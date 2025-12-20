@@ -20,48 +20,32 @@ async function findUpdatedActions(job) {
         );
         
         const $ = load(response.data);
-        const updatedActions = [];
+        const updatedSkills = [];
         
-        // Проходим по ВСЕМ строкам таблицы
-        $('tr').each((i, elem) => {
+        // Ищем обновлённые строки с timestamp > 0
+        $('tr.update.js__jobguide_update_one.hide').each((i, elem) => {
             const $row = $(elem);
-            const rowClass = $row.attr('class') || '';
+            const timestamp = $row.attr('data-updated');
             
-            // Если это строка с классом update И hide
-            if (rowClass.includes('update') && 
-                rowClass.includes('js__jobguide_update_one') && 
-                rowClass.includes('hide')) {
+            // ТОЛЬКО если timestamp существует и > 0
+            if (timestamp && parseInt(timestamp) > 0) {
+                const $nextRow = $row.next();
+                const actionId = $nextRow.attr('id');
                 
-                // Получаем timestamp
-                const timestamp = $row.attr('data-updated');
-                const timestampNum = parseInt(timestamp);
-                
-                // Фильтруем: timestamp должен быть > 0 (не 0 и не пустой)
-                if (timestamp && timestampNum > 0) {
-                    // Берём следующую строку
-                    const $nextRow = $row.next();
-                    const nextRowId = $nextRow.attr('id');
-                    
-                    // Проверяем что следующая строка - pve_action__
-                    if (nextRowId && nextRowId.startsWith('pve_action__')) {
-                        console.log(`  ✓ Found: ${nextRowId} (timestamp: ${timestamp})`);
-                        updatedActions.push({
-                            id: nextRowId,
-                            timestamp: timestamp
-                        });
-                    }
-                } else if (timestamp === '0') {
-                    // Пропускаем - это не обновление
-                    const $nextRow = $row.next();
-                    const nextRowId = $nextRow.attr('id');
-                    if (nextRowId && nextRowId.startsWith('pve_action__')) {
-                        console.log(`  ✗ Skipped: ${nextRowId} (timestamp is 0)`);
+                if (actionId && actionId.startsWith('pve_action__')) {
+                    // Извлекаем число из pve_action__XX
+                    const match = actionId.match(/pve_action__(\d+)/);
+                    if (match) {
+                        const number = match[1];
+                        const skillName = `PVE Skill ${number}`;
+                        console.log(`  ✓ ${actionId} → ${skillName}`);
+                        updatedSkills.push(skillName);
                     }
                 }
             }
         });
         
-        return updatedActions;
+        return updatedSkills;
         
     } catch (error) {
         console.error(`Error parsing ${job}:`, error.message);
@@ -70,69 +54,70 @@ async function findUpdatedActions(job) {
 }
 
 async function main() {
-    console.log('Searching for updated pve_action__ elements (timestamp > 0)...\n');
+    console.log('Searching for updated PVE Skills...\n');
     
     const results = [];
     
     for (const job of JOBS) {
-        const actions = await findUpdatedActions(job);
+        const skills = await findUpdatedActions(job);
         
-        if (actions.length > 0) {
+        if (skills.length > 0) {
             // Создаём объект для этого класса
             const jobObj = { job: job };
             
-            // Добавляем action_id_1, action_id_2 и т.д.
-            actions.forEach((action, index) => {
-                jobObj[`action_id_${index + 1}`] = action.id;
-                // Можно также сохранить timestamp если нужно
-                jobObj[`timestamp_${index + 1}`] = action.timestamp;
+            // Добавляем PVE Skill 1, PVE Skill 2 и т.д.
+            skills.forEach((skill, index) => {
+                jobObj[`PVE Skill ${index + 1}`] = skill;
             });
             
             results.push(jobObj);
-            console.log(`  Total for ${job}: ${actions.length} updated actions\n`);
+            console.log(`  Found: ${skills.length} updated skills\n`);
         } else {
-            console.log(`  No updated actions found for ${job}\n`);
+            console.log(`  No updated skills\n`);
         }
         
         // Пауза
         await new Promise(resolve => setTimeout(resolve, 2000));
     }
     
-    // Сохраняем
+    // Создаем папку если нет
     await mkdir('data', { recursive: true });
     
+    // Сохраняем результат
     const output = {
         generated: new Date().toISOString(),
         data: results
     };
     
-    await writeFile('data/updated_actions.json', JSON.stringify(output, null, 2));
+    await writeFile('data/updated.json', JSON.stringify(output, null, 2));
     
-    console.log('='.repeat(70));
-    console.log('FINAL RESULT (only actions with timestamp > 0):');
-    console.log('='.repeat(70));
+    console.log('='.repeat(60));
+    console.log('FINAL RESULT:');
+    console.log('='.repeat(60));
     
     if (results.length === 0) {
-        console.log('❌ No updated actions found on any job page.');
+        console.log('❌ No updated PVE Skills found.');
     } else {
-        console.log(`✅ Found updated actions in ${results.length} jobs.`);
+        console.log(`✅ Found updated PVE Skills in ${results.length} jobs.\n`);
+        
+        // Показываем результат
         results.forEach(jobData => {
-            const actionCount = (Object.keys(jobData).length - 1) / 2; // минус поле job, делим на 2 (id + timestamp)
-            console.log(`\n${jobData.job}: ${actionCount} action(s)`);
-            
-            // Показываем какие именно
+            console.log(`${jobData.job}:`);
             Object.entries(jobData).forEach(([key, value]) => {
-                if (key.startsWith('action_id_')) {
-                    const num = key.replace('action_id_', '');
-                    const timestamp = jobData[`timestamp_${num}`] || 'no timestamp';
-                    console.log(`  ${key}: ${value} (timestamp: ${timestamp})`);
+                if (key.startsWith('PVE Skill')) {
+                    console.log(`  ${key}: ${value}`);
                 }
             });
+            console.log('');
         });
     }
     
-    console.log('\n💾 Saved to data/updated_actions.json');
-    console.log('='.repeat(70));
+    console.log('💾 Saved to data/updated_skills.json');
+    console.log('='.repeat(60));
+    
+    // Показываем как выглядит JSON
+    console.log('\nJSON output preview:');
+    console.log(JSON.stringify(output, null, 2));
 }
 
 main();

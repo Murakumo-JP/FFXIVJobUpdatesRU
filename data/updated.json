@@ -1,0 +1,99 @@
+{
+  "generated": "2025-12-20T11:52:19.653Z",
+  "data": [
+    {
+      "job": "darkknight",
+      "PVE Skill 1": "PVE Skill 26"
+    },
+    {
+      "job": "gunbreaker",
+      "PVE Skill 1": "PVE Skill 11",
+      "PVE Skill 2": "PVE Skill 16",
+      "PVE Skill 3": "PVE Skill 18",
+      "PVE Skill 4": "PVE Skill 19",
+      "PVE Skill 5": "PVE Skill 20",
+      "PVE Skill 6": "PVE Skill 25",
+      "PVE Skill 7": "PVE Skill 26",
+      "PVE Skill 8": "PVE Skill 27",
+      "PVE Skill 9": "PVE Skill 29",
+      "PVE Skill 10": "PVE Skill 32",
+      "PVE Skill 11": "PVE Skill 33",
+      "PVE Skill 12": "PVE Skill 36",
+      "PVE Skill 13": "PVE Skill 37",
+      "PVE Skill 14": "PVE Skill 38"
+    },
+    {
+      "job": "whitemage",
+      "PVE Skill 1": "PVE Skill 24",
+      "PVE Skill 2": "PVE Skill 27",
+      "PVE Skill 3": "PVE Skill 30"
+    },
+    {
+      "job": "scholar",
+      "PVE Skill 1": "PVE Skill 27"
+    },
+    {
+      "job": "astrologian",
+      "PVE Skill 1": "PVE Skill 21"
+    },
+    {
+      "job": "sage",
+      "PVE Skill 1": "PVE Skill 32"
+    },
+    {
+      "job": "viper",
+      "PVE Skill 1": "PVE Skill 06",
+      "PVE Skill 2": "PVE Skill 11",
+      "PVE Skill 3": "PVE Skill 13",
+      "PVE Skill 4": "PVE Skill 14",
+      "PVE Skill 5": "PVE Skill 15",
+      "PVE Skill 6": "PVE Skill 16",
+      "PVE Skill 7": "PVE Skill 19",
+      "PVE Skill 8": "PVE Skill 23",
+      "PVE Skill 9": "PVE Skill 24",
+      "PVE Skill 10": "PVE Skill 25",
+      "PVE Skill 11": "PVE Skill 32",
+      "PVE Skill 12": "PVE Skill 34",
+      "PVE Skill 13": "PVE Skill 35",
+      "PVE Skill 14": "PVE Skill 36",
+      "PVE Skill 15": "PVE Skill 37",
+      "PVE Skill 16": "PVE Skill 38",
+      "PVE Skill 17": "PVE Skill 39",
+      "PVE Skill 18": "PVE Skill 40",
+      "PVE Skill 19": "PVE Skill 41",
+      "PVE Skill 20": "PVE Skill 42",
+      "PVE Skill 21": "PVE Skill 43",
+      "PVE Skill 22": "PVE Skill 44",
+      "PVE Skill 23": "PVE Skill 45"
+    },
+    {
+      "job": "bard",
+      "PVE Skill 1": "PVE Skill 28",
+      "PVE Skill 2": "PVE Skill 30",
+      "PVE Skill 3": "PVE Skill 34"
+    },
+    {
+      "job": "machinist",
+      "PVE Skill 1": "PVE Skill 19",
+      "PVE Skill 2": "PVE Skill 27",
+      "PVE Skill 3": "PVE Skill 35",
+      "PVE Skill 4": "PVE Skill 38"
+    },
+    {
+      "job": "dancer",
+      "PVE Skill 1": "PVE Skill 23",
+      "PVE Skill 2": "PVE Skill 27",
+      "PVE Skill 3": "PVE Skill 29"
+    },
+    {
+      "job": "redmage",
+      "PVE Skill 1": "PVE Skill 20",
+      "PVE Skill 2": "PVE Skill 21",
+      "PVE Skill 3": "PVE Skill 34",
+      "PVE Skill 4": "PVE Skill 36",
+      "PVE Skill 5": "PVE Skill 37",
+      "PVE Skill 6": "PVE Skill 38",
+      "PVE Skill 7": "PVE Skill 39"
+    }
+  ]
+}
