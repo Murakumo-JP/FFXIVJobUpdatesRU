@@ -1,0 +1,43 @@
+name: Parse FFXIV Jobs
+
+on:
+  workflow_dispatch:
+  
+jobs:
+  parse-and-commit:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+    
+    - name: Install dependencies
+      run: npm ci
+    
+    - name: Run parser
+      run: node parser.js
+    
+    - name: Commit and push if changes
+      run: |
+        # Настраиваем git
+        git config --global user.name 'GitHub Action'
+        git config --global user.email 'action@github.com'
+        
+        # Добавляем все измененные файлы данных
+        git add -f data/*.json data/*.csv
+        
+        # Проверяем есть ли изменения
+        if git diff --staged --quiet; then
+          echo "Нет изменений для коммита"
+        else
+          git commit -m "🤖 Auto-update: $(date '+%Y-%m-%d %H:%M')"
+          git push
+        fi
