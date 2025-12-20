@@ -1,15 +1,17 @@
 {
-  "generated": "2025-12-20T20:39:26.060Z",
+  "generated": "2025-12-20T21:05:05.242Z",
+  "total_jobs_updated": 16,
+  "total_skills_updated": 79,
   "flags": {
-    "Darkknight": {
+    "DRK": {
       "PVE Skill 26": true,
       "PVP Skill 06": true,
       "PVP Skill 08": true
     },
-    "Paladin": {
+    "PLD": {
       "PVP Skill 04": true
     },
-    "Gunbreaker": {
+    "GNB": {
       "PVE Skill 11": true,
       "PVE Skill 16": true,
       "PVE Skill 18": true,
@@ -25,38 +27,38 @@
       "PVE Skill 37": true,
       "PVE Skill 38": true
     },
-    "Whitemage": {
+    "WHM": {
       "PVE Skill 24": true,
       "PVE Skill 27": true,
       "PVE Skill 30": true,
       "PVP Skill 04": true,
       "PVP Skill 06": true
     },
-    "Scholar": {
+    "SCH": {
       "PVE Skill 27": true,
       "PVP Skill 03": true,
       "PVP Skill 05": true,
       "PVP Skill 09": true
     },
-    "Astrologian": {
+    "AST": {
       "PVE Skill 21": true
     },
-    "Sage": {
+    "SGE": {
       "PVE Skill 32": true
     },
-    "Dragoon": {
+    "DRG": {
       "PVP Skill 06": true,
       "PVP Skill 12": true
     },
-    "Ninja": {
+    "NIN": {
       "PVP Skill 13": true,
       "PVP Skill 14": true
     },
-    "Samurai": {
+    "SAM": {
       "PVP Skill 04": true,
       "PVP Skill 12": true
     },
-    "Viper": {
+    "VPR": {
       "PVE Skill 06": true,
       "PVE Skill 11": true,
       "PVE Skill 13": true,
@@ -81,24 +83,24 @@
       "PVE Skill 44": true,
       "PVE Skill 45": true
     },
-    "Bard": {
+    "BRD": {
       "PVE Skill 28": true,
       "PVE Skill 30": true,
       "PVE Skill 34": true
     },
-    "Machinist": {
+    "MCH": {
       "PVE Skill 19": true,
       "PVE Skill 27": true,
       "PVE Skill 35": true,
       "PVE Skill 38": true
     },
-    "Dancer": {
+    "DNC": {
       "PVE Skill 23": true,
       "PVE Skill 27": true,
       "PVE Skill 29": true,
       "PVP Skill 04": true
     },
-    "Redmage": {
+    "RDM": {
       "PVE Skill 20": true,
       "PVE Skill 21": true,
       "PVE Skill 34": true,
@@ -107,7 +109,7 @@
       "PVE Skill 38": true,
       "PVE Skill 39": true
     },
-    "Pictomancer": {
+    "PCT": {
       "PVP Skill 21": true,
       "PVP Skill 24": true,
       "PVP Skill 25": true
