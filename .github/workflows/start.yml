@@ -27,8 +27,11 @@ jobs:
           git config --local user.name "GitHub Action"
           git fetch origin main
           git checkout main
-          git add R18Anime.css
-          git add R18Manga.css
+          # Добавляем файлы которые создает парсер
+          git add data/
+          # Или если нужны конкретные файлы
+          # git add data/updates.json
+          # git add data/updates.csv
           git diff --cached --quiet && exit 0
-          git commit -m "Update DB"
+          git commit -m "Update FFXIV job data"
           git push
