@@ -1,0 +1,116 @@
+{
+  "generated": "2025-12-20T20:39:26.060Z",
+  "flags": {
+    "Darkknight": {
+      "PVE Skill 26": true,
+      "PVP Skill 06": true,
+      "PVP Skill 08": true
+    },
+    "Paladin": {
+      "PVP Skill 04": true
+    },
+    "Gunbreaker": {
+      "PVE Skill 11": true,
+      "PVE Skill 16": true,
+      "PVE Skill 18": true,
+      "PVE Skill 19": true,
+      "PVE Skill 20": true,
+      "PVE Skill 25": true,
+      "PVE Skill 26": true,
+      "PVE Skill 27": true,
+      "PVE Skill 29": true,
+      "PVE Skill 32": true,
+      "PVE Skill 33": true,
+      "PVE Skill 36": true,
+      "PVE Skill 37": true,
+      "PVE Skill 38": true
+    },
+    "Whitemage": {
+      "PVE Skill 24": true,
+      "PVE Skill 27": true,
+      "PVE Skill 30": true,
+      "PVP Skill 04": true,
+      "PVP Skill 06": true
+    },
+    "Scholar": {
+      "PVE Skill 27": true,
+      "PVP Skill 03": true,
+      "PVP Skill 05": true,
+      "PVP Skill 09": true
+    },
+    "Astrologian": {
+      "PVE Skill 21": true
+    },
+    "Sage": {
+      "PVE Skill 32": true
+    },
+    "Dragoon": {
+      "PVP Skill 06": true,
+      "PVP Skill 12": true
+    },
+    "Ninja": {
+      "PVP Skill 13": true,
+      "PVP Skill 14": true
+    },
+    "Samurai": {
+      "PVP Skill 04": true,
+      "PVP Skill 12": true
+    },
+    "Viper": {
+      "PVE Skill 06": true,
+      "PVE Skill 11": true,
+      "PVE Skill 13": true,
+      "PVE Skill 14": true,
+      "PVE Skill 15": true,
+      "PVE Skill 16": true,
+      "PVE Skill 19": true,
+      "PVE Skill 23": true,
+      "PVE Skill 24": true,
+      "PVE Skill 25": true,
+      "PVE Skill 32": true,
+      "PVE Skill 34": true,
+      "PVE Skill 35": true,
+      "PVE Skill 36": true,
+      "PVE Skill 37": true,
+      "PVE Skill 38": true,
+      "PVE Skill 39": true,
+      "PVE Skill 40": true,
+      "PVE Skill 41": true,
+      "PVE Skill 42": true,
+      "PVE Skill 43": true,
+      "PVE Skill 44": true,
+      "PVE Skill 45": true
+    },
+    "Bard": {
+      "PVE Skill 28": true,
+      "PVE Skill 30": true,
+      "PVE Skill 34": true
+    },
+    "Machinist": {
+      "PVE Skill 19": true,
+      "PVE Skill 27": true,
+      "PVE Skill 35": true,
+      "PVE Skill 38": true
+    },
+    "Dancer": {
+      "PVE Skill 23": true,
+      "PVE Skill 27": true,
+      "PVE Skill 29": true,
+      "PVP Skill 04": true
+    },
+    "Redmage": {
+      "PVE Skill 20": true,
+      "PVE Skill 21": true,
+      "PVE Skill 34": true,
+      "PVE Skill 36": true,
+      "PVE Skill 37": true,
+      "PVE Skill 38": true,
+      "PVE Skill 39": true
+    },
+    "Pictomancer": {
+      "PVP Skill 21": true,
+      "PVP Skill 24": true,
+      "PVP Skill 25": true
+    }
+  }
+}

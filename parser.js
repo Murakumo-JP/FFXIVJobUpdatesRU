@@ -7,9 +7,12 @@ const JOBS = [
     'whitemage', 'scholar', 'astrologian', 'sage',
     'monk', 'dragoon', 'ninja', 'samurai', 'reaper', 'viper',
     'bard', 'machinist', 'dancer',
-    'blackmage', 'summoner', 'redmage', 'pictomancer',
-    'bluemage'
+    'blackmage', 'summoner', 'redmage', 'pictomancer'
 ];
+
+function toCamelCase(job) {
+    return job.charAt(0).toUpperCase() + job.slice(1);
+}
 
 async function findUpdatedActions(job) {
     try {
@@ -20,26 +23,34 @@ async function findUpdatedActions(job) {
         );
         
         const $ = load(response.data);
-        const updatedSkills = [];
+        const updatedSkills = {};
         
-        // Ищем обновлённые строки с timestamp > 0
         $('tr.update.js__jobguide_update_one.hide').each((i, elem) => {
             const $row = $(elem);
             const timestamp = $row.attr('data-updated');
             
-            // ТОЛЬКО если timestamp существует и > 0
             if (timestamp && parseInt(timestamp) > 0) {
                 const $nextRow = $row.next();
                 const actionId = $nextRow.attr('id');
                 
-                if (actionId && actionId.startsWith('pve_action__')) {
-                    // Извлекаем число из pve_action__XX
-                    const match = actionId.match(/pve_action__(\d+)/);
-                    if (match) {
-                        const number = match[1];
-                        const skillName = `PVE Skill ${number}`;
-                        console.log(`  ✓ ${actionId} → ${skillName}`);
-                        updatedSkills.push(skillName);
+                if (actionId) {
+                    if (actionId.startsWith('pve_action__')) {
+                        const match = actionId.match(/pve_action__(\d+)/);
+                        if (match) {
+                            const number = match[1];
+                            const skillKey = `PVE Skill ${number.padStart(2, '0')}`;
+                            console.log(`  ✓ ${actionId} → ${skillKey}`);
+                            updatedSkills[skillKey] = true;
+                        }
+                    }
+                    else if (actionId.startsWith('pvp_action__')) {
+                        const match = actionId.match(/pvp_action__(\d+)/);
+                        if (match) {
+                            const number = match[1];
+                            const skillKey = `PVP Skill ${number.padStart(2, '0')}`;
+                            console.log(`  ✓ ${actionId} → ${skillKey}`);
+                            updatedSkills[skillKey] = true;
+                        }
                     }
                 }
             }
@@ -49,75 +60,73 @@ async function findUpdatedActions(job) {
         
     } catch (error) {
         console.error(`Error parsing ${job}:`, error.message);
-        return [];
+        return {};
     }
 }
 
 async function main() {
-    console.log('Searching for updated PVE Skills...\n');
+    console.log('Searching for updated skills...\n');
     
-    const results = [];
+    const flags = {};
+    let totalSkills = 0;
     
     for (const job of JOBS) {
-        const skills = await findUpdatedActions(job);
+        const jobSkills = await findUpdatedActions(job);
         
-        if (skills.length > 0) {
-            // Создаём объект для этого класса
-            const jobObj = { job: job };
-            
-            // Добавляем PVE Skill 1, PVE Skill 2 и т.д.
-            skills.forEach((skill, index) => {
-                jobObj[`PVE Skill ${index + 1}`] = skill;
-            });
-            
-            results.push(jobObj);
-            console.log(`  Found: ${skills.length} updated skills\n`);
+        if (Object.keys(jobSkills).length > 0) {
+            const jobKey = toCamelCase(job);
+            flags[jobKey] = jobSkills;
+            totalSkills += Object.keys(jobSkills).length;
+            console.log(`  ${jobKey}: ${Object.keys(jobSkills).length} skills\n`);
         } else {
-            console.log(`  No updated skills\n`);
+            console.log(`  ${job}: No updated skills\n`);
         }
         
-        // Пауза
         await new Promise(resolve => setTimeout(resolve, 2000));
     }
     
-    // Создаем папку если нет
     await mkdir('data', { recursive: true });
     
-    // Сохраняем результат
     const output = {
         generated: new Date().toISOString(),
-        data: results
+        flags: flags
     };
     
-    await writeFile('data/updated.json', JSON.stringify(output, null, 2));
+    await writeFile('data/updated_flags.json', JSON.stringify(output, null, 2));
     
     console.log('='.repeat(60));
     console.log('FINAL RESULT:');
     console.log('='.repeat(60));
     
-    if (results.length === 0) {
-        console.log('❌ No updated PVE Skills found.');
+    if (Object.keys(flags).length === 0) {
+        console.log('❌ No updated skills found.');
     } else {
-        console.log(`✅ Found updated PVE Skills in ${results.length} jobs.\n`);
+        console.log(`✅ Found updated skills in ${Object.keys(flags).length} jobs.`);
+        console.log(`📊 Total skills with updates: ${totalSkills}\n`);
         
-        // Показываем результат
-        results.forEach(jobData => {
-            console.log(`${jobData.job}:`);
-            Object.entries(jobData).forEach(([key, value]) => {
-                if (key.startsWith('PVE Skill')) {
-                    console.log(`  ${key}: ${value}`);
-                }
+        Object.entries(flags).forEach(([job, jobFlags]) => {
+            console.log(`${job}:`);
+            Object.keys(jobFlags).forEach(skillKey => {
+                console.log(`  ${skillKey}`);
             });
             console.log('');
         });
     }
     
-    console.log('💾 Saved to data/updated_skills.json');
+    console.log('💾 Saved to data/updated_flags.json');
     console.log('='.repeat(60));
     
-    // Показываем как выглядит JSON
-    console.log('\nJSON output preview:');
-    console.log(JSON.stringify(output, null, 2));
+    console.log('\nFile structure preview:');
+    console.log(JSON.stringify({
+        generated: output.generated,
+        flags: Object.keys(flags).reduce((acc, job) => {
+            acc[job] = { 
+                count: Object.keys(flags[job]).length,
+                example: Object.keys(flags[job])[0] || 'none'
+            };
+            return acc;
+        }, {})
+    }, null, 2));
 }
 
 main();
