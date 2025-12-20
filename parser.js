@@ -89,7 +89,6 @@ async function main() {
         const jobSkills = await findUpdatedActions(job.slug);
         
         if (Object.keys(jobSkills).length > 0) {
-            // Сохраняем только под кодом класса (DRK, PLD и т.д.)
             flags[job.code] = jobSkills;
             
             updatedJobs++;
@@ -99,14 +98,11 @@ async function main() {
             console.log(`  ❌ ${job.code}: Нет обновлений\n`);
         }
         
-        // Пауза между запросами
         await new Promise(resolve => setTimeout(resolve, 2000));
     }
     
-    // Создаём папку для данных
     await mkdir('data', { recursive: true });
     
-    // Сохраняем результат
     const output = {
         generated: new Date().toISOString(),
         total_jobs_updated: updatedJobs,
@@ -126,7 +122,6 @@ async function main() {
         console.log(`✅ Обновлено ${updatedJobs} из ${JOBS.length} классов`);
         console.log(`📈 Всего обновлённых скиллов: ${totalSkills}`);
         
-        // Выводим список обновлённых классов
         console.log('\n📋 Классы с обновлениями:');
         JOBS.forEach(job => {
             if (flags[job.code]) {
