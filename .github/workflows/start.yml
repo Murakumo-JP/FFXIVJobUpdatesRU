@@ -21,11 +21,11 @@ jobs:
         run: npm install
 
       - name: Run parser
-        run: node parser.js
+        run: node index.js
 
       - name: Commit if changes
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add data/updated.json
-          git diff --cached --quiet || (git commit -m "Update FFXIV skills" && git push)
+          git diff --cached --quiet || (git commit -m "Update FFXIV Flags" && git push)

@@ -34,6 +34,38 @@ function timestampToDate(timestamp) {
     return `${day}/${month}/${year}`;
 }
 
+function getSkillKey(actionId) {
+    if (actionId.startsWith('pve_action__')) {
+        const match = actionId.match(/pve_action__(\d+)/);
+        if (match) {
+            const number = match[1];
+            return `PVE Skill ${number.padStart(2, '0')}`;
+        }
+    }
+    else if (actionId.startsWith('pvp_action__')) {
+        const match = actionId.match(/pvp_action__(\d+)/);
+        if (match) {
+            const number = match[1];
+            return `PVP Skill ${number.padStart(2, '0')}`;
+        }
+    }
+    else if (actionId.startsWith('trait_action__')) {
+        const match = actionId.match(/trait_action__(\d+)/);
+        if (match) {
+            const number = match[1];
+            return `Trait ${number.padStart(2, '0')}`;
+        }
+    }
+    else if (actionId.startsWith('pvplimitbreakaction_')) {
+        const match = actionId.match(/pvplimitbreakaction_(\d+)/);
+        if (match) {
+            const number = match[1];
+            return `PVP Skill LB${number}`;
+        }
+    }
+    return null;
+}
+
 async function parseJobPage(jobSlug) {
     try {
         console.log(`Парсинг ${jobSlug}...`);
@@ -101,23 +133,10 @@ async function parseJobPage(jobSlug) {
                 const actionId = $nextRow.attr('id');
                 
                 if (actionId) {
-                    if (actionId.startsWith('pve_action__')) {
-                        const match = actionId.match(/pve_action__(\d+)/);
-                        if (match) {
-                            const number = match[1];
-                            const skillKey = `PVE Skill ${number.padStart(2, '0')}`;
-                            jobData[skillKey] = true;
-                            skillCount++;
-                        }
-                    }
-                    else if (actionId.startsWith('pvp_action__')) {
-                        const match = actionId.match(/pvp_action__(\d+)/);
-                        if (match) {
-                            const number = match[1];
-                            const skillKey = `PVP Skill ${number.padStart(2, '0')}`;
-                            jobData[skillKey] = true;
-                            skillCount++;
-                        }
+                    const skillKey = getSkillKey(actionId);
+                    if (skillKey) {
+                        jobData[skillKey] = true;
+                        skillCount++;
                     }
                 }
             }
@@ -129,6 +148,14 @@ async function parseJobPage(jobSlug) {
         if (updateCount > 0) {
             Object.entries(jobData).forEach(([key, value]) => {
                 if (key.includes('Update')) {
+                    console.log(`    ${key}: ${value}`);
+                }
+            });
+        }
+        
+        if (skillCount > 0) {
+            Object.entries(jobData).forEach(([key, value]) => {
+                if (key.includes('Skill') || key.includes('Trait')) {
                     console.log(`    ${key}: ${value}`);
                 }
             });
