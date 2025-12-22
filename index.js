@@ -59,7 +59,7 @@ function getSkillKey(actionId) {
     else if (actionId.startsWith('pvplimitbreakaction_')) {
         const match = actionId.match(/pvplimitbreakaction_(\d+)/);
         if (match) {
-            const number = match[1];
+            const number = parseInt(match[1]);
             return `PVP Skill LB${number}`;
         }
     }
@@ -124,6 +124,11 @@ async function parseJobPage(jobSlug) {
         }
         
         let skillCount = 0;
+        let pveCount = 0;
+        let pvpCount = 0;
+        let traitCount = 0;
+        let lbCount = 0;
+        
         $('tr.update.js__jobguide_update_one.hide').each((i, elem) => {
             const $row = $(elem);
             const timestamp = $row.attr('data-updated');
@@ -137,6 +142,11 @@ async function parseJobPage(jobSlug) {
                     if (skillKey) {
                         jobData[skillKey] = true;
                         skillCount++;
+                        
+                        if (skillKey.startsWith('PVE Skill')) pveCount++;
+                        else if (skillKey.startsWith('PVP Skill LB')) lbCount++;
+                        else if (skillKey.startsWith('PVP Skill')) pvpCount++;
+                        else if (skillKey.startsWith('Trait')) traitCount++;
                     }
                 }
             }
@@ -144,6 +154,7 @@ async function parseJobPage(jobSlug) {
         
         const updateCount = Object.keys(jobData).filter(k => k.includes('Update')).length;
         console.log(`  Найдено: ${updateCount} дат, ${skillCount} скиллов`);
+        console.log(`    PVE: ${pveCount}, PVP: ${pvpCount}, Traits: ${traitCount}, LB: ${lbCount}`);
         
         if (updateCount > 0) {
             Object.entries(jobData).forEach(([key, value]) => {
@@ -174,6 +185,11 @@ async function main() {
     
     const flags = {};
     let processedJobs = 0;
+    let totalSkills = 0;
+    let totalPve = 0;
+    let totalPvp = 0;
+    let totalTraits = 0;
+    let totalLb = 0;
     
     for (const job of JOBS) {
         const jobData = await parseJobPage(job.slug);
@@ -181,6 +197,16 @@ async function main() {
         if (Object.keys(jobData).length > 0) {
             flags[job.code] = jobData;
             processedJobs++;
+            
+            const skills = Object.keys(jobData).filter(k => k.includes('Skill') || k.includes('Trait')).length;
+            totalSkills += skills;
+            
+            Object.keys(jobData).forEach(key => {
+                if (key.startsWith('PVE Skill') && !key.includes('LB')) totalPve++;
+                else if (key.startsWith('PVP Skill LB')) totalLb++;
+                else if (key.startsWith('PVP Skill')) totalPvp++;
+                else if (key.startsWith('Trait')) totalTraits++;
+            });
         }
         
         await new Promise(resolve => setTimeout(resolve, 2000));
@@ -196,6 +222,11 @@ async function main() {
     await writeFile('data/Update.json', JSON.stringify(output, null, 2));
     
     console.log(`\nГотово! Обработано ${processedJobs} из ${JOBS.length} классов.`);
+    console.log(`Всего найдено: ${totalSkills} элементов`);
+    console.log(`  PVE Skills: ${totalPve}`);
+    console.log(`  PVP Skills: ${totalPvp}`);
+    console.log(`  Traits: ${totalTraits}`);
+    console.log(`  PVP Limit Break: ${totalLb}`);
 }
 
 main().catch(error => {

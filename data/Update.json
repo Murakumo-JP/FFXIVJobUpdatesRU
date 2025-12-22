@@ -1,5 +1,5 @@
 {
-  "generated": "2025-12-22T15:35:56.075Z",
+  "generated": "2025-12-22T15:47:27.083Z",
   "flags": {
     "DRK": {
       "PVE Update": "Последнее обновление: 16/12/2025",
@@ -36,7 +36,7 @@
       "PVE Skill 38": true,
       "Trait 10": true,
       "Trait 12": true,
-      "PVP Skill LB01": true
+      "PVP Skill LB1": true
     },
     "WHM": {
       "PVE Update": "Последнее обновление: 16/12/2025",
@@ -120,7 +120,7 @@
       "PVE Skill 43": true,
       "PVE Skill 44": true,
       "PVE Skill 45": true,
-      "PVP Skill LB01": true
+      "PVP Skill LB1": true
     },
     "BRD": {
       "PVE Update": "Последнее обновление: 16/12/2025",
