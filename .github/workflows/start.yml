@@ -23,9 +23,16 @@ jobs:
       - name: Run parser
         run: node index.js
 
+      - name: Get formatted date
+        id: date
+        run: |
+          FORMATTED_DATE=$(date '+%d.%m.%Y')
+          echo "formatted_date=$FORMATTED_DATE" >> $GITHUB_OUTPUT
+          echo "Date: $FORMATTED_DATE"
+
       - name: Commit if changes
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add data/Update.json
-          git diff --cached --quiet || (git commit -m "Update FFXIV Flags" && git push)
+          git diff --cached --quiet || (git commit -m "Update Skill Flags [${{ steps.date.outputs.formatted_date }}]" && git push)
