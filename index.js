@@ -69,7 +69,7 @@ class UpdateParser {
         this.$ = $;
     }
 
-    parseUpdateDate(section, type) {
+        parseUpdateDate(section, type) {
         const $section = this.$(section);
         if (!$section.length) return null;
 
@@ -91,7 +91,7 @@ class UpdateParser {
 
         const timestamp = parseInt(timestampMatch[1]);
         const dateStr = Utils.timestampToDate(timestamp);
-        return `${type} Update: ${dateStr}`;
+        return `Последнее обновление: ${dateStr}`;
     }
 
     parseSkills() {

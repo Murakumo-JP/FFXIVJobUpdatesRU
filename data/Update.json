@@ -1,25 +1,25 @@
 {
-  "generated": "2025-12-24T17:04:51.123Z",
+  "generated": "2025-12-24T20:08:07.412Z",
   "flags": {
     "PLD": {
-      "PVE Update": "PVE Update: 16/12/2025",
-      "PVP Update": "PVP Update: 16/12/2025",
+      "PVE Update": "Последнее обновление: 16/12/2025",
+      "PVP Update": "Последнее обновление: 16/12/2025",
       "PVP Skill 04": true
     },
     "WAR": {
-      "PVE Update": "PVE Update: 16/12/2025",
-      "PVP Update": "PVP Update: 16/12/2025"
+      "PVE Update": "Последнее обновление: 16/12/2025",
+      "PVP Update": "Последнее обновление: 16/12/2025"
     },
     "DRK": {
-      "PVE Update": "PVE Update: 16/12/2025",
-      "PVP Update": "PVP Update: 16/12/2025",
+      "PVE Update": "Последнее обновление: 16/12/2025",
+      "PVP Update": "Последнее обновление: 16/12/2025",
       "PVE Skill 26": true,
       "PVP Skill 06": true,
       "PVP Skill 08": true
     },
     "GNB": {
-      "PVE Update": "PVE Update: 16/12/2025",
-      "PVP Update": "PVP Update: 16/12/2025",
+      "PVE Update": "Последнее обновление: 16/12/2025",
+      "PVP Update": "Последнее обновление: 16/12/2025",
       "PVE Skill 11": true,
       "PVE Skill 16": true,
       "PVE Skill 18": true,
@@ -39,8 +39,8 @@
       "Trait 12": true
     },
     "WHM": {
-      "PVE Update": "PVE Update: 16/12/2025",
-      "PVP Update": "PVP Update: 16/12/2025",
+      "PVE Update": "Последнее обновление: 16/12/2025",
+      "PVP Update": "Последнее обновление: 16/12/2025",
       "PVE Skill 24": true,
       "PVE Skill 27": true,
       "PVE Skill 30": true,
@@ -49,8 +49,8 @@
       "Trait 18": true
     },
     "SCH": {
-      "PVE Update": "PVE Update: 16/12/2025",
-      "PVP Update": "PVP Update: 16/12/2025",
+      "PVE Update": "Последнее обновление: 16/12/2025",
+      "PVP Update": "Последнее обновление: 16/12/2025",
       "PVE Skill 27": true,
       "PVP Skill 03": true,
       "PVP Skill 05": true,
@@ -58,45 +58,45 @@
       "Trait 14": true
     },
     "AST": {
-      "PVE Update": "PVE Update: 16/12/2025",
-      "PVP Update": "PVP Update: 16/12/2025",
+      "PVE Update": "Последнее обновление: 16/12/2025",
+      "PVP Update": "Последнее обновление: 16/12/2025",
       "PVE Skill 21": true
     },
     "SGE": {
-      "PVE Update": "PVE Update: 16/12/2025",
-      "PVP Update": "PVP Update: 16/12/2025",
+      "PVE Update": "Последнее обновление: 16/12/2025",
+      "PVP Update": "Последнее обновление: 16/12/2025",
       "PVE Skill 32": true,
       "Trait 14": true
     },
     "MNK": {
-      "PVE Update": "PVE Update: 16/12/2025",
-      "PVP Update": "PVP Update: 16/12/2025"
+      "PVE Update": "Последнее обновление: 16/12/2025",
+      "PVP Update": "Последнее обновление: 16/12/2025"
     },
     "DRG": {
-      "PVE Update": "PVE Update: 16/12/2025",
-      "PVP Update": "PVP Update: 16/12/2025",
+      "PVE Update": "Последнее обновление: 16/12/2025",
+      "PVP Update": "Последнее обновление: 16/12/2025",
       "PVP Skill 06": true,
       "PVP Skill 12": true
     },
     "NIN": {
-      "PVE Update": "PVE Update: 16/12/2025",
-      "PVP Update": "PVP Update: 16/12/2025",
+      "PVE Update": "Последнее обновление: 16/12/2025",
+      "PVP Update": "Последнее обновление: 16/12/2025",
       "PVP Skill 13": true,
       "PVP Skill 14": true
     },
     "SAM": {
-      "PVE Update": "PVE Update: 16/12/2025",
-      "PVP Update": "PVP Update: 16/12/2025",
+      "PVE Update": "Последнее обновление: 16/12/2025",
+      "PVP Update": "Последнее обновление: 16/12/2025",
       "PVP Skill 04": true,
       "PVP Skill 12": true
     },
     "RPR": {
-      "PVE Update": "PVE Update: 16/12/2025",
-      "PVP Update": "PVP Update: 16/12/2025"
+      "PVE Update": "Последнее обновление: 16/12/2025",
+      "PVP Update": "Последнее обновление: 16/12/2025"
     },
     "VPR": {
-      "PVE Update": "PVE Update: 16/12/2025",
-      "PVP Update": "PVP Update: 16/12/2025",
+      "PVE Update": "Последнее обновление: 16/12/2025",
+      "PVP Update": "Последнее обновление: 16/12/2025",
       "PVE Skill 06": true,
       "PVE Skill 11": true,
       "PVE Skill 13": true,
@@ -123,16 +123,16 @@
       "PVP Skill LB1": true
     },
     "BRD": {
-      "PVE Update": "PVE Update: 16/12/2025",
-      "PVP Update": "PVP Update: 16/12/2025",
+      "PVE Update": "Последнее обновление: 16/12/2025",
+      "PVP Update": "Последнее обновление: 16/12/2025",
       "PVE Skill 28": true,
       "PVE Skill 30": true,
       "PVE Skill 34": true,
       "Trait 19": true
     },
     "MCH": {
-      "PVE Update": "PVE Update: 16/12/2025",
-      "PVP Update": "PVP Update: 16/12/2025",
+      "PVE Update": "Последнее обновление: 16/12/2025",
+      "PVP Update": "Последнее обновление: 16/12/2025",
       "PVE Skill 19": true,
       "PVE Skill 27": true,
       "PVE Skill 35": true,
@@ -140,8 +140,8 @@
       "Trait 18": true
     },
     "DNC": {
-      "PVE Update": "PVE Update: 16/12/2025",
-      "PVP Update": "PVP Update: 16/12/2025",
+      "PVE Update": "Последнее обновление: 16/12/2025",
+      "PVP Update": "Последнее обновление: 16/12/2025",
       "PVE Skill 23": true,
       "PVE Skill 27": true,
       "PVE Skill 29": true,
@@ -149,16 +149,16 @@
       "Trait 13": true
     },
     "BLM": {
-      "PVE Update": "PVE Update: 16/12/2025",
-      "PVP Update": "PVP Update: 16/12/2025"
+      "PVE Update": "Последнее обновление: 16/12/2025",
+      "PVP Update": "Последнее обновление: 16/12/2025"
     },
     "SMN": {
-      "PVE Update": "PVE Update: 16/12/2025",
-      "PVP Update": "PVP Update: 16/12/2025"
+      "PVE Update": "Последнее обновление: 16/12/2025",
+      "PVP Update": "Последнее обновление: 16/12/2025"
     },
     "RDM": {
-      "PVE Update": "PVE Update: 16/12/2025",
-      "PVP Update": "PVP Update: 16/12/2025",
+      "PVE Update": "Последнее обновление: 16/12/2025",
+      "PVP Update": "Последнее обновление: 16/12/2025",
       "PVE Skill 20": true,
       "PVE Skill 21": true,
       "PVE Skill 34": true,
@@ -169,8 +169,8 @@
       "Trait 15": true
     },
     "PCT": {
-      "PVE Update": "PVE Update: 16/12/2025",
-      "PVP Update": "PVP Update: 16/12/2025",
+      "PVE Update": "Последнее обновление: 16/12/2025",
+      "PVP Update": "Последнее обновление: 16/12/2025",
       "PVP Skill 21": true,
       "PVP Skill 24": true,
       "PVP Skill 25": true
