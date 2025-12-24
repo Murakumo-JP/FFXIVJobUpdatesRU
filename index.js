@@ -2,10 +2,17 @@ import axios from 'axios';
 import { load } from 'cheerio';
 import { writeFile, mkdir } from 'fs/promises';
 
+const CONFIG = {
+    baseUrl: 'https://eu.finalfantasyxiv.com/jobguide',
+    timeout: 15000,
+    delayBetweenRequests: 2000,
+    userAgent: 'FFXIV Parser'
+};
+
 const JOBS = [
-    { code: 'DRK', slug: 'darkknight' },
     { code: 'PLD', slug: 'paladin' },
     { code: 'WAR', slug: 'warrior' },
+    { code: 'DRK', slug: 'darkknight' },
     { code: 'GNB', slug: 'gunbreaker' },
     { code: 'WHM', slug: 'whitemage' },
     { code: 'SCH', slug: 'scholar' },
@@ -26,210 +33,237 @@ const JOBS = [
     { code: 'PCT', slug: 'pictomancer' }
 ];
 
-function timestampToDate(timestamp) {
-    const date = new Date(timestamp * 1000);
-    const day = date.getDate().toString().padStart(2, '0');
-    const month = (date.getMonth() + 1).toString().padStart(2, '0');
-    const year = date.getFullYear();
-    return `${day}/${month}/${year}`;
-}
+const Utils = {
+    timestampToDate(timestamp) {
+        const date = new Date(timestamp * 1000);
+        const day = date.getDate().toString().padStart(2, '0');
+        const month = (date.getMonth() + 1).toString().padStart(2, '0');
+        const year = date.getFullYear();
+        return `${day}/${month}/${year}`;
+    },
 
-function getSkillKey(actionId) {
-    if (actionId.startsWith('pve_action__')) {
-        const match = actionId.match(/pve_action__(\d+)/);
-        if (match) {
-            const number = match[1];
-            return `PVE Skill ${number.padStart(2, '0')}`;
-        }
-    }
-    else if (actionId.startsWith('pvp_action__')) {
-        const match = actionId.match(/pvp_action__(\d+)/);
-        if (match) {
-            const number = match[1];
-            return `PVP Skill ${number.padStart(2, '0')}`;
-        }
-    }
-    else if (actionId.startsWith('trait_action__')) {
-        const match = actionId.match(/trait_action__(\d+)/);
-        if (match) {
-            const number = match[1];
-            return `Trait ${number.padStart(2, '0')}`;
-        }
-    }
-    else if (actionId.startsWith('pvplimitbreakaction_')) {
-        const match = actionId.match(/pvplimitbreakaction_(\d+)/);
-        if (match) {
-            const number = parseInt(match[1]);
-            return `PVP Skill LB${number}`;
-        }
-    }
-    return null;
-}
+    getSkillKey(actionId) {
+        const patterns = [
+            { regex: /^pve_action__(\d+)$/, formatter: (num) => `PVE Skill ${num.padStart(2, '0')}` },
+            { regex: /^pvp_action__(\d+)$/, formatter: (num) => `PVP Skill ${num.padStart(2, '0')}` },
+            { regex: /^trait_action__(\d+)$/, formatter: (num) => `Trait ${num.padStart(2, '0')}` },
+            { regex: /^pvplimitbreakaction_(\d+)$/, formatter: (num) => `PVP Skill LB${parseInt(num)}` }
+        ];
 
-async function parseJobPage(jobSlug) {
-    try {
-        console.log(`Парсинг ${jobSlug}...`);
-        const response = await axios.get(
-            `https://eu.finalfantasyxiv.com/jobguide/${jobSlug}/`,
-            { headers: { 'User-Agent': 'FFXIV Parser' }, timeout: 15000 }
-        );
-        
-        const $ = load(response.data);
-        const jobData = {};
-        
-        const $pveSection = $('div.js__select--pve');
-        if ($pveSection.length) {
-            const $pveUpdate = $pveSection.find('p.job__update');
-            if ($pveUpdate.length) {
-                const $span = $pveUpdate.find('span[id^="datetime-"]');
-                if ($span.length) {
-                    const spanId = $span.attr('id');
-                    const scriptText = $('script').filter((i, el) => {
-                        return $(el).text().includes(`document.getElementById('${spanId}')`);
-                    }).text();
-                    
-                    if (scriptText) {
-                        const timestampMatch = scriptText.match(/ldst_strftime\((\d+),\s*'YMD'\)/);
-                        if (timestampMatch) {
-                            const timestamp = parseInt(timestampMatch[1]);
-                            const dateStr = timestampToDate(timestamp);
-                            jobData['PVE Update'] = `Последнее обновление: ${dateStr}`;
-                        }
-                    }
-                }
+        for (const pattern of patterns) {
+            const match = actionId.match(pattern.regex);
+            if (match) {
+                return pattern.formatter(match[1]);
             }
         }
-        
-        const $pvpSection = $('div.js__select--pvp');
-        if ($pvpSection.length) {
-            const $pvpUpdate = $pvpSection.find('p.job__update');
-            if ($pvpUpdate.length) {
-                const $span = $pvpUpdate.find('span[id^="datetime-"]');
-                if ($span.length) {
-                    const spanId = $span.attr('id');
-                    const scriptText = $('script').filter((i, el) => {
-                        return $(el).text().includes(`document.getElementById('${spanId}')`);
-                    }).text();
-                    
-                    if (scriptText) {
-                        const timestampMatch = scriptText.match(/ldst_strftime\((\d+),\s*'YMD'\)/);
-                        if (timestampMatch) {
-                            const timestamp = parseInt(timestampMatch[1]);
-                            const dateStr = timestampToDate(timestamp);
-                            jobData['PVP Update'] = `Последнее обновление: ${dateStr}`;
-                        }
-                    }
-                }
-            }
-        }
-        
-        let skillCount = 0;
-        let pveCount = 0;
-        let pvpCount = 0;
-        let traitCount = 0;
-        let lbCount = 0;
-        
-        $('tr.update.js__jobguide_update_one.hide').each((i, elem) => {
-            const $row = $(elem);
+        return null;
+    },
+
+    delay(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+    }
+};
+
+class UpdateParser {
+    constructor($) {
+        this.$ = $;
+    }
+
+    parseUpdateDate(section, type) {
+        const $section = this.$(section);
+        if (!$section.length) return null;
+
+        const $update = $section.find('p.job__update');
+        if (!$update.length) return null;
+
+        const $span = $update.find('span[id^="datetime-"]');
+        if (!$span.length) return null;
+
+        const spanId = $span.attr('id');
+        const scriptText = this.$('script').filter((i, el) => {
+            return this.$(el).text().includes(`document.getElementById('${spanId}')`);
+        }).text();
+
+        if (!scriptText) return null;
+
+        const timestampMatch = scriptText.match(/ldst_strftime\((\d+),\s*'YMD'\)/);
+        if (!timestampMatch) return null;
+
+        const timestamp = parseInt(timestampMatch[1]);
+        const dateStr = Utils.timestampToDate(timestamp);
+        return `${type} Update: ${dateStr}`;
+    }
+
+    parseSkills() {
+        const skills = {
+            pve: [], pvp: [], traits: [], lb: []
+        };
+
+        this.$('tr.update.js__jobguide_update_one.hide').each((i, elem) => {
+            const $row = this.$(elem);
             const timestamp = $row.attr('data-updated');
             
-            if (timestamp && parseInt(timestamp) > 0) {
-                const $nextRow = $row.next();
-                const actionId = $nextRow.attr('id');
-                
-                if (actionId) {
-                    const skillKey = getSkillKey(actionId);
-                    if (skillKey) {
-                        jobData[skillKey] = true;
-                        skillCount++;
-                        
-                        if (skillKey.startsWith('PVE Skill')) pveCount++;
-                        else if (skillKey.startsWith('PVP Skill LB')) lbCount++;
-                        else if (skillKey.startsWith('PVP Skill')) pvpCount++;
-                        else if (skillKey.startsWith('Trait')) traitCount++;
-                    }
-                }
-            }
+            if (!timestamp || parseInt(timestamp) <= 0) return;
+
+            const $nextRow = $row.next();
+            const actionId = $nextRow.attr('id');
+            if (!actionId) return;
+
+            const skillKey = Utils.getSkillKey(actionId);
+            if (!skillKey) return;
+
+            if (skillKey.startsWith('PVE Skill')) skills.pve.push(skillKey);
+            else if (skillKey.startsWith('PVP Skill LB')) skills.lb.push(skillKey);
+            else if (skillKey.startsWith('PVP Skill')) skills.pvp.push(skillKey);
+            else if (skillKey.startsWith('Trait')) skills.traits.push(skillKey);
         });
+
+        return skills;
+    }
+}
+
+class JobPageParser {
+    constructor(jobSlug) {
+        this.jobSlug = jobSlug;
+        this.url = `${CONFIG.baseUrl}/${jobSlug}/`;
+        this.data = {};
+    }
+
+    async fetch() {
+        try {
+            const response = await axios.get(this.url, {
+                headers: { 'User-Agent': CONFIG.userAgent },
+                timeout: CONFIG.timeout
+            });
+            this.$ = load(response.data);
+            return true;
+        } catch (error) {
+            console.error(`Ошибка загрузки ${this.jobSlug}:`, error.message);
+            return false;
+        }
+    }
+
+    async parse() {
+        if (!await this.fetch()) return this.data;
+
+        const updateParser = new UpdateParser(this.$);
         
-        const updateCount = Object.keys(jobData).filter(k => k.includes('Update')).length;
-        console.log(`  Найдено: ${updateCount} дат, ${skillCount} скиллов`);
-        console.log(`    PVE: ${pveCount}, PVP: ${pvpCount}, Traits: ${traitCount}, LB: ${lbCount}`);
+        const pveUpdate = updateParser.parseUpdateDate('div.js__select--pve', 'PVE');
+        const pvpUpdate = updateParser.parseUpdateDate('div.js__select--pvp', 'PVP');
         
+        if (pveUpdate) this.data['PVE Update'] = pveUpdate;
+        if (pvpUpdate) this.data['PVP Update'] = pvpUpdate;
+
+        const skills = updateParser.parseSkills();
+        
+        [...skills.pve, ...skills.pvp, ...skills.lb, ...skills.traits]
+            .forEach(skill => this.data[skill] = true);
+
+        this.printStats(skills);
+        return this.data;
+    }
+
+    printStats(skills) {
+        const updateCount = Object.keys(this.data).filter(k => k.includes('Update')).length;
+        const skillCount = Object.keys(this.data).filter(k => 
+            k.includes('Skill') || k.includes('Trait')
+        ).length;
+
+        console.log(`Найдено: ${updateCount} дат, ${skillCount} умений`);
+        console.log(`PVE: ${skills.pve.length}, PVP: ${skills.pvp.length}, Traits: ${skills.traits.length}, LB: ${skills.lb.length}`);
+
         if (updateCount > 0) {
-            Object.entries(jobData).forEach(([key, value]) => {
+            Object.entries(this.data).forEach(([key, value]) => {
                 if (key.includes('Update')) {
                     console.log(`    ${key}: ${value}`);
                 }
             });
         }
-        
+
         if (skillCount > 0) {
-            Object.entries(jobData).forEach(([key, value]) => {
-                if (key.includes('Skill') || key.includes('Trait')) {
-                    console.log(`    ${key}: ${value}`);
-                }
-            });
+            console.log('Умение:', Object.keys(this.data)
+                .filter(k => k.includes('Skill') || k.includes('Trait'))
+                .join(', '));
         }
-        
-        return jobData;
-        
-    } catch (error) {
-        console.error(`Ошибка парсинга ${jobSlug}:`, error.message);
-        return {};
+    }
+}
+
+class ParserManager {
+    constructor() {
+        this.flags = {};
+        this.stats = {
+            processedJobs: 0,
+            totalSkills: 0,
+            pve: 0, pvp: 0, traits: 0, lb: 0
+        };
+    }
+
+    async parseAllJobs() {
+        console.log('Запуск парсера...\n');
+
+        for (const job of JOBS) {
+            console.log(`Парсинг ${job.slug}...`);
+            
+            const parser = new JobPageParser(job.slug);
+            const jobData = await parser.parse();
+
+            if (Object.keys(jobData).length > 0) {
+                this.flags[job.code] = jobData;
+                this.stats.processedJobs++;
+                this.updateStats(jobData);
+            }
+
+            await Utils.delay(CONFIG.delayBetweenRequests);
+        }
+
+        return this.flags;
+    }
+
+    updateStats(jobData) {
+        const skills = Object.keys(jobData).filter(k => 
+            k.includes('Skill') || k.includes('Trait')
+        );
+        this.stats.totalSkills += skills.length;
+
+        skills.forEach(key => {
+            if (key.startsWith('PVE Skill') && !key.includes('LB')) this.stats.pve++;
+            else if (key.startsWith('PVP Skill LB')) this.stats.lb++;
+            else if (key.startsWith('PVP Skill')) this.stats.pvp++;
+            else if (key.startsWith('Trait')) this.stats.traits++;
+        });
+    }
+
+    printFinalReport() {
+        console.log(`\nОТЧЕТ:`);
+        console.log(`Обработано ${this.stats.processedJobs} из ${JOBS.length} классов`);
+        console.log(`Всего найдено: ${this.stats.totalSkills} флагов`);
+        console.log(`PVE Skills: ${this.stats.pve}`);
+        console.log(`PVP Skills: ${this.stats.pvp}`);
+        console.log(`Traits: ${this.stats.traits}`);
+        console.log(`PVP Limit Break: ${this.stats.lb}`);
     }
 }
 
 async function main() {
-    console.log('Запуск парсера...\n');
-    
-    const flags = {};
-    let processedJobs = 0;
-    let totalSkills = 0;
-    let totalPve = 0;
-    let totalPvp = 0;
-    let totalTraits = 0;
-    let totalLb = 0;
-    
-    for (const job of JOBS) {
-        const jobData = await parseJobPage(job.slug);
+    try {
+        const parserManager = new ParserManager();
+        const flags = await parserManager.parseAllJobs();
         
-        if (Object.keys(jobData).length > 0) {
-            flags[job.code] = jobData;
-            processedJobs++;
-            
-            const skills = Object.keys(jobData).filter(k => k.includes('Skill') || k.includes('Trait')).length;
-            totalSkills += skills;
-            
-            Object.keys(jobData).forEach(key => {
-                if (key.startsWith('PVE Skill') && !key.includes('LB')) totalPve++;
-                else if (key.startsWith('PVP Skill LB')) totalLb++;
-                else if (key.startsWith('PVP Skill')) totalPvp++;
-                else if (key.startsWith('Trait')) totalTraits++;
-            });
-        }
+        await mkdir('data', { recursive: true });
         
-        await new Promise(resolve => setTimeout(resolve, 2000));
+        const output = {
+            generated: new Date().toISOString(),
+            flags: flags
+        };
+        
+        await writeFile('data/Update.json', JSON.stringify(output, null, 2));
+        
+        parserManager.printFinalReport();
+        
+    } catch (error) {
+        console.error('Критическая ошибка:', error);
+        process.exit(1);
     }
-    
-    await mkdir('data', { recursive: true });
-    
-    const output = {
-        generated: new Date().toISOString(),
-        flags: flags
-    };
-    
-    await writeFile('data/Update.json', JSON.stringify(output, null, 2));
-    
-    console.log(`\nГотово! Обработано ${processedJobs} из ${JOBS.length} классов.`);
-    console.log(`Всего найдено: ${totalSkills} элементов`);
-    console.log(`  PVE Skills: ${totalPve}`);
-    console.log(`  PVP Skills: ${totalPvp}`);
-    console.log(`  Traits: ${totalTraits}`);
-    console.log(`  PVP Limit Break: ${totalLb}`);
 }
 
-main().catch(error => {
-    console.error('Критическая ошибка:', error);
-    process.exit(1);
-});
+main();
