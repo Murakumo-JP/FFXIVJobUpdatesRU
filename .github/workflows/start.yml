@@ -34,5 +34,5 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add data/Update.json
+          git add data/UpdateFlags.json
           git diff --cached --quiet || (git commit -m "Update Skill Flags [${{ steps.date.outputs.formatted_date }}]" && git push)

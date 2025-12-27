@@ -256,7 +256,7 @@ async function main() {
             flags: flags
         };
         
-        await writeFile('data/Update.json', JSON.stringify(output, null, 2));
+        await writeFile('data/UpdateFlags.json', JSON.stringify(output, null, 2));
         
         parserManager.printFinalReport();
         
