@@ -1,0 +1,5079 @@
+[
+	{
+		"page_job": "PLD",
+		"job": "Paladin",
+		"skills": [
+			{
+				"skill": "Fast Blade",
+				"level": "Ур.1",
+				"icon": "8325a7bb54f039c5bd3cd2af4430dccfd525e0b9.png",
+				"db-skill": "PVE Skill 01"
+			},
+			{
+				"skill": "Fight or Flight",
+				"level": "Ур.2",
+				"icon": "87405b9b9f00d9957df252ea0116e4137bc4dbd1.png",
+				"db-skill": "PVE Skill 02"
+			},
+			{
+				"skill": "Riot Blade",
+				"level": "Ур.4",
+				"icon": "bdda04f3b284e3cbf7d07e50d9bffb21b74ce869.png",
+				"db-skill": "PVE Skill 03"
+			},
+			{
+				"skill": "Total Eclipse",
+				"level": "Ур.6",
+				"icon": "07c42572697cdcf5381955b09ed7c3028be8a0bb.png",
+				"db-skill": "PVE Skill 04"
+			},
+			{
+				"skill": "Shield Bash",
+				"level": "Ур.10",
+				"icon": "49cbc217420d69d69bb1bfcf6fba10358dcd2521.png",
+				"db-skill": "PVE Skill 05"
+			},
+			{
+				"skill": "Iron Will",
+				"level": "Ур.10",
+				"icon": "1e60c8b0c72bbc52497a163755dc855f5cdf7091.png",
+				"db-skill": "PVE Skill 06"
+			},
+			{
+				"skill": "Release Iron Will",
+				"level": "Ур.10",
+				"icon": "0b880866e9d45ac7b9b664dcf536acc46ecb4679.png",
+				"db-skill": "PVE Skill 07"
+			},
+			{
+				"skill": "Shield Lob",
+				"level": "Ур.15",
+				"icon": "d95d796eae4df45f2419a8c6df1cdf4afc7b0523.png",
+				"db-skill": "PVE Skill 08"
+			},
+			{
+				"skill": "Rage of Halone",
+				"level": "Ур.26",
+				"icon": "b35b9fa5ce7169d660177032734661f18a79ee5b.png",
+				"db-skill": "PVE Skill 09"
+			},
+			{
+				"skill": "Spirits Within",
+				"level": "Ур.30",
+				"icon": "d7e7cf097286ae99e6637242596a14832a9edf8f.png",
+				"db-skill": "PVE Skill 10"
+			},
+			{
+				"skill": "Sheltron",
+				"level": "Ур.35",
+				"icon": "e622516a93fd2298b9fd40e0d2d60c3fc8485c5a.png",
+				"db-skill": "PVE Skill 11"
+			},
+			{
+				"skill": "Sentinel",
+				"level": "Ур.38",
+				"icon": "913eb4344bb6c8710f250115fa22484b026f08bd.png",
+				"db-skill": "PVE Skill 12"
+			},
+			{
+				"skill": "Prominence",
+				"level": "Ур.40",
+				"icon": "c0f8a1aa0ba0a20c0d8580e63932678c5c4a8b9b.png",
+				"db-skill": "PVE Skill 13"
+			},
+			{
+				"skill": "Cover",
+				"level": "Ур.45",
+				"icon": "81b581992c0df5ad867ed18ad229f6d6f7fd3eea.png",
+				"db-skill": "PVE Skill 14"
+			},
+			{
+				"skill": "Circle of Scorn",
+				"level": "Ур.50",
+				"icon": "af5ddb89ddd5ade6706afe571f45aa6028e1925b.png",
+				"db-skill": "PVE Skill 15"
+			},
+			{
+				"skill": "Hallowed Ground",
+				"level": "Ур.50",
+				"icon": "249bf48c39ec44b9b32f0681ea256850ed6aa8f8.png",
+				"db-skill": "PVE Skill 16"
+			},
+			{
+				"skill": "Bulwark",
+				"level": "Ур.52",
+				"icon": "b0a3dcb47763055bc61ee9f90ba0ee3b46050197.png",
+				"db-skill": "PVE Skill 17"
+			},
+			{
+				"skill": "Goring Blade",
+				"level": "Ур.54",
+				"icon": "eb067afbfb5a4198760b2e28e9c3cf669d9866b8.png",
+				"db-skill": "PVE Skill 18"
+			},
+			{
+				"skill": "Divine Veil",
+				"level": "Ур.56",
+				"icon": "495faab61344751872ca0867e2d5e59b04c6940c.png",
+				"db-skill": "PVE Skill 19"
+			},
+			{
+				"skill": "Clemency",
+				"level": "Ур.58",
+				"icon": "3c20e8bf8f5f130db398ac4ba5df14e403b7666a.png",
+				"db-skill": "PVE Skill 20"
+			},
+			{
+				"skill": "Royal Authority",
+				"level": "Ур.60",
+				"icon": "3fe523f08ebd0b93125ae42d5bcf8e18dce08a02.png",
+				"db-skill": "PVE Skill 21"
+			},
+			{
+				"skill": "Intervention",
+				"level": "Ур.62",
+				"icon": "fdb9b8347b33dae63e25debeab15aa75c270f39a.png",
+				"db-skill": "PVE Skill 22"
+			},
+			{
+				"skill": "Holy Spirit",
+				"level": "Ур.64",
+				"icon": "b8ad098c5afaad79a847f3fb79298456c1e9d689.png",
+				"db-skill": "PVE Skill 23"
+			},
+			{
+				"skill": "Intervene",
+				"level": "Ур.66",
+				"icon": "c841f5c954aa4e31bd1d82ffd00f863eb944a386.png",
+				"db-skill": "PVE Skill 24"
+			},
+			{
+				"skill": "Requiescat",
+				"level": "Ур.68",
+				"icon": "acbcd4de5a1839e4fd8c96ae05eb4109caed9ca1.png",
+				"db-skill": "PVE Skill 25"
+			},
+			{
+				"skill": "Passage of Arms",
+				"level": "Ур.70",
+				"icon": "b570dfda793945b3bb8fddef02b1a865b8a04b32.png",
+				"db-skill": "PVE Skill 26"
+			},
+			{
+				"skill": "Holy Circle",
+				"level": "Ур.72",
+				"icon": "afd455f208e2720a10a1b26e9a231fefac4d5be7.png",
+				"db-skill": "PVE Skill 27"
+			},
+			{
+				"skill": "Atonement",
+				"level": "Ур.76",
+				"icon": "f59cb1517f2f26c490a87d58366b5bccff372f19.png",
+				"db-skill": "PVE Skill 28"
+			},
+			{
+				"skill": "Supplication",
+				"level": "Ур.76",
+				"icon": "a13b67a351de7eaf60e51a8662e722785ec3826f.png",
+				"db-skill": "PVE Skill 29"
+			},
+			{
+				"skill": "Sepulchre",
+				"level": "Ур.76",
+				"icon": "445847900654988d4b1a2950d57f69793a425d00.png",
+				"db-skill": "PVE Skill 30"
+			},
+			{
+				"skill": "Confiteor",
+				"level": "Ур.80",
+				"icon": "362579dcb6dc2b7c9ea6eac6917c7b9c61f7ce1b.png",
+				"db-skill": "PVE Skill 31"
+			},
+			{
+				"skill": "Holy Sheltron",
+				"level": "Ур.82",
+				"icon": "c856abb6dac68e4bfd6cbb98b309360cb6162ced.png",
+				"db-skill": "PVE Skill 32"
+			},
+			{
+				"skill": "Expiacion",
+				"level": "Ур.86",
+				"icon": "5e4beef5d32f45954a62524cdebb8d535de32921.png",
+				"db-skill": "PVE Skill 33"
+			},
+			{
+				"skill": "Blade of Faith",
+				"level": "Ур.90",
+				"icon": "004ab8b8fc5c3fe5b362bf7f0e35f9ab9a91918a.png",
+				"db-skill": "PVE Skill 34"
+			},
+			{
+				"skill": "Blade of Truth",
+				"level": "Ур.90",
+				"icon": "31fd8e8a1827a2f830335a67cf52abb191d62485.png",
+				"db-skill": "PVE Skill 35"
+			},
+			{
+				"skill": "Blade of Valor",
+				"level": "Ур.90",
+				"icon": "289629a47afee95a9d05e38bcc68a2b7fdd1cacd.png",
+				"db-skill": "PVE Skill 36"
+			},
+			{
+				"skill": "Guardian",
+				"level": "Ур.92",
+				"icon": "4c5945e5decd30562898378c54cc3308aa210ff1.png",
+				"db-skill": "PVE Skill 37"
+			},
+			{
+				"skill": "Imperator",
+				"level": "Ур.96",
+				"icon": "a888fa731d0d80fd277caa00abbca126be5b0b3c.png",
+				"db-skill": "PVE Skill 38"
+			},
+			{
+				"skill": "Blade of Honor",
+				"level": "Ур.100",
+				"icon": "18481cd008426e41c0773107a91b20e2b9d59f7e.png",
+				"db-skill": "PVE Skill 39"
+			}
+		]
+	},
+	{
+		"page_job": "WAR",
+		"job": "Warrior",
+		"skills": [
+			{
+				"skill": "Heavy Swing",
+				"level": "Ур.1",
+				"icon": "7a622f61949998a4bca402f5be90c0417bb02ac1.png",
+				"db-skill": "PVE Skill 01"
+			},
+			{
+				"skill": "Maim",
+				"level": "Ур.4",
+				"icon": "39dae45d3a3309357462861dac9bb9b159030ea8.png",
+				"db-skill": "PVE Skill 02"
+			},
+			{
+				"skill": "Berserk",
+				"level": "Ур.6",
+				"icon": "c5a2c3896b62318a88ea9e48159ff7efd0962be1.png",
+				"db-skill": "PVE Skill 03"
+			},
+			{
+				"skill": "Overpower",
+				"level": "Ур.10",
+				"icon": "335c367406c5d952f11b8fd2dadaabb89e1cecbc.png",
+				"db-skill": "PVE Skill 04"
+			},
+			{
+				"skill": "Defiance",
+				"level": "Ур.10",
+				"icon": "e6cc16e225417ce3c68cde5eb28df034f349d25d.png",
+				"db-skill": "PVE Skill 05"
+			},
+			{
+				"skill": "Release Defiance",
+				"level": "Ур.10",
+				"icon": "1965311bb3fb720ba65258cb8f427bb986fa36c4.png",
+				"db-skill": "PVE Skill 06"
+			},
+			{
+				"skill": "Tomahawk",
+				"level": "Ур.15",
+				"icon": "de42e4febcf54cf4af3189f9d2adfa4ca5975c25.png",
+				"db-skill": "PVE Skill 07"
+			},
+			{
+				"skill": "Storm's Path",
+				"level": "Ур.26",
+				"icon": "14d9c5aa40a8f86aa13890aa9bedc9f6579ed289.png",
+				"db-skill": "PVE Skill 08"
+			},
+			{
+				"skill": "Thrill of Battle",
+				"level": "Ур.30",
+				"icon": "9412945d8b5a61fbb118907bd33046110ff83434.png",
+				"db-skill": "PVE Skill 09"
+			},
+			{
+				"skill": "Inner Beast",
+				"level": "Ур.35",
+				"icon": "c72ea7de2c06ad8a03bc55598297aba5bf00b0b6.png",
+				"db-skill": "PVE Skill 10"
+			},
+			{
+				"skill": "Vengeance",
+				"level": "Ур.38",
+				"icon": "72a939d0010304553c5b88fae576f5a25f453e10.png",
+				"db-skill": "PVE Skill 11"
+			},
+			{
+				"skill": "Mythril Tempest",
+				"level": "Ур.40",
+				"icon": "b9efeaf988763dc594fc2497b603cfda4253064f.png",
+				"db-skill": "PVE Skill 12"
+			},
+			{
+				"skill": "Holmgang",
+				"level": "Ур.42",
+				"icon": "91b5673b1dfb08c80d7b8fc2bdc936f46906317f.png",
+				"db-skill": "PVE Skill 13"
+			},
+			{
+				"skill": "Steel Cyclone",
+				"level": "Ур.45",
+				"icon": "caee561eee94d7ecc27ac396982ebe39df5c6893.png",
+				"db-skill": "PVE Skill 14"
+			},
+			{
+				"skill": "Storm's Eye",
+				"level": "Ур.50",
+				"icon": "05faebea82787675c2331bb4ddb7778b70ab53f0.png",
+				"db-skill": "PVE Skill 15"
+			},
+			{
+				"skill": "Infuriate",
+				"level": "Ур.50",
+				"icon": "ecd32b95358ef9b2756b005daef73afdde9fab80.png",
+				"db-skill": "PVE Skill 16"
+			},
+			{
+				"skill": "Fell Cleave",
+				"level": "Ур.54",
+				"icon": "5d146522a8fc94788d96043b93034176eab59a10.png",
+				"db-skill": "PVE Skill 17"
+			},
+			{
+				"skill": "Raw Intuition",
+				"level": "Ур.56",
+				"icon": "1d9a63cc19bbec0e2f99d192040c26e306e2e675.png",
+				"db-skill": "PVE Skill 18"
+			},
+			{
+				"skill": "Equilibrium",
+				"level": "Ур.58",
+				"icon": "b549a16dfa8cbde55ec19b81bad325c5480d98e2.png",
+				"db-skill": "PVE Skill 19"
+			},
+			{
+				"skill": "Decimate",
+				"level": "Ур.60",
+				"icon": "f4fdd09a56a0b83a0cbe11a83f706dc0fb6781f5.png",
+				"db-skill": "PVE Skill 20"
+			},
+			{
+				"skill": "Onslaught",
+				"level": "Ур.62",
+				"icon": "d0a1dad0fa6c8294ceb31b6879c765a02498e3fb.png",
+				"db-skill": "PVE Skill 21"
+			},
+			{
+				"skill": "Upheaval",
+				"level": "Ур.64",
+				"icon": "ba0b3b08d9b2ef02636e06148bc739680390fdd3.png",
+				"db-skill": "PVE Skill 22"
+			},
+			{
+				"skill": "Shake It Off",
+				"level": "Ур.68",
+				"icon": "f71e2c46512c1e937c0ff316be668d853869c637.png",
+				"db-skill": "PVE Skill 23"
+			},
+			{
+				"skill": "Inner Release",
+				"level": "Ур.70",
+				"icon": "809168ffb23f67e3d4b720b3caa4a0a1773fea4c.png",
+				"db-skill": "PVE Skill 24"
+			},
+			{
+				"skill": "Chaotic Cyclone",
+				"level": "Ур.72",
+				"icon": "a5ea711252d08de0f9fd2e65313690c19b9f8773.png",
+				"db-skill": "PVE Skill 25"
+			},
+			{
+				"skill": "Nascent Flash",
+				"level": "Ур.76",
+				"icon": "0a4356e3696cea8f2c8cea9be200e773da6c7caa.png",
+				"db-skill": "PVE Skill 26"
+			},
+			{
+				"skill": "Inner Chaos",
+				"level": "Ур.80",
+				"icon": "70a629706b7fa0dc566d988dbf32da064d0c3458.png",
+				"db-skill": "PVE Skill 27"
+			},
+			{
+				"skill": "Bloodwhetting",
+				"level": "Ур.82",
+				"icon": "439c677f7cd4da8e9be9b92245865d2eb1ebceca.png",
+				"db-skill": "PVE Skill 28"
+			},
+			{
+				"skill": "Orogeny",
+				"level": "Ур.86",
+				"icon": "a746763655d8eb64a4f2577f4a19d445866aa8e5.png",
+				"db-skill": "PVE Skill 29"
+			},
+			{
+				"skill": "Primal Rend",
+				"level": "Ур.90",
+				"icon": "e6ccdb7bd1a86153af07f02f06583113ac86c8eb.png",
+				"db-skill": "PVE Skill 30"
+			},
+			{
+				"skill": "Damnation",
+				"level": "Ур.92",
+				"icon": "a4f5302a169e6ee5667e03976e7455aacc394604.png",
+				"db-skill": "PVE Skill 31"
+			},
+			{
+				"skill": "Primal Wrath",
+				"level": "Ур.96",
+				"icon": "e9e68562064da9f0787632d983da080105fc2389.png",
+				"db-skill": "PVE Skill 32"
+			},
+			{
+				"skill": "Primal Ruination",
+				"level": "Ур.100",
+				"icon": "5eb4d961217f31467ecf479d45f89767f5f9c0d7.png",
+				"db-skill": "PVE Skill 33"
+			}
+		]
+	},
+	{
+		"page_job": "DRK",
+		"job": "Dark Knight",
+		"skills": [
+			{
+				"skill": "Hard Slash",
+				"level": "Ур.1",
+				"icon": "5c0fef99ef9100285ede6dbc62a5c35cea188d7c.png",
+				"db-skill": "PVE Skill 01"
+			},
+			{
+				"skill": "Syphon Strike",
+				"level": "Ур.2",
+				"icon": "e2a305d72e05ef339e0692bd5f7ed9626b6eb9ea.png",
+				"db-skill": "PVE Skill 02"
+			},
+			{
+				"skill": "Unleash",
+				"level": "Ур.6",
+				"icon": "600c6a17bd8c4e08c783d1fb8891f12eea132a9a.png",
+				"db-skill": "PVE Skill 03"
+			},
+			{
+				"skill": "Grit",
+				"level": "Ур.10",
+				"icon": "b6d1592d4fcbcafe1e3b0958d688c50346fe2bd4.png",
+				"db-skill": "PVE Skill 04"
+			},
+			{
+				"skill": "Release Grit",
+				"level": "Ур.10",
+				"icon": "13a97691011df3c616e3181fd21b5f6805ce5799.png",
+				"db-skill": "PVE Skill 05"
+			},
+			{
+				"skill": "Unmend",
+				"level": "Ур.15",
+				"icon": "6203d55695d1cdde37d875f7b4b4253606266ad0.png",
+				"db-skill": "PVE Skill 06"
+			},
+			{
+				"skill": "Souleater",
+				"level": "Ур.26",
+				"icon": "8c6a197869a69116f52b41b3fef2ce03c29b5212.png",
+				"db-skill": "PVE Skill 07"
+			},
+			{
+				"skill": "Flood of Darkness",
+				"level": "Ур.30",
+				"icon": "438927fdaa593ec9d1bd020e1c60fad9ca495f3f.png",
+				"db-skill": "PVE Skill 08"
+			},
+			{
+				"skill": "Blood Weapon",
+				"level": "Ур.35",
+				"icon": "c0c4dd65cec09b11aa7ecfecf6526aff4c59b83f.png",
+				"db-skill": "PVE Skill 09"
+			},
+			{
+				"skill": "Shadow Wall",
+				"level": "Ур.38",
+				"icon": "7ea7904a9e066bb33d542755b5984ad78c711a45.png",
+				"db-skill": "PVE Skill 10"
+			},
+			{
+				"skill": "Stalwart Soul",
+				"level": "Ур.40",
+				"icon": "cc2fff4dcbf82d405c36a0d153fb28af5fcb9068.png",
+				"db-skill": "PVE Skill 11"
+			},
+			{
+				"skill": "Edge of Darkness",
+				"level": "Ур.40",
+				"icon": "e62374eb5036fcaa1201fec390bc266620501abe.png",
+				"db-skill": "PVE Skill 12"
+			},
+			{
+				"skill": "Dark Mind",
+				"level": "Ур.45",
+				"icon": "adb1f756a8cfa746f5ec2f97e487e41c06026a61.png",
+				"db-skill": "PVE Skill 13"
+			},
+			{
+				"skill": "Living Dead",
+				"level": "Ур.50",
+				"icon": "968fc4ccd880ca468fff7b34680e793a80ffdab1.png",
+				"db-skill": "PVE Skill 14"
+			},
+			{
+				"skill": "Salted Earth",
+				"level": "Ур.52",
+				"icon": "8c3e2f641cea5b3c0693034e6feafeff359341c5.png",
+				"db-skill": "PVE Skill 15"
+			},
+			{
+				"skill": "Shadowstride",
+				"level": "Ур.54",
+				"icon": "52870f24b14efd37172003e974b8c45ca3d38010.png",
+				"db-skill": "PVE Skill 16"
+			},
+			{
+				"skill": "Abyssal Drain",
+				"level": "Ур.56",
+				"icon": "17543c65847814b073fe6481402a347c7efc9225.png",
+				"db-skill": "PVE Skill 17"
+			},
+			{
+				"skill": "Carve and Spit",
+				"level": "Ур.60",
+				"icon": "6bbe53b6e1f87598b98967ae9d29e4337a7afadd.png",
+				"db-skill": "PVE Skill 18"
+			},
+			{
+				"skill": "Bloodspiller",
+				"level": "Ур.62",
+				"icon": "4e5cbcae7dcf48cf8e3522d308f0c86df9114f0d.png",
+				"db-skill": "PVE Skill 19"
+			},
+			{
+				"skill": "Quietus",
+				"level": "Ур.64",
+				"icon": "ea30bbaacc0da577820f8b027cec26738c1be840.png",
+				"db-skill": "PVE Skill 20"
+			},
+			{
+				"skill": "Dark Missionary",
+				"level": "Ур.66",
+				"icon": "1dc1a1d830e5355e2cd251531e85932c24ba1b8d.png",
+				"db-skill": "PVE Skill 21"
+			},
+			{
+				"skill": "Delirium",
+				"level": "Ур.68",
+				"icon": "fbf4ae3878ecc04c6201114ce6b0aadf26bef857.png",
+				"db-skill": "PVE Skill 22"
+			},
+			{
+				"skill": "The Blackest Night",
+				"level": "Ур.70",
+				"icon": "f82c8fbcd6549c8cd72108a937aade172f8b98a8.png",
+				"db-skill": "PVE Skill 23"
+			},
+			{
+				"skill": "Flood of Shadow",
+				"level": "Ур.74",
+				"icon": "de4960def285cc69e33455acae0f50808a6cd623.png",
+				"db-skill": "PVE Skill 24"
+			},
+			{
+				"skill": "Edge of Shadow",
+				"level": "Ур.74",
+				"icon": "e4536e75673663bf1b91d1a78a565dabc2f041f6.png",
+				"db-skill": "PVE Skill 25"
+			},
+			{
+				"skill": "Living Shadow",
+				"level": "Ур.80",
+				"icon": "5150a7bff7be43d689f896e7be140f4720a23f6e.png",
+				"db-skill": "PVE Skill 26"
+			},
+			{
+				"skill": "Oblation",
+				"level": "Ур.82",
+				"icon": "5a42ca000eb7ab0c80e3952539ed260af3d4c5e8.png",
+				"db-skill": "PVE Skill 27"
+			},
+			{
+				"skill": "Salt and Darkness",
+				"level": "Ур.86",
+				"icon": "bb0216fb548f749ceb5bf25f071af462129be59b.png",
+				"db-skill": "PVE Skill 28"
+			},
+			{
+				"skill": "Shadowbringer",
+				"level": "Ур.90",
+				"icon": "bb5281f6fd7eb6900cbda1c39722b4d3c7e51b6e.png",
+				"db-skill": "PVE Skill 29"
+			},
+			{
+				"skill": "Shadowed Vigil",
+				"level": "Ур.92",
+				"icon": "093f2ddb0a06f04a76fe41fd5c31f7fceb46d2ea.png",
+				"db-skill": "PVE Skill 30"
+			},
+			{
+				"skill": "Scarlet Delirium",
+				"level": "Ур.96",
+				"icon": "457d3fa4f25afb9c4494105c0afc15644bbaad7a.png",
+				"db-skill": "PVE Skill 31"
+			},
+			{
+				"skill": "Comeuppance",
+				"level": "Ур.96",
+				"icon": "cc157e7338d9b4c32f880aed1838519933bc6797.png",
+				"db-skill": "PVE Skill 32"
+			},
+			{
+				"skill": "Torcleaver",
+				"level": "Ур.96",
+				"icon": "2510476b643976c09c1b42f6eb9f011b7de6902c.png",
+				"db-skill": "PVE Skill 33"
+			},
+			{
+				"skill": "Impalement",
+				"level": "Ур.96",
+				"icon": "77ef69ee0efdb439996373d7e47f2744a7604b10.png",
+				"db-skill": "PVE Skill 34"
+			},
+			{
+				"skill": "Disesteem",
+				"level": "Ур.100",
+				"icon": "acf9474555312bfc65c8d4e8e93cf368f819f503.png",
+				"db-skill": "PVE Skill 35"
+			}
+		]
+	},
+	{
+		"page_job": "GNB",
+		"job": "Gunbreaker",
+		"skills": [
+			{
+				"skill": "Keen Edge",
+				"level": "Ур.1",
+				"icon": "7cd4d1186b81029de28854eec532029ef245779c.png",
+				"db-skill": "PVE Skill 01"
+			},
+			{
+				"skill": "No Mercy",
+				"level": "Ур.2",
+				"icon": "ab1c97d8f6007446d9f7c324adc29299e6be8e10.png",
+				"db-skill": "PVE Skill 02"
+			},
+			{
+				"skill": "Brutal Shell",
+				"level": "Ур.4",
+				"icon": "729d76d5161a59cbed8b5f369e8476acf5ea24b2.png",
+				"db-skill": "PVE Skill 03"
+			},
+			{
+				"skill": "Camouflage",
+				"level": "Ур.6",
+				"icon": "62855107ef85d3d74b0eb9d14f030368ddb6ff5a.png",
+				"db-skill": "PVE Skill 04"
+			},
+			{
+				"skill": "Demon Slice",
+				"level": "Ур.10",
+				"icon": "a38cbdd5b185413becb8c56388d1043259dd25b1.png",
+				"db-skill": "PVE Skill 05"
+			},
+			{
+				"skill": "Royal Guard",
+				"level": "Ур.10",
+				"icon": "b44946a0b3966b9638d4bc04d4b8c5858bfc3ad0.png",
+				"db-skill": "PVE Skill 06"
+			},
+			{
+				"skill": "Release Royal Guard",
+				"level": "Ур.10",
+				"icon": "bf2a6455e06637fe409340c4dba7530e55d8bfee.png",
+				"db-skill": "PVE Skill 07"
+			},
+			{
+				"skill": "Lightning Shot",
+				"level": "Ур.15",
+				"icon": "da2f213272cf4d4c2c5df5ccf597dd8e01ddb58b.png",
+				"db-skill": "PVE Skill 08"
+			},
+			{
+				"skill": "Danger Zone",
+				"level": "Ур.18",
+				"icon": "fdc5cd0d9017c98bc96d4e0f20122e2f83667128.png",
+				"db-skill": "PVE Skill 09"
+			},
+			{
+				"skill": "Solid Barrel",
+				"level": "Ур.26",
+				"icon": "57a492f3dd90592bb2b3255f3e2f342dd6b800f9.png",
+				"db-skill": "PVE Skill 10"
+			},
+			{
+				"skill": "Burst Strike",
+				"level": "Ур.30",
+				"icon": "43828414469ebc6fd88ef500ab2e941177b833ec.png",
+				"db-skill": "PVE Skill 11"
+			},
+			{
+				"skill": "Nebula",
+				"level": "Ур.38",
+				"icon": "d16438334b399cb5524acb6d77485b6c56a2be4a.png",
+				"db-skill": "PVE Skill 12"
+			},
+			{
+				"skill": "Demon Slaughter",
+				"level": "Ур.40",
+				"icon": "46bce3e1c9f5ca00fbc00c7f52fc765c47aba80a.png",
+				"db-skill": "PVE Skill 13"
+			},
+			{
+				"skill": "Aurora",
+				"level": "Ур.45",
+				"icon": "e220754db76f98256dd7258171a61a9de8dd898c.png",
+				"db-skill": "PVE Skill 14"
+			},
+			{
+				"skill": "Superbolide",
+				"level": "Ур.50",
+				"icon": "58257f726f8a2f793622a654e5b0b2df36b372ad.png",
+				"db-skill": "PVE Skill 15"
+			},
+			{
+				"skill": "Sonic Break",
+				"level": "Ур.54",
+				"icon": "7edeee63ceea914fd74fc091aa99a84b290a57b1.png",
+				"db-skill": "PVE Skill 16"
+			},
+			{
+				"skill": "Trajectory",
+				"level": "Ур.54",
+				"icon": "905366f09c4875cbe0ba664aa043c8bd22aefc1c.png",
+				"db-skill": "PVE Skill 17"
+			},
+			{
+				"skill": "Gnashing Fang",
+				"level": "Ур.60",
+				"icon": "31a707fb47363e30af254750784a60ff55f60ec9.png",
+				"db-skill": "PVE Skill 18"
+			},
+			{
+				"skill": "Savage Claw",
+				"level": "Ур.60",
+				"icon": "fe183577affbcd066b131c997ca32283dba5c768.png",
+				"db-skill": "PVE Skill 19"
+			},
+			{
+				"skill": "Wicked Talon",
+				"level": "Ур.60",
+				"icon": "137262f0ad98e13fd0ace2dc4f7f786d0bcec9a5.png",
+				"db-skill": "PVE Skill 20"
+			},
+			{
+				"skill": "Bow Shock",
+				"level": "Ур.62",
+				"icon": "b3fa2bb1c9e838fc01439b7d39a495b444c73c6a.png",
+				"db-skill": "PVE Skill 21"
+			},
+			{
+				"skill": "Heart of Light",
+				"level": "Ур.64",
+				"icon": "04bbce4afc048a15cdccdd0495e679f90b115963.png",
+				"db-skill": "PVE Skill 22"
+			},
+			{
+				"skill": "Heart of Stone",
+				"level": "Ур.68",
+				"icon": "059baae88deccf4ffdc31f8afd0074ec4589f81f.png",
+				"db-skill": "PVE Skill 23"
+			},
+			{
+				"skill": "Continuation",
+				"level": "Ур.70",
+				"icon": "8e38ca32b4021206901a4761dbef4d0c783b8620.png",
+				"db-skill": "PVE Skill 24"
+			},
+			{
+				"skill": "Jugular Rip",
+				"level": "Ур.70",
+				"icon": "75e8b1b0530a1eb26a7d87aa7a3a50cfb8d3bff7.png",
+				"db-skill": "PVE Skill 25"
+			},
+			{
+				"skill": "Abdomen Tear",
+				"level": "Ур.70",
+				"icon": "e8472939441b3136fb9b2bfa52851e500e001279.png",
+				"db-skill": "PVE Skill 26"
+			},
+			{
+				"skill": "Eye Gouge",
+				"level": "Ур.70",
+				"icon": "0c7e1462abaa7984e64644f3cb9e4a066ec16c59.png",
+				"db-skill": "PVE Skill 27"
+			},
+			{
+				"skill": "Fated Circle",
+				"level": "Ур.72",
+				"icon": "72b126aa8a17d9d94ee177b98af27d512aa6e01f.png",
+				"db-skill": "PVE Skill 28"
+			},
+			{
+				"skill": "Bloodfest",
+				"level": "Ур.76",
+				"icon": "90de52fbbbc0de9309a2b2aceb1b0146e3b7283a.png",
+				"db-skill": "PVE Skill 29"
+			},
+			{
+				"skill": "Blasting Zone",
+				"level": "Ур.80",
+				"icon": "d35fea54a4ec47a5d8227e13b5dba247a5c8a5a6.png",
+				"db-skill": "PVE Skill 30"
+			},
+			{
+				"skill": "Heart of Corundum",
+				"level": "Ур.82",
+				"icon": "493de7202ca9b1e4bed75fdd4e5b1e7a8c61d58a.png",
+				"db-skill": "PVE Skill 31"
+			},
+			{
+				"skill": "Hypervelocity",
+				"level": "Ур.86",
+				"icon": "7d7143520a9ec0306e977c10b4594ad0b5eee50f.png",
+				"db-skill": "PVE Skill 32"
+			},
+			{
+				"skill": "Double Down",
+				"level": "Ур.90",
+				"icon": "9431f382886a5bac654058624ed21082deaae9d9.png",
+				"db-skill": "PVE Skill 33"
+			},
+			{
+				"skill": "Great Nebula",
+				"level": "Ур.92",
+				"icon": "c6aa9ac9d9d3b144c6c5d955616edbecbb40d19a.png",
+				"db-skill": "PVE Skill 34"
+			},
+			{
+				"skill": "Fated Brand",
+				"level": "Ур.96",
+				"icon": "212d089b8f857465c135f0aed8a6a201e8cfdc90.png",
+				"db-skill": "PVE Skill 35"
+			},
+			{
+				"skill": "Reign of Beasts",
+				"level": "Ур.100",
+				"icon": "df78916692df98ce5e4990edbb531dba1d535e8e.png",
+				"db-skill": "PVE Skill 36"
+			},
+			{
+				"skill": "Noble Blood",
+				"level": "Ур.100",
+				"icon": "10aad4140dd5bacfad70315a6a6da6bd3c4e59a0.png",
+				"db-skill": "PVE Skill 37"
+			},
+			{
+				"skill": "Lion Heart",
+				"level": "Ур.100",
+				"icon": "105394eb5da461f87c00f49826e7ba06e4c93577.png",
+				"db-skill": "PVE Skill 38"
+			}
+		]
+	},
+	{
+		"page_job": "WHM",
+		"job": "White Mage",
+		"skills": [
+			{
+				"skill": "Stone",
+				"level": "Ур.1",
+				"icon": "002aa233f5d570b0e27d55ce38b57a6b06b7cc69.png",
+				"db-skill": "PVE Skill 01"
+			},
+			{
+				"skill": "Cure",
+				"level": "Ур.2",
+				"icon": "a2d0e0ed56915f523e8a7326bbdd09eff0534eda.png",
+				"db-skill": "PVE Skill 02"
+			},
+			{
+				"skill": "Aero",
+				"level": "Ур.4",
+				"icon": "78107cd063a81b78b99eb7cb5da15f2bec403c70.png",
+				"db-skill": "PVE Skill 03"
+			},
+			{
+				"skill": "Medica",
+				"level": "Ур.10",
+				"icon": "6c5fd075bab7c063aef743a1de5e36958354b42b.png",
+				"db-skill": "PVE Skill 04"
+			},
+			{
+				"skill": "Raise",
+				"level": "Ур.12",
+				"icon": "34bdc3ad370b701a106f32daa68e73055ab72331.png",
+				"db-skill": "PVE Skill 05"
+			},
+			{
+				"skill": "Stone II",
+				"level": "Ур.18",
+				"icon": "ce8e52e199a7d9e548537bc77197f4d7965dea58.png",
+				"db-skill": "PVE Skill 06"
+			},
+			{
+				"skill": "Cure II",
+				"level": "Ур.30",
+				"icon": "a70a8e3dcb347c11047f00945f9435687f21f06d.png",
+				"db-skill": "PVE Skill 07"
+			},
+			{
+				"skill": "Presence of Mind",
+				"level": "Ур.30",
+				"icon": "7be14bf07b21fa5c78cd7f7891279704da6cadb9.png",
+				"db-skill": "PVE Skill 08"
+			},
+			{
+				"skill": "Regen",
+				"level": "Ур.35",
+				"icon": "53bb0b4fc881c4c06d64c915864968cced6c6201.png",
+				"db-skill": "PVE Skill 09"
+			},
+			{
+				"skill": "Cure III",
+				"level": "Ур.40",
+				"icon": "33c3597ee1004e364a6331f732f077666e798acd.png",
+				"db-skill": "PVE Skill 10"
+			},
+			{
+				"skill": "Aetherial Shift",
+				"level": "Ур.40",
+				"icon": "d69b1e0884f3f4edac543210cd9b42d74c2b3f25.png",
+				"db-skill": "PVE Skill 11"
+			},
+			{
+				"skill": "Holy",
+				"level": "Ур.45",
+				"icon": "bb161bfc68766590d81cb1f7d6049711c949039b.png",
+				"db-skill": "PVE Skill 12"
+			},
+			{
+				"skill": "Aero II",
+				"level": "Ур.46",
+				"icon": "7e4202353c63451702e9944dc93551a18951efcf.png",
+				"db-skill": "PVE Skill 13"
+			},
+			{
+				"skill": "Medica II",
+				"level": "Ур.50",
+				"icon": "530234ed64e2b5b5aaacf978a90d87932734272f.png",
+				"db-skill": "PVE Skill 14"
+			},
+			{
+				"skill": "Benediction",
+				"level": "Ур.50",
+				"icon": "44e09756739b6b8924b82471572e7103ac5ca1fb.png",
+				"db-skill": "PVE Skill 15"
+			},
+			{
+				"skill": "Afflatus Solace",
+				"level": "Ур.52",
+				"icon": "a9c7b172b8c82aaa311a578fe3b42f5f30266e93.png",
+				"db-skill": "PVE Skill 16"
+			},
+			{
+				"skill": "Asylum",
+				"level": "Ур.52",
+				"icon": "cf3242dc922e88211cb5b2c4aa67f9ae79fb88fb.png",
+				"db-skill": "PVE Skill 17"
+			},
+			{
+				"skill": "Stone III",
+				"level": "Ур.54",
+				"icon": "f38006e73efc8e122777b9c23097a4c40bc9c9c4.png",
+				"db-skill": "PVE Skill 18"
+			},
+			{
+				"skill": "Assize",
+				"level": "Ур.56",
+				"icon": "4c9f83b599b37adfa6597ea7e884331cac170a12.png",
+				"db-skill": "PVE Skill 19"
+			},
+			{
+				"skill": "Thin Air",
+				"level": "Ур.58",
+				"icon": "539a73220a23fd185c17bed962b140bf7b4673d2.png",
+				"db-skill": "PVE Skill 20"
+			},
+			{
+				"skill": "Tetragrammaton",
+				"level": "Ур.60",
+				"icon": "6e00b907b75a6906045955d68cf68af66ba6aa9e.png",
+				"db-skill": "PVE Skill 21"
+			},
+			{
+				"skill": "Stone IV",
+				"level": "Ур.64",
+				"icon": "33eacc1401b5fe03a2dd54e317cd60ccbb912c44.png",
+				"db-skill": "PVE Skill 22"
+			},
+			{
+				"skill": "Divine Benison",
+				"level": "Ур.66",
+				"icon": "065d9df35159a3bc53d59984a18b35581b442a73.png",
+				"db-skill": "PVE Skill 23"
+			},
+			{
+				"skill": "Plenary Indulgence",
+				"level": "Ур.70",
+				"icon": "2144617daa9bac9ea7bc1f063a9e0cd033fcd363.png",
+				"db-skill": "PVE Skill 24"
+			},
+			{
+				"skill": "Dia",
+				"level": "Ур.72",
+				"icon": "de737874f0025d808d0bddac1d4156fec9464d00.png",
+				"db-skill": "PVE Skill 25"
+			},
+			{
+				"skill": "Glare",
+				"level": "Ур.72",
+				"icon": "c1f9bdbca11c2c7944e3e95cf7599a6a3849e5a2.png",
+				"db-skill": "PVE Skill 26"
+			},
+			{
+				"skill": "Afflatus Misery",
+				"level": "Ур.74",
+				"icon": "e01507664cb997891de06ec522b71619279969bc.png",
+				"db-skill": "PVE Skill 27"
+			},
+			{
+				"skill": "Afflatus Rapture",
+				"level": "Ур.76",
+				"icon": "9582c5aa6ffa9abf82db6140916020235a003a20.png",
+				"db-skill": "PVE Skill 28"
+			},
+			{
+				"skill": "Temperance",
+				"level": "Ур.80",
+				"icon": "78e099cba536b64fe978d05487c51b28a66f29df.png",
+				"db-skill": "PVE Skill 29"
+			},
+			{
+				"skill": "Glare III",
+				"level": "Ур.82",
+				"icon": "dfafd20ceefae82548deba9511d3d765c4535b3a.png",
+				"db-skill": "PVE Skill 30"
+			},
+			{
+				"skill": "Holy III",
+				"level": "Ур.82",
+				"icon": "eceb9103dbf8066a8b6c8bce2e84df7552f1a074.png",
+				"db-skill": "PVE Skill 31"
+			},
+			{
+				"skill": "Aquaveil",
+				"level": "Ур.86",
+				"icon": "f87f8e18282665458cc9c358ff1a2b8a78833491.png",
+				"db-skill": "PVE Skill 32"
+			},
+			{
+				"skill": "Liturgy of the Bell",
+				"level": "Ур.90",
+				"icon": "4d31a93f520e700ac70ab1604bdb6811f124ebb4.png",
+				"db-skill": "PVE Skill 33"
+			},
+			{
+				"skill": "Glare IV",
+				"level": "Ур.92",
+				"icon": "8114a12aa7d10fbe87b9edfe0fc6257adec7a06f.png",
+				"db-skill": "PVE Skill 34"
+			},
+			{
+				"skill": "Medica III",
+				"level": "Ур.96",
+				"icon": "afd378388b20cba91d3988c04efeff1256eae7b3.png",
+				"db-skill": "PVE Skill 35"
+			},
+			{
+				"skill": "Divine Caress",
+				"level": "Ур.100",
+				"icon": "94e9cc4b561ab6fca2c4a92cdbb2c86cd7825df9.png",
+				"db-skill": "PVE Skill 36"
+			}
+		]
+	},
+	{
+		"page_job": "SCH",
+		"job": "Scholar",
+		"skills": [
+			{
+				"skill": "Ruin",
+				"level": "Ур.1",
+				"icon": "1c74fa1688f3d89d6f5b972ce384df15f62e35d1.png",
+				"db-skill": "PVE Skill 01"
+			},
+			{
+				"skill": "Bio",
+				"level": "Ур.2",
+				"icon": "93f61adcffc6644730a017347d91805359b52bdb.png",
+				"db-skill": "PVE Skill 02"
+			},
+			{
+				"skill": "Physick",
+				"level": "Ур.4",
+				"icon": "e51f309947cde0c36f3a0cd815ca01e268928eb6.png",
+				"db-skill": "PVE Skill 03"
+			},
+			{
+				"skill": "Summon Eos",
+				"level": "Ур.4",
+				"icon": "7e5c03b72c4e181034da8121d6f2bdf2f1aa2a60.png",
+				"db-skill": "PVE Skill 04"
+			},
+			{
+				"skill": "Resurrection",
+				"level": "Ур.12",
+				"icon": "9e61ea15caf1f7c0e4b44943dcbee0178e61a9fd.png",
+				"db-skill": "PVE Skill 05"
+			},
+			{
+				"skill": "Whispering Dawn",
+				"level": "Ур.20",
+				"icon": "161dc95f27e69fb5bd4caecfdeab022e3560193d.png",
+				"db-skill": "PVE Skill 06"
+			},
+			{
+				"skill": "Bio II",
+				"level": "Ур.26",
+				"icon": "ea0a5e685172203ac73332f7e1690a5a89b25590.png",
+				"db-skill": "PVE Skill 07"
+			},
+			{
+				"skill": "Adloquium",
+				"level": "Ур.30",
+				"icon": "07beea4eb1cc3f24533d045db5b694c939f3a3ac.png",
+				"db-skill": "PVE Skill 08"
+			},
+			{
+				"skill": "Succor",
+				"level": "Ур.35",
+				"icon": "59ca7d9f2002ba3176f070a023bcfd8fa2129fb9.png",
+				"db-skill": "PVE Skill 09"
+			},
+			{
+				"skill": "Ruin II",
+				"level": "Ур.38",
+				"icon": "d6875ae1008a9e4b2d04562cff42646752e919c5.png",
+				"db-skill": "PVE Skill 10"
+			},
+			{
+				"skill": "Fey Illumination",
+				"level": "Ур.40",
+				"icon": "6ed1ace8e31760fa3b042e6d27dac669668196b0.png",
+				"db-skill": "PVE Skill 11"
+			},
+			{
+				"skill": "Aetherflow",
+				"level": "Ур.45",
+				"icon": "175631d8db5550a7b74a9bc811c3781e083e393e.png",
+				"db-skill": "PVE Skill 12"
+			},
+			{
+				"skill": "Energy Drain",
+				"level": "Ур.45",
+				"icon": "92ea9227a8a09c62eb53852e2c26c0d6763a35c2.png",
+				"db-skill": "PVE Skill 13"
+			},
+			{
+				"skill": "Lustrate",
+				"level": "Ур.45",
+				"icon": "a9adc8943d1d8402366c869416b7a9d5ef7fcf07.png",
+				"db-skill": "PVE Skill 14"
+			},
+			{
+				"skill": "Art of War",
+				"level": "Ур.46",
+				"icon": "a414b67652d67ff6707276156d1ce275f188ef07.png",
+				"db-skill": "PVE Skill 15"
+			},
+			{
+				"skill": "Sacred Soil",
+				"level": "Ур.50",
+				"icon": "4c47bdf94dc6c3dcd9b303cfa42a08a5cfd13629.png",
+				"db-skill": "PVE Skill 16"
+			},
+			{
+				"skill": "Indomitability",
+				"level": "Ур.52",
+				"icon": "7f80a5bd016eab7200c55dd8d1d6afb07361a0ca.png",
+				"db-skill": "PVE Skill 17"
+			},
+			{
+				"skill": "Broil",
+				"level": "Ур.54",
+				"icon": "7203f797d2c3dd4148a8cb5fe510c1cfd1ac46a8.png",
+				"db-skill": "PVE Skill 18"
+			},
+			{
+				"skill": "Deployment Tactics",
+				"level": "Ур.56",
+				"icon": "307e3a65fff1e38b28235509dd392323642d6965.png",
+				"db-skill": "PVE Skill 19"
+			},
+			{
+				"skill": "Emergency Tactics",
+				"level": "Ур.58",
+				"icon": "fbfaa6c46fac537aec9d2903ec64d4f64fc54557.png",
+				"db-skill": "PVE Skill 20"
+			},
+			{
+				"skill": "Dissipation",
+				"level": "Ур.60",
+				"icon": "fffbdbce557a09ee3a50f541fac07d432bfc7c89.png",
+				"db-skill": "PVE Skill 21"
+			},
+			{
+				"skill": "Excogitation",
+				"level": "Ур.64",
+				"icon": "b46ada85c48a81940953f46eaaba05f1c2f5cfdd.png",
+				"db-skill": "PVE Skill 22"
+			},
+			{
+				"skill": "Broil II",
+				"level": "Ур.64",
+				"icon": "d8d8172feffed42f80d335bb7bedb14cc90fbd56.png",
+				"db-skill": "PVE Skill 23"
+			},
+			{
+				"skill": "Chain Stratagem",
+				"level": "Ур.66",
+				"icon": "2f5f538d79932e3bfb3bd5c72af6f13987aa3e6d.png",
+				"db-skill": "PVE Skill 24"
+			},
+			{
+				"skill": "Aetherpact",
+				"level": "Ур.70",
+				"icon": "eb866b142bd93d46ffa7809e1092aefc48f48f3c.png",
+				"db-skill": "PVE Skill 25"
+			},
+			{
+				"skill": "Dissolve Union",
+				"level": "Ур.70",
+				"icon": "10602136009d5a92a005f0bd127a1a9ec8c1691a.png",
+				"db-skill": "PVE Skill 26"
+			},
+			{
+				"skill": "Biolysis",
+				"level": "Ур.72",
+				"icon": "e77ebe8644e35de5bc2d67a4c8365d6d726c9ca4.png",
+				"db-skill": "PVE Skill 27"
+			},
+			{
+				"skill": "Broil III",
+				"level": "Ур.72",
+				"icon": "1f85b58d71471a33c2d35db849b20a681bfd5b56.png",
+				"db-skill": "PVE Skill 28"
+			},
+			{
+				"skill": "Recitation",
+				"level": "Ур.74",
+				"icon": "b1be794db381c20399faf7dec80b7f64eaba2e61.png",
+				"db-skill": "PVE Skill 29"
+			},
+			{
+				"skill": "Fey Blessing",
+				"level": "Ур.76",
+				"icon": "e37b65935298898f61fd4b12a293998ba1258be5.png",
+				"db-skill": "PVE Skill 30"
+			},
+			{
+				"skill": "Summon Seraph",
+				"level": "Ур.80",
+				"icon": "ff070d67e4c75ed8bb06de1f577979e8c69c8ad1.png",
+				"db-skill": "PVE Skill 31"
+			},
+			{
+				"skill": "Consolation",
+				"level": "Ур.80",
+				"icon": "86ce58393104f45f36ef15d9d358a684c4013df4.png",
+				"db-skill": "PVE Skill 32"
+			},
+			{
+				"skill": "Broil IV",
+				"level": "Ур.82",
+				"icon": "ec2463dfb6a287aaf59d57acf7620690fb92606e.png",
+				"db-skill": "PVE Skill 33"
+			},
+			{
+				"skill": "Art of War II",
+				"level": "Ур.82",
+				"icon": "ec9b2021f0cbe6165173334f9081ce3be52c92d2.png",
+				"db-skill": "PVE Skill 34"
+			},
+			{
+				"skill": "Protraction",
+				"level": "Ур.86",
+				"icon": "4960cc6d3b31acfe657bfbdca97021bc546aada0.png",
+				"db-skill": "PVE Skill 35"
+			},
+			{
+				"skill": "Expedient",
+				"level": "Ур.90",
+				"icon": "b9eb7f8aed74850abe24b753549fc676af9db2c8.png",
+				"db-skill": "PVE Skill 36"
+			},
+			{
+				"skill": "Baneful Impaction",
+				"level": "Ур.92",
+				"icon": "16ca1e2b66efb797ca63394b5f856ab89a709acf.png",
+				"db-skill": "PVE Skill 37"
+			},
+			{
+				"skill": "Concitation",
+				"level": "Ур.96",
+				"icon": "f124b01882a45f5befe10fa82964fc7fb7895e8c.png",
+				"db-skill": "PVE Skill 38"
+			},
+			{
+				"skill": "Seraphism",
+				"level": "Ур.100",
+				"icon": "3660e0317ed2aba78b7cfdc526dd174efa94d88d.png",
+				"db-skill": "PVE Skill 39"
+			},
+			{
+				"skill": "Manifestation",
+				"level": "Ур.100",
+				"icon": "7244131eba68b8042f1461bf4100deaebe2a7c0d.png",
+				"db-skill": "PVE Skill 40"
+			},
+			{
+				"skill": "Accession",
+				"level": "Ур.100",
+				"icon": "c859b1042c024b57c646316f1e0e93ff5e5f90fb.png",
+				"db-skill": "PVE Skill 41"
+			}
+		]
+	},
+	{
+		"page_job": "AST",
+		"job": "Astrologian",
+		"skills": [
+			{
+				"skill": "Malefic",
+				"level": "Ур.1",
+				"icon": "1c53f900e5226e09621196190c506da91d3703bb.png",
+				"db-skill": "PVE Skill 01"
+			},
+			{
+				"skill": "Benefic",
+				"level": "Ур.2",
+				"icon": "ec1096796458eca5c96eea7720465aa642bd73e1.png",
+				"db-skill": "PVE Skill 02"
+			},
+			{
+				"skill": "Combust",
+				"level": "Ур.4",
+				"icon": "7e161244d4e8b8909f2b0804f096fdec8228ef4d.png",
+				"db-skill": "PVE Skill 03"
+			},
+			{
+				"skill": "Lightspeed",
+				"level": "Ур.6",
+				"icon": "8e5b0f4ba2437c7ed0dba22471388c128372c767.png",
+				"db-skill": "PVE Skill 04"
+			},
+			{
+				"skill": "Helios",
+				"level": "Ур.10",
+				"icon": "78affa4069a26e38833b6dc5826c2e3abf05917d.png",
+				"db-skill": "PVE Skill 05"
+			},
+			{
+				"skill": "Ascend",
+				"level": "Ур.12",
+				"icon": "89ac1eda0deb042fbdb3618d88511262a4d0f5c5.png",
+				"db-skill": "PVE Skill 06"
+			},
+			{
+				"skill": "Essential Dignity",
+				"level": "Ур.15",
+				"icon": "6e6f7c02d300a61d010d596d0e2fe80a12f8e03b.png",
+				"db-skill": "PVE Skill 07"
+			},
+			{
+				"skill": "Benefic II",
+				"level": "Ур.26",
+				"icon": "eeb9a90c14711ee0450ce0c96d4b6b00f73f733e.png",
+				"db-skill": "PVE Skill 08"
+			},
+			{
+				"skill": "Astral Draw",
+				"level": "Ур.30",
+				"icon": "ca9495b5dd2708d088f8180b433b812580622dcb.png",
+				"db-skill": "PVE Skill 09"
+			},
+			{
+				"skill": "Umbral Draw",
+				"level": "Ур.30",
+				"icon": "3a5badd54650309c03a120ea6906ad51276e8c6e.png",
+				"db-skill": "PVE Skill 10"
+			},
+			{
+				"skill": "Play I",
+				"level": "Ур.30",
+				"icon": "aa32f90984104b56be403963081f119244df50a8.png",
+				"db-skill": "PVE Skill 11"
+			},
+			{
+				"skill": "Play II",
+				"level": "Ур.30",
+				"icon": "1d7b124a1b665b5be6db3759a2f5060eef40b89d.png",
+				"db-skill": "PVE Skill 12"
+			},
+			{
+				"skill": "Play III",
+				"level": "Ур.30",
+				"icon": "59c09c6f090fb75d16bb4f906793b951fd58b4cf.png",
+				"db-skill": "PVE Skill 13"
+			},
+			{
+				"skill": "Aspected Benefic",
+				"level": "Ур.34",
+				"icon": "9abd9dc20f6f0864806e050841e5ae74172d3d93.png",
+				"db-skill": "PVE Skill 14"
+			},
+			{
+				"skill": "Aspected Helios",
+				"level": "Ур.42",
+				"icon": "ee92429fd70cd18d445735da357c023336da994d.png",
+				"db-skill": "PVE Skill 15"
+			},
+			{
+				"skill": "Gravity",
+				"level": "Ур.45",
+				"icon": "42e3c5d1cccb388c35ee3d6907a6e6109ba4b852.png",
+				"db-skill": "PVE Skill 16"
+			},
+			{
+				"skill": "Combust II",
+				"level": "Ур.46",
+				"icon": "447dd0b8ed8d759beeaa8b8aa7f8f1ec2cbec7b4.png",
+				"db-skill": "PVE Skill 17"
+			},
+			{
+				"skill": "Synastry",
+				"level": "Ур.50",
+				"icon": "883284b0f5ce828b73992bdaf990124383c77efd.png",
+				"db-skill": "PVE Skill 18"
+			},
+			{
+				"skill": "Divination",
+				"level": "Ур.50",
+				"icon": "24e1ea2b4dce9d16ae60f33ab860190a67a3a506.png",
+				"db-skill": "PVE Skill 19"
+			},
+			{
+				"skill": "Malefic II",
+				"level": "Ур.54",
+				"icon": "e9cbc9998cc2491689d203da71716e9cee15c615.png",
+				"db-skill": "PVE Skill 20"
+			},
+			{
+				"skill": "Collective Unconscious",
+				"level": "Ур.58",
+				"icon": "6ffe2bab0c77721314aee02e2f3f14f61351e2a4.png",
+				"db-skill": "PVE Skill 21"
+			},
+			{
+				"skill": "Celestial Opposition",
+				"level": "Ур.60",
+				"icon": "f2ca2bba463ed6f55295fb64f6a497e130b05cf4.png",
+				"db-skill": "PVE Skill 22"
+			},
+			{
+				"skill": "Earthly Star",
+				"level": "Ур.62",
+				"icon": "522e3417c4930cf5834e64c75e763e999dc284c8.png",
+				"db-skill": "PVE Skill 23"
+			},
+			{
+				"skill": "Stellar Detonation",
+				"level": "Ур.62",
+				"icon": "f69c65b6871458427cf794c2467d50e1ae6b7949.png",
+				"db-skill": "PVE Skill 24"
+			},
+			{
+				"skill": "Malefic III",
+				"level": "Ур.64",
+				"icon": "4383eddfb0a234ec105f3bdfcc162aa2ff8b37d8.png",
+				"db-skill": "PVE Skill 25"
+			},
+			{
+				"skill": "Minor Arcana",
+				"level": "Ур.70",
+				"icon": "5f9cec813674a23520286ff23759e752db5499bd.png",
+				"db-skill": "PVE Skill 26"
+			},
+			{
+				"skill": "Combust III",
+				"level": "Ур.72",
+				"icon": "0f73da17cc2ccea0a36787347d34738d6a97673a.png",
+				"db-skill": "PVE Skill 27"
+			},
+			{
+				"skill": "Malefic IV",
+				"level": "Ур.72",
+				"icon": "0a063c1dba4b21b9f27440a05d707da109b00d15.png",
+				"db-skill": "PVE Skill 28"
+			},
+			{
+				"skill": "Celestial Intersection",
+				"level": "Ур.74",
+				"icon": "2a71645e6880d0bb4b46332fd64cd0756dd3b08f.png",
+				"db-skill": "PVE Skill 29"
+			},
+			{
+				"skill": "Horoscope",
+				"level": "Ур.76",
+				"icon": "c806bf7d70b7343de2de42f47a2bbaa59e8b324e.png",
+				"db-skill": "PVE Skill 30"
+			},
+			{
+				"skill": "Horoscope",
+				"level": "Ур.76",
+				"icon": "224ca9088106c40e33179fa3fdfcd742104d1891.png",
+				"db-skill": "PVE Skill 31"
+			},
+			{
+				"skill": "Neutral Sect",
+				"level": "Ур.80",
+				"icon": "8ccf71b513276dce09f58889b5bb8878371b8519.png",
+				"db-skill": "PVE Skill 32"
+			},
+			{
+				"skill": "Fall Malefic",
+				"level": "Ур.82",
+				"icon": "6f0ba481b923ff8cea8bc37b5c25f9192e494beb.png",
+				"db-skill": "PVE Skill 33"
+			},
+			{
+				"skill": "Gravity II",
+				"level": "Ур.82",
+				"icon": "56748917749affb1f286aba23c3a54cc0e5d0156.png",
+				"db-skill": "PVE Skill 34"
+			},
+			{
+				"skill": "Exaltation",
+				"level": "Ур.86",
+				"icon": "c4bf5c769353b2ee48cba7af8c64a86f1bb11e7d.png",
+				"db-skill": "PVE Skill 35"
+			},
+			{
+				"skill": "Macrocosmos",
+				"level": "Ур.90",
+				"icon": "1d39637c8a2ed0b39fc54cac5eb718eabc29bc53.png",
+				"db-skill": "PVE Skill 36"
+			},
+			{
+				"skill": "Microcosmos",
+				"level": "Ур.90",
+				"icon": "03b8b3a806a33ef16f67e6c5c09e8deb6c59d526.png",
+				"db-skill": "PVE Skill 37"
+			},
+			{
+				"skill": "Oracle",
+				"level": "Ур.92",
+				"icon": "7c826ef697cd5d5934661e9238dd5ba0ad607e9d.png",
+				"db-skill": "PVE Skill 38"
+			},
+			{
+				"skill": "Helios Conjunction",
+				"level": "Ур.96",
+				"icon": "20768aed61f83aeae04632231cba41ae889e187f.png",
+				"db-skill": "PVE Skill 39"
+			},
+			{
+				"skill": "Sun Sign",
+				"level": "Ур.100",
+				"icon": "9b0527d5ad6cdb263a912b463d4ff12bd13e9fea.png",
+				"db-skill": "PVE Skill 40"
+			}
+		]
+	},
+	{
+		"page_job": "SGE",
+		"job": "Sage",
+		"skills": [
+			{
+				"skill": "Dosis",
+				"level": "Ур.1",
+				"icon": "817398ae8dfe613839528291eebfe76e05bd3584.png",
+				"db-skill": "PVE Skill 01"
+			},
+			{
+				"skill": "Diagnosis",
+				"level": "Ур.2",
+				"icon": "c750ddbd308f469bfe54e263e98f2b1dc42ecfd3.png",
+				"db-skill": "PVE Skill 02"
+			},
+			{
+				"skill": "Kardia",
+				"level": "Ур.4",
+				"icon": "bd80c68721d02a37275edfa07de82a39adbceb1c.png",
+				"db-skill": "PVE Skill 03"
+			},
+			{
+				"skill": "Prognosis",
+				"level": "Ур.10",
+				"icon": "7f8253801283aa010e5a6ff40dafda493f1d58a4.png",
+				"db-skill": "PVE Skill 04"
+			},
+			{
+				"skill": "Egeiro",
+				"level": "Ур.12",
+				"icon": "3b5dbe0188fba544474a1c3304af88544838e5cc.png",
+				"db-skill": "PVE Skill 05"
+			},
+			{
+				"skill": "Physis",
+				"level": "Ур.20",
+				"icon": "b2acbee8acf84344ed1cbf15e97a5f88fe0f2e22.png",
+				"db-skill": "PVE Skill 06"
+			},
+			{
+				"skill": "Phlegma",
+				"level": "Ур.26",
+				"icon": "9f221a8b7c540f90f808d332e802b3626fef4431.png",
+				"db-skill": "PVE Skill 07"
+			},
+			{
+				"skill": "Eukrasia",
+				"level": "Ур.30",
+				"icon": "3d9da11ae40aa687171f1bf2a5655b6f0e442d79.png",
+				"db-skill": "PVE Skill 08"
+			},
+			{
+				"skill": "Eukrasian Diagnosis",
+				"level": "Ур.30",
+				"icon": "0a0085828964c504f045a98b67feaf6c26c2307d.png",
+				"db-skill": "PVE Skill 09"
+			},
+			{
+				"skill": "Eukrasian Prognosis",
+				"level": "Ур.30",
+				"icon": "723cccd2fe9542159daffcd22f44ff52d8a2f6a1.png",
+				"db-skill": "PVE Skill 10"
+			},
+			{
+				"skill": "Eukrasian Dosis",
+				"level": "Ур.30",
+				"icon": "3cffb9cb106612236b80ce85e1881e0d7760512f.png",
+				"db-skill": "PVE Skill 11"
+			},
+			{
+				"skill": "Soteria",
+				"level": "Ур.35",
+				"icon": "4f39d0024ea7741facfb247d0056064e831c3765.png",
+				"db-skill": "PVE Skill 12"
+			},
+			{
+				"skill": "Icarus",
+				"level": "Ур.40",
+				"icon": "347d5069652ea0716aa462ba3dd96fc148156b0f.png",
+				"db-skill": "PVE Skill 13"
+			},
+			{
+				"skill": "Druochole",
+				"level": "Ур.45",
+				"icon": "00cd1d056243c5e06b9bbb52a6112ddb35dbcbe9.png",
+				"db-skill": "PVE Skill 14"
+			},
+			{
+				"skill": "Dyskrasia",
+				"level": "Ур.46",
+				"icon": "849a554b53462ae2c240dc06558bf710c0f98e5e.png",
+				"db-skill": "PVE Skill 15"
+			},
+			{
+				"skill": "Kerachole",
+				"level": "Ур.50",
+				"icon": "b49859cbf63de26b230527650742576590166760.png",
+				"db-skill": "PVE Skill 16"
+			},
+			{
+				"skill": "Ixochole",
+				"level": "Ур.52",
+				"icon": "4ee83614031659334dda42affd3314aebcaf98f4.png",
+				"db-skill": "PVE Skill 17"
+			},
+			{
+				"skill": "Zoe",
+				"level": "Ур.56",
+				"icon": "958000045b75c90c1ce059d11d2f2ed488d72a65.png",
+				"db-skill": "PVE Skill 18"
+			},
+			{
+				"skill": "Pepsis",
+				"level": "Ур.58",
+				"icon": "863096a46c76144097ba25d6d9d5fe1f997cda9e.png",
+				"db-skill": "PVE Skill 19"
+			},
+			{
+				"skill": "Physis II",
+				"level": "Ур.60",
+				"icon": "ece8fe6d911ad6497e35a13d82572d2373d2a2a4.png",
+				"db-skill": "PVE Skill 20"
+			},
+			{
+				"skill": "Taurochole",
+				"level": "Ур.62",
+				"icon": "fe3b0d2ce97deba2e6b4cfbc39e65e2abd32b31b.png",
+				"db-skill": "PVE Skill 21"
+			},
+			{
+				"skill": "Toxikon",
+				"level": "Ур.66",
+				"icon": "bedfcd09b95bf0fa2290753478364965c82a739b.png",
+				"db-skill": "PVE Skill 22"
+			},
+			{
+				"skill": "Haima",
+				"level": "Ур.70",
+				"icon": "31657e2f5ec2ec375960c927a6ed532883d8d271.png",
+				"db-skill": "PVE Skill 23"
+			},
+			{
+				"skill": "Dosis II",
+				"level": "Ур.72",
+				"icon": "0323f174ced3df37c1c6699f4c4dc980e58b9b7b.png",
+				"db-skill": "PVE Skill 24"
+			},
+			{
+				"skill": "Phlegma II",
+				"level": "Ур.72",
+				"icon": "abcef32ec5c7c111d5a2a3569ce427d7fc0a6ede.png",
+				"db-skill": "PVE Skill 25"
+			},
+			{
+				"skill": "Eukrasian Dosis II",
+				"level": "Ур.72",
+				"icon": "075562984879d8d32898462a95da91d65e3df88c.png",
+				"db-skill": "PVE Skill 26"
+			},
+			{
+				"skill": "Rhizomata",
+				"level": "Ур.74",
+				"icon": "d4628890501806f6ebbc3371b1e21ba63e69940c.png",
+				"db-skill": "PVE Skill 27"
+			},
+			{
+				"skill": "Holos",
+				"level": "Ур.76",
+				"icon": "810d7969914bee1bbf088a70d62d6578a0949f9e.png",
+				"db-skill": "PVE Skill 28"
+			},
+			{
+				"skill": "Panhaima",
+				"level": "Ур.80",
+				"icon": "f7bdefbdd3410f2dd4b5c0f36e74ee72b115ccda.png",
+				"db-skill": "PVE Skill 29"
+			},
+			{
+				"skill": "Dosis III",
+				"level": "Ур.82",
+				"icon": "99b9cce6a42b638d04a03e6e3de38555d333b53b.png",
+				"db-skill": "PVE Skill 30"
+			},
+			{
+				"skill": "Phlegma III",
+				"level": "Ур.82",
+				"icon": "93dc61daa2db9449d34a5198669e59de306451e1.png",
+				"db-skill": "PVE Skill 31"
+			},
+			{
+				"skill": "Eukrasian Dosis III",
+				"level": "Ур.82",
+				"icon": "7e340f46db9e27a9fd1fcd729d8eaceacf4cfa9f.png",
+				"db-skill": "PVE Skill 32"
+			},
+			{
+				"skill": "Dyskrasia II",
+				"level": "Ур.82",
+				"icon": "0f71b2b711281a46eb641cb99bbe0f3b9c2e4a0a.png",
+				"db-skill": "PVE Skill 33"
+			},
+			{
+				"skill": "Eukrasian Dyskrasia",
+				"level": "Ур.82",
+				"icon": "c8c74517022e0d8f5fd8f379225a64f12eff5e0a.png",
+				"db-skill": "PVE Skill 34"
+			},
+			{
+				"skill": "Toxikon II",
+				"level": "Ур.82",
+				"icon": "a5a4b7ed8fbb4d9ac9fbf32fde1784f37367645a.png",
+				"db-skill": "PVE Skill 35"
+			},
+			{
+				"skill": "Krasis",
+				"level": "Ур.86",
+				"icon": "2ef8237422768324b57e9d244731351fb0eca548.png",
+				"db-skill": "PVE Skill 36"
+			},
+			{
+				"skill": "Pneuma",
+				"level": "Ур.90",
+				"icon": "5ec3407305900508ed6eaea6dba984851b883fe3.png",
+				"db-skill": "PVE Skill 37"
+			},
+			{
+				"skill": "Psyche",
+				"level": "Ур.92",
+				"icon": "9d4fec42b917590f53bfa7ccc1691c083afd7a3c.png",
+				"db-skill": "PVE Skill 38"
+			},
+			{
+				"skill": "Eukrasian Prognosis II",
+				"level": "Ур.96",
+				"icon": "dc49cdcdfa8ec3a8d32f6e8b405ddda6971e23f0.png",
+				"db-skill": "PVE Skill 39"
+			},
+			{
+				"skill": "Philosophia",
+				"level": "Ур.100",
+				"icon": "a3dd5ff88eb7a7cce95536d48fe81665e3feb3ca.png",
+				"db-skill": "PVE Skill 40"
+			}
+		]
+	},
+	{
+		"page_job": "MNK",
+		"job": "Monk",
+		"skills": [
+			{
+				"skill": "Bootshine",
+				"level": "Ур.1",
+				"icon": "042e3be3ea0a054e9fa9cb7db61dd0a14a3622f7.png",
+				"db-skill": "PVE Skill 01"
+			},
+			{
+				"skill": "True Strike",
+				"level": "Ур.4",
+				"icon": "af7b18aed7033e61d761f6103f46160923ce4dba.png",
+				"db-skill": "PVE Skill 02"
+			},
+			{
+				"skill": "Snap Punch",
+				"level": "Ур.6",
+				"icon": "a0723660e32d9a35961de3002386736a3f97f9aa.png",
+				"db-skill": "PVE Skill 03"
+			},
+			{
+				"skill": "Steeled Meditation",
+				"level": "Ур.15",
+				"icon": "3f5525f96d26fa3bb52df3cd390fbabd126be062.png",
+				"db-skill": "PVE Skill 04"
+			},
+			{
+				"skill": "Steel Peak",
+				"level": "Ур.15",
+				"icon": "bf14821955a0b22662b2ad2f939f5d25e28ddfbe.png",
+				"db-skill": "PVE Skill 05"
+			},
+			{
+				"skill": "Twin Snakes",
+				"level": "Ур.18",
+				"icon": "30f4acde19a2b7da96a18abfb609bf41f1d140dd.png",
+				"db-skill": "PVE Skill 06"
+			},
+			{
+				"skill": "Arm of the Destroyer",
+				"level": "Ур.26",
+				"icon": "44aeab1317ba946482cfcb3db020495c82b2adaf.png",
+				"db-skill": "PVE Skill 07"
+			},
+			{
+				"skill": "Demolish",
+				"level": "Ур.30",
+				"icon": "478fe9db14cb870f97bd5c97e94d6c330a52e625.png",
+				"db-skill": "PVE Skill 08"
+			},
+			{
+				"skill": "Rockbreaker",
+				"level": "Ур.30",
+				"icon": "6f757660279f936fff7f7b46f415c50ffa8ab08a.png",
+				"db-skill": "PVE Skill 09"
+			},
+			{
+				"skill": "Thunderclap",
+				"level": "Ур.35",
+				"icon": "3cd306065005282605a77162e9158092ba2a75b1.png",
+				"db-skill": "PVE Skill 10"
+			},
+			{
+				"skill": "Inspirited Meditation",
+				"level": "Ур.40",
+				"icon": "e496f61cb81a7d95c751a64c3c416faa851216f0.png",
+				"db-skill": "PVE Skill 11"
+			},
+			{
+				"skill": "Howling Fist",
+				"level": "Ур.40",
+				"icon": "b5e5c9978cca1e84dd3dfd44bf37acb9aa875c13.png",
+				"db-skill": "PVE Skill 12"
+			},
+			{
+				"skill": "Mantra",
+				"level": "Ур.42",
+				"icon": "87f8bb6f1bcc8aa169c04e15c7d526d9d6e3dc55.png",
+				"db-skill": "PVE Skill 13"
+			},
+			{
+				"skill": "Four-point Fury",
+				"level": "Ур.45",
+				"icon": "2e982c5bcdf7073f54f478d072d76eb8fc7ebd73.png",
+				"db-skill": "PVE Skill 14"
+			},
+			{
+				"skill": "Dragon Kick",
+				"level": "Ур.50",
+				"icon": "b28fd0b73c9131439b9d376ea443532892876681.png",
+				"db-skill": "PVE Skill 15"
+			},
+			{
+				"skill": "Perfect Balance",
+				"level": "Ур.50",
+				"icon": "08bf418da9242f2ad395422bd474f9f4b8819b29.png",
+				"db-skill": "PVE Skill 16"
+			},
+			{
+				"skill": "Form Shift",
+				"level": "Ур.52",
+				"icon": "f48ad79820696829faea1b43c94a9e70a1b84ce9.png",
+				"db-skill": "PVE Skill 17"
+			},
+			{
+				"skill": "Forbidden Meditation",
+				"level": "Ур.54",
+				"icon": "3f5525f96d26fa3bb52df3cd390fbabd126be062.png",
+				"db-skill": "PVE Skill 18"
+			},
+			{
+				"skill": "The Forbidden Chakra",
+				"level": "Ур.54",
+				"icon": "cbe79f033c767f053b625ec72de22bee654722b8.png",
+				"db-skill": "PVE Skill 19"
+			},
+			{
+				"skill": "Masterful Blitz",
+				"level": "Ур.60",
+				"icon": "00cd52fc4dd2849210bea04ee05cd62a921f1cfb.png",
+				"db-skill": "PVE Skill 20"
+			},
+			{
+				"skill": "Tornado Kick",
+				"level": "Ур.60",
+				"icon": "e5c7d0867c9b53f33bd8b319379946e7b9c27ba1.png",
+				"db-skill": "PVE Skill 21"
+			},
+			{
+				"skill": "Elixir Field",
+				"level": "Ур.60",
+				"icon": "c3b8c8cd51562f2117d6ee72ee44c6cb7a9ed497.png",
+				"db-skill": "PVE Skill 22"
+			},
+			{
+				"skill": "Celestial Revolution",
+				"level": "Ур.60",
+				"icon": "c9d2b58e28943b3309db19b112d998246d1b79b2.png",
+				"db-skill": "PVE Skill 23"
+			},
+			{
+				"skill": "Flint Strike",
+				"level": "Ур.60",
+				"icon": "4a4c381e589645018bad71d48508a65e340035ca.png",
+				"db-skill": "PVE Skill 24"
+			},
+			{
+				"skill": "Riddle of Earth",
+				"level": "Ур.64",
+				"icon": "84e3e679f5393f9a83e3b8204aad5192ecc483d1.png",
+				"db-skill": "PVE Skill 25"
+			},
+			{
+				"skill": "Earth's Reply",
+				"level": "Ур.64",
+				"icon": "f43b6c836fff7fa639c967aac3d6ef768fc1d16c.png",
+				"db-skill": "PVE Skill 26"
+			},
+			{
+				"skill": "Riddle of Fire",
+				"level": "Ур.68",
+				"icon": "1bc71b7e13b0634a6242026cd6ae29e018add98a.png",
+				"db-skill": "PVE Skill 27"
+			},
+			{
+				"skill": "Brotherhood",
+				"level": "Ур.70",
+				"icon": "a744e79fae56358a44e1d1f253a8be12d0ebaf8f.png",
+				"db-skill": "PVE Skill 28"
+			},
+			{
+				"skill": "Riddle of Wind",
+				"level": "Ур.72",
+				"icon": "793d43f2460d5b36044a6926484d73bf8670190f.png",
+				"db-skill": "PVE Skill 29"
+			},
+			{
+				"skill": "Enlightened Meditation",
+				"level": "Ур.74",
+				"icon": "e496f61cb81a7d95c751a64c3c416faa851216f0.png",
+				"db-skill": "PVE Skill 30"
+			},
+			{
+				"skill": "Enlightenment",
+				"level": "Ур.74",
+				"icon": "f258ec9d84566ca80f061e58a8ba3993a7b735a3.png",
+				"db-skill": "PVE Skill 31"
+			},
+			{
+				"skill": "Six-sided Star",
+				"level": "Ур.80",
+				"icon": "eaa1b242a96d4dd9511d690e7d7aa1e1ea985e5a.png",
+				"db-skill": "PVE Skill 32"
+			},
+			{
+				"skill": "Shadow of the Destroyer",
+				"level": "Ур.82",
+				"icon": "5166f89f6382d21ffd65cb45b3537c507f7d55de.png",
+				"db-skill": "PVE Skill 33"
+			},
+			{
+				"skill": "Rising Phoenix",
+				"level": "Ур.86",
+				"icon": "2ab98b9212f6d5a8d56cf74d904b3f15eda79d52.png",
+				"db-skill": "PVE Skill 34"
+			},
+			{
+				"skill": "Phantom Rush",
+				"level": "Ур.90",
+				"icon": "47555f213252da857e3c68acb669cdb7f2c3d78d.png",
+				"db-skill": "PVE Skill 35"
+			},
+			{
+				"skill": "Leaping Opo",
+				"level": "Ур.92",
+				"icon": "000c5561b5d49694d019252cf5bbd8db16d948aa.png",
+				"db-skill": "PVE Skill 36"
+			},
+			{
+				"skill": "Rising Raptor",
+				"level": "Ур.92",
+				"icon": "8b71871e5f6a0c0fbdefea14931fc459e6f6ca58.png",
+				"db-skill": "PVE Skill 37"
+			},
+			{
+				"skill": "Pouncing Coeurl",
+				"level": "Ур.92",
+				"icon": "9314f58e4df7e3392781a926bbd0480d3a9b5c71.png",
+				"db-skill": "PVE Skill 38"
+			},
+			{
+				"skill": "Elixir Burst",
+				"level": "Ур.92",
+				"icon": "334dae96eb1b67c861a22e07a9c0f3c918130f5f.png",
+				"db-skill": "PVE Skill 39"
+			},
+			{
+				"skill": "Wind's Reply",
+				"level": "Ур.96",
+				"icon": "d57a98ac83fa1f066de448639688b34ba4342a98.png",
+				"db-skill": "PVE Skill 40"
+			},
+			{
+				"skill": "Fire's Reply",
+				"level": "Ур.100",
+				"icon": "6de38cd8ff4cddd607b2bb2afde0dd8a22774489.png",
+				"db-skill": "PVE Skill 41"
+			}
+		]
+	},
+	{
+		"page_job": "DRG",
+		"job": "Dragoon",
+		"skills": [
+			{
+				"skill": "True Thrust",
+				"level": "Ур.1",
+				"icon": "a456526b20c613a31c9ff03a7cd8d69ab328a4c8.png",
+				"db-skill": "PVE Skill 01"
+			},
+			{
+				"skill": "Vorpal Thrust",
+				"level": "Ур.4",
+				"icon": "85a78cf7b49d80ab94aa206b385563ffa0222346.png",
+				"db-skill": "PVE Skill 02"
+			},
+			{
+				"skill": "Life Surge",
+				"level": "Ур.6",
+				"icon": "eb7e59cbec93afbdf7a3cecd0e164c545ea8dec2.png",
+				"db-skill": "PVE Skill 03"
+			},
+			{
+				"skill": "Piercing Talon",
+				"level": "Ур.15",
+				"icon": "b34933ec0ea122c75fd1deeb69f3b9df942dbdc1.png",
+				"db-skill": "PVE Skill 04"
+			},
+			{
+				"skill": "Disembowel",
+				"level": "Ур.18",
+				"icon": "d5052c9c0d1bf846c9a4fb70497dd1cea97ceca6.png",
+				"db-skill": "PVE Skill 05"
+			},
+			{
+				"skill": "Full Thrust",
+				"level": "Ур.26",
+				"icon": "34a78b866a4906267ee8f0e93457cb22b5550b9d.png",
+				"db-skill": "PVE Skill 06"
+			},
+			{
+				"skill": "Lance Charge",
+				"level": "Ур.30",
+				"icon": "cb90fa2f691cd58f5b068f6088550b3d56c2bd73.png",
+				"db-skill": "PVE Skill 07"
+			},
+			{
+				"skill": "Jump",
+				"level": "Ур.30",
+				"icon": "f33d8ab6bf2a7e902b9292016eefbbb0fe551548.png",
+				"db-skill": "PVE Skill 08"
+			},
+			{
+				"skill": "Elusive Jump",
+				"level": "Ур.35",
+				"icon": "410e90de2429654f6a4912e15c1d07597f765f53.png",
+				"db-skill": "PVE Skill 09"
+			},
+			{
+				"skill": "Doom Spike",
+				"level": "Ур.40",
+				"icon": "1e6e09c76f8847d3caf2ee330400848219460dfa.png",
+				"db-skill": "PVE Skill 10"
+			},
+			{
+				"skill": "Winged Glide",
+				"level": "Ур.45",
+				"icon": "970713e35721fcecc8fce83a6064c984bdeb22c3.png",
+				"db-skill": "PVE Skill 11"
+			},
+			{
+				"skill": "Chaos Thrust",
+				"level": "Ур.50",
+				"icon": "b77850f0a67953c4b4a13228788bdc1ec41c20fc.png",
+				"db-skill": "PVE Skill 12"
+			},
+			{
+				"skill": "Dragonfire Dive",
+				"level": "Ур.50",
+				"icon": "1ccffd13759a4491f95494464c6d10dc33c006af.png",
+				"db-skill": "PVE Skill 13"
+			},
+			{
+				"skill": "Battle Litany",
+				"level": "Ур.52",
+				"icon": "508f9edf2563db3319c3f623ce5d94517062263c.png",
+				"db-skill": "PVE Skill 14"
+			},
+			{
+				"skill": "Fang and Claw",
+				"level": "Ур.56",
+				"icon": "4fe2230dcc26896793e2936288fd25252dcfc56c.png",
+				"db-skill": "PVE Skill 15"
+			},
+			{
+				"skill": "Wheeling Thrust",
+				"level": "Ур.58",
+				"icon": "a8a45f08c2c5db904616f91470667fe4aaa6bcc5.png",
+				"db-skill": "PVE Skill 16"
+			},
+			{
+				"skill": "Geirskogul",
+				"level": "Ур.60",
+				"icon": "9997d1e9e3008de62095f170806afc46bf8c0512.png",
+				"db-skill": "PVE Skill 17"
+			},
+			{
+				"skill": "Sonic Thrust",
+				"level": "Ур.62",
+				"icon": "9457aa084f7bf99d66ad2c32318a7377886fa5b1.png",
+				"db-skill": "PVE Skill 18"
+			},
+			{
+				"skill": "Drakesbane",
+				"level": "Ур.64",
+				"icon": "1bc31e46fb90bda5697cf272e0df8b9ac8086b13.png",
+				"db-skill": "PVE Skill 19"
+			},
+			{
+				"skill": "Mirage Dive",
+				"level": "Ур.60",
+				"icon": "83da9c48674e13d357d7ff8ba8fba6b49f287f79.png",
+				"db-skill": "PVE Skill 20"
+			},
+			{
+				"skill": "Nastrond",
+				"level": "Ур.70",
+				"icon": "97ac6d936a5ade6f37ed4395355893eb976a477a.png",
+				"db-skill": "PVE Skill 21"
+			},
+			{
+				"skill": "Coerthan Torment",
+				"level": "Ур.72",
+				"icon": "673868536e6be70ed3ae3e1b4be66579b572e324.png",
+				"db-skill": "PVE Skill 22"
+			},
+			{
+				"skill": "High Jump",
+				"level": "Ур.74",
+				"icon": "864834c5502d69496057326478a42ef74a504af3.png",
+				"db-skill": "PVE Skill 23"
+			},
+			{
+				"skill": "Raiden Thrust",
+				"level": "Ур.76",
+				"icon": "d63e1dd2c2cb09e371caf50f997b65f8148c578b.png",
+				"db-skill": "PVE Skill 24"
+			},
+			{
+				"skill": "Stardiver",
+				"level": "Ур.80",
+				"icon": "235f159d863cc53374d2029a1bfb141828fad5b5.png",
+				"db-skill": "PVE Skill 25"
+			},
+			{
+				"skill": "Draconian Fury",
+				"level": "Ур.82",
+				"icon": "51e0251a0915bf36c3c804a760c8b3eaa3fe869e.png",
+				"db-skill": "PVE Skill 26"
+			},
+			{
+				"skill": "Heavens' Thrust",
+				"level": "Ур.86",
+				"icon": "e8ab8aa66c28e6c6fd4acf489417d7e7e2d5acc6.png",
+				"db-skill": "PVE Skill 27"
+			},
+			{
+				"skill": "Chaotic Spring",
+				"level": "Ур.86",
+				"icon": "e34337371ce368cb087a6c9cf3cad150271b7077.png",
+				"db-skill": "PVE Skill 28"
+			},
+			{
+				"skill": "Wyrmwind Thrust",
+				"level": "Ур.90",
+				"icon": "e61f89ed9db5020d7733920451f4d1809fe52c6b.png",
+				"db-skill": "PVE Skill 29"
+			},
+			{
+				"skill": "Rise of the Dragon",
+				"level": "Ур.92",
+				"icon": "4d7cca717dd43f7598d848d99886ccaec3835bad.png",
+				"db-skill": "PVE Skill 30"
+			},
+			{
+				"skill": "Lance Barrage",
+				"level": "Ур.96",
+				"icon": "a5743cd6a29dd664a044690a6e98f3ddeb05eb5a.png",
+				"db-skill": "PVE Skill 31"
+			},
+			{
+				"skill": "Spiral Blow",
+				"level": "Ур.96",
+				"icon": "b87f6aa2ebc0b8c4a858b76c6be82094738a6247.png",
+				"db-skill": "PVE Skill 32"
+			},
+			{
+				"skill": "Starcross",
+				"level": "Ур.100",
+				"icon": "fa02faafe16ebea100212e1ae3b89298bc249a7f.png",
+				"db-skill": "PVE Skill 33"
+			}
+		]
+	},
+	{
+		"page_job": "NIN",
+		"job": "Ninja",
+		"skills": [
+			{
+				"skill": "Spinning Edge",
+				"level": "Ур.1",
+				"icon": "657b568d32fd379339d365704c75ee7ca7e0cbd9.png",
+				"db-skill": "PVE Skill 01"
+			},
+			{
+				"skill": "Shade Shift",
+				"level": "Ур.2",
+				"icon": "533a4a3e924aaf268ee89a9c58845941bb73bad1.png",
+				"db-skill": "PVE Skill 02"
+			},
+			{
+				"skill": "Gust Slash",
+				"level": "Ур.4",
+				"icon": "3b3414364511f0fa913d25a989b88668c6152a90.png",
+				"db-skill": "PVE Skill 03"
+			},
+			{
+				"skill": "Hide",
+				"level": "Ур.10",
+				"icon": "2dc011be7f8180f6559af70db7dc93c4b0229d95.png",
+				"db-skill": "PVE Skill 04"
+			},
+			{
+				"skill": "Throwing Dagger",
+				"level": "Ур.15",
+				"icon": "e874766b966c4e6a786b58a35d76d3c0bd25b973.png",
+				"db-skill": "PVE Skill 05"
+			},
+			{
+				"skill": "Mug",
+				"level": "Ур.15",
+				"icon": "61a5e5150f8d24fa8d9d5dfbefceb5ec53fe4045.png",
+				"db-skill": "PVE Skill 06"
+			},
+			{
+				"skill": "Trick Attack",
+				"level": "Ур.18",
+				"icon": "fb4232c3fd76ce4d889759ec7ef7bffb15b78ede.png",
+				"db-skill": "PVE Skill 07"
+			},
+			{
+				"skill": "Aeolian Edge",
+				"level": "Ур.26",
+				"icon": "e68ade763da71adb1e8401db79a08e1df6f4d9e1.png",
+				"db-skill": "PVE Skill 08"
+			},
+			{
+				"skill": "Ten",
+				"level": "Ур.30",
+				"icon": "55c66e798d7404567ec69a023335542cef7cd916.png",
+				"db-skill": "PVE Skill 09"
+			},
+			{
+				"skill": "Ninjutsu",
+				"level": "Ур.30",
+				"icon": "b1362c998dbfc19dfd13223d2ae275be7f4db7cc.png",
+				"db-skill": "PVE Skill 10"
+			},
+			{
+				"skill": "Chi",
+				"level": "Ур.35",
+				"icon": "1836df5cdf1d1f78ae7b2f65462661f2fa6a79d8.png",
+				"db-skill": "PVE Skill 11"
+			},
+			{
+				"skill": "Death Blossom",
+				"level": "Ур.38",
+				"icon": "d40b78dd5c99076b25086882f27de295f8a609af.png",
+				"db-skill": "PVE Skill 12"
+			},
+			{
+				"skill": "Assassinate",
+				"level": "Ур.40",
+				"icon": "99d0c3688cb4d3fafd0df210199783bcadc74cc2.png",
+				"db-skill": "PVE Skill 13"
+			},
+			{
+				"skill": "Shukuchi",
+				"level": "Ур.40",
+				"icon": "ea2717bad5b805b35bb32731d78113692104a30d.png",
+				"db-skill": "PVE Skill 14"
+			},
+			{
+				"skill": "Jin",
+				"level": "Ур.45",
+				"icon": "2183f2672edde169e6276764503ec11ae06b4c1e.png",
+				"db-skill": "PVE Skill 15"
+			},
+			{
+				"skill": "Kassatsu",
+				"level": "Ур.50",
+				"icon": "a12553440d7385aaafc940cac8f14682e3012392.png",
+				"db-skill": "PVE Skill 16"
+			},
+			{
+				"skill": "Hakke Mujinsatsu",
+				"level": "Ур.52",
+				"icon": "86e59c1bd3dedee2a6b68d3321da04c68a3acb52.png",
+				"db-skill": "PVE Skill 17"
+			},
+			{
+				"skill": "Armor Crush",
+				"level": "Ур.54",
+				"icon": "f8e49f627d8f6e16b91b2192b322812f09c40475.png",
+				"db-skill": "PVE Skill 18"
+			},
+			{
+				"skill": "Dream Within a Dream",
+				"level": "Ур.56",
+				"icon": "f2e750bda00af60c3a06480f512753c8b6d5951b.png",
+				"db-skill": "PVE Skill 19"
+			},
+			{
+				"skill": "Hellfrog Medium",
+				"level": "Ур.62",
+				"icon": "c802df3d7abd5e50889d1cc5e97cf64eb1610afa.png",
+				"db-skill": "PVE Skill 20"
+			},
+			{
+				"skill": "Dokumori",
+				"level": "Ур.66",
+				"icon": "751e11fc60c05f5ac427b522211ae510ef845f6c.png",
+				"db-skill": "PVE Skill 21"
+			},
+			{
+				"skill": "Bhavacakra",
+				"level": "Ур.68",
+				"icon": "7fa8283b30b9ac35aada60984cbfaf01d3268c95.png",
+				"db-skill": "PVE Skill 22"
+			},
+			{
+				"skill": "Ten Chi Jin",
+				"level": "Ур.70",
+				"icon": "9c0c72efe9ba9c13d3765b1b7dd863c68eeaf4ba.png",
+				"db-skill": "PVE Skill 23"
+			},
+			{
+				"skill": "Meisui",
+				"level": "Ур.72",
+				"icon": "9c7d1c58eb10c5d105f1ee98a21f84a031d26518.png",
+				"db-skill": "PVE Skill 24"
+			},
+			{
+				"skill": "Bunshin",
+				"level": "Ур.80",
+				"icon": "0469d406babef3b172ba2a567f748b6ff8e11860.png",
+				"db-skill": "PVE Skill 25"
+			},
+			{
+				"skill": "Phantom Kamaitachi",
+				"level": "Ур.82",
+				"icon": "45a5ef76e62a78c0c0fcf1feeefb4b992ab82346.png",
+				"db-skill": "PVE Skill 26"
+			},
+			{
+				"skill": "Hollow Nozuchi",
+				"level": "Ур.86",
+				"icon": "54d329bd6de61295054388e35afdd610561884ca.png",
+				"db-skill": "PVE Skill 27"
+			},
+			{
+				"skill": "Forked Raiju",
+				"level": "Ур.90",
+				"icon": "9ab20d782e03641292336da9b2453f426435a3b0.png",
+				"db-skill": "PVE Skill 28"
+			},
+			{
+				"skill": "Fleeting Raiju",
+				"level": "Ур.90",
+				"icon": "aaf631010c04fc9685247fe855060f640dff89f7.png",
+				"db-skill": "PVE Skill 29"
+			},
+			{
+				"skill": "Kunai's Bane",
+				"level": "Ур.92",
+				"icon": "70139d7c1c6e323518d56f1bd503a9e8bc94d21b.png",
+				"db-skill": "PVE Skill 30"
+			},
+			{
+				"skill": "Deathfrog Medium",
+				"level": "Ур.96",
+				"icon": "cb1fc6f802ae442daa8ead243f4f9f49bf9525f4.png",
+				"db-skill": "PVE Skill 31"
+			},
+			{
+				"skill": "Zesho Meppo",
+				"level": "Ур.96",
+				"icon": "55604bbe9cf720982be6e0ef74e9bf002d939935.png",
+				"db-skill": "PVE Skill 32"
+			},
+			{
+				"skill": "Tenri Jindo",
+				"level": "Ур.100",
+				"icon": "7604dd447d3b450e4816e62d5bf4e2f83fafabc4.png",
+				"db-skill": "PVE Skill 33"
+			}
+		]
+	},
+	{
+		"_comment": "Добавить потом Jyutsu умения в поиск",
+		"page_job": "SAM",
+		"job": "Samurai",
+		"skills": [
+			{
+				"skill": "Hakaze",
+				"level": "Ур.1",
+				"icon": "55c0a798d2db426ad407ab0d506fae3afe14cd1d.png",
+				"db-skill": "PVE Skill 01"
+			},
+			{
+				"skill": "Jinpu",
+				"level": "Ур.4",
+				"icon": "2cdd1c3fa2b166f8da269d9e3241399d3a37f959.png",
+				"db-skill": "PVE Skill 02"
+			},
+			{
+				"skill": "Third Eye",
+				"level": "Ур.6",
+				"icon": "3c97e963e92ae242000e51159d9eb749897d8a68.png",
+				"db-skill": "PVE Skill 03"
+			},
+			{
+				"skill": "Enpi",
+				"level": "Ур.15",
+				"icon": "b2b75c383779cbd254a8bca3dbd30f2490c1d270.png",
+				"db-skill": "PVE Skill 04"
+			},
+			{
+				"skill": "Shifu",
+				"level": "Ур.18",
+				"icon": "64dcd53611773e2f2c981bc01877937b5331df8c.png",
+				"db-skill": "PVE Skill 05"
+			},
+			{
+				"skill": "Fuga",
+				"level": "Ур.26",
+				"icon": "5f181040a9d1ef66c6310a307036639fd78ef6c8.png",
+				"db-skill": "PVE Skill 06"
+			},
+			{
+				"skill": "Gekko",
+				"level": "Ур.30",
+				"icon": "69a82466c03f3531657ce703afb8a399fdd89812.png",
+				"db-skill": "PVE Skill 07"
+			},
+			{
+				"skill": "Iaijutsu",
+				"level": "Ур.30",
+				"icon": "64757011257ac3561af53f09ffb47bd76744803d.png",
+				"db-skill": "PVE Skill 08"
+			},
+			{
+				"skill": "Mangetsu",
+				"level": "Ур.35",
+				"icon": "81e6e44a8a26f2355226894a36dea570ce1d6962.png",
+				"db-skill": "PVE Skill 09"
+			},
+			{
+				"skill": "Kasha",
+				"level": "Ур.40",
+				"icon": "8330058e7e147dc2093e838239c2865aea6d6166.png",
+				"db-skill": "PVE Skill 10"
+			},
+			{
+				"skill": "Oka",
+				"level": "Ур.45",
+				"icon": "83caa2b18aa8a589ccdd81b8367452ef73d1e2b2.png",
+				"db-skill": "PVE Skill 11"
+			},
+			{
+				"skill": "Yukikaze",
+				"level": "Ур.50",
+				"icon": "353a35cad8a1e089d162451dbe5de1fb78f4b0a9.png",
+				"db-skill": "PVE Skill 12"
+			},
+			{
+				"skill": "Meikyo Shisui",
+				"level": "Ур.50",
+				"icon": "13e7fc6c10bb476259ec8d29d086bef49bea509c.png",
+				"db-skill": "PVE Skill 13"
+			},
+			{
+				"skill": "Hissatsu: Shinten",
+				"level": "Ур.52",
+				"icon": "c57812e667388d676fd1267d87583aa29c2da2ef.png",
+				"db-skill": "PVE Skill 14"
+			},
+			{
+				"skill": "Hissatsu: Gyoten",
+				"level": "Ур.54",
+				"icon": "98f63e44032f5b66bbe9f77ad2882e38b42854b3.png",
+				"db-skill": "PVE Skill 15"
+			},
+			{
+				"skill": "Hissatsu: Yaten",
+				"level": "Ур.56",
+				"icon": "f939f0b2b36012cbc5096f6b64a787a8d5f5ed6a.png",
+				"db-skill": "PVE Skill 16"
+			},
+			{
+				"skill": "Meditate",
+				"level": "Ур.60",
+				"icon": "4b642f7d616d6ca25a2ac0dfb230cb5f953eebd1.png",
+				"db-skill": "PVE Skill 17"
+			},
+			{
+				"skill": "Hissatsu: Kyuten",
+				"level": "Ур.62",
+				"icon": "b0d5ff90bd65e254949741965c77d50b100b8241.png",
+				"db-skill": "PVE Skill 18"
+			},
+			{
+				"skill": "Hagakure",
+				"level": "Ур.68",
+				"icon": "afaf9f6273e5d6a275a84ad286c390d7337cd11d.png",
+				"db-skill": "PVE Skill 19"
+			},
+			{
+				"skill": "Ikishoten",
+				"level": "Ур.68",
+				"icon": "9165fbf83411057b22d8d9c2a5e29dd6fd6fce5c.png",
+				"db-skill": "PVE Skill 20"
+			},
+			{
+				"skill": "Hissatsu: Guren",
+				"level": "Ур.70",
+				"icon": "a6e4fbc47fbb90b64d6a58495cf991f9aad2548b.png",
+				"db-skill": "PVE Skill 21"
+			},
+			{
+				"skill": "Hissatsu: Senei",
+				"level": "Ур.72",
+				"icon": "1812ee8f2135ed92057b767eacbf2469ef0b25ee.png",
+				"db-skill": "PVE Skill 22"
+			},
+			{
+				"skill": "Tsubame-gaeshi",
+				"level": "Ур.74",
+				"icon": "2aeabf974ab57ac123bc19cacfcd94c3ad86373a.png",
+				"db-skill": "PVE Skill 23"
+			},
+			{
+				"skill": "Shoha",
+				"level": "Ур.80",
+				"icon": "1f8f320806d886a35983a5c411ba95ede40072ce.png",
+				"db-skill": "PVE Skill 24"
+			},
+			{
+				"skill": "Tengetsu",
+				"level": "Ур.82",
+				"icon": "e19cabdcde1b0f098413243188fac82350642f89.png",
+				"db-skill": "PVE Skill 25"
+			},
+			{
+				"skill": "Fuko",
+				"level": "Ур.86",
+				"icon": "db60b934788a92fdfd9bf4b749c5c7ab80a56d03.png",
+				"db-skill": "PVE Skill 26"
+			},
+			{
+				"skill": "Ogi Namikiri",
+				"level": "Ур.90",
+				"icon": "08d676ac5d79d9f433c8ebc11ff39fa40246ae2b.png",
+				"db-skill": "PVE Skill 27"
+			},
+			{
+				"skill": "Kaeshi: Namikiri",
+				"level": "Ур.90",
+				"icon": "63536deb9e8a888c17e4b367bff095cc0f3c2740.png",
+				"db-skill": "PVE Skill 28"
+			},
+			{
+				"skill": "Gyofu",
+				"level": "Ур.92",
+				"icon": "ddb014de5732830d67f200a551b9e53a5537c3b7.png",
+				"db-skill": "PVE Skill 29"
+			},
+			{
+				"skill": "Zanshin",
+				"level": "Ур.96",
+				"icon": "4f7a3ffda80a03425ae8a4001c4f4c2412012047.png",
+				"db-skill": "PVE Skill 30"
+			}
+		]
+	},
+	{
+		"page_job": "RPR",
+		"job": "Reaper",
+		"skills": [
+			{
+				"skill": "Slice",
+				"level": "Ур.1",
+				"icon": "26fda59956454f1dbca5f260b2763321a2bb761a.png",
+				"db-skill": "PVE Skill 01"
+			},
+			{
+				"skill": "Waxing Slice",
+				"level": "Ур.5",
+				"icon": "4bab01eb43df9752e98deef097e9251647ad96df.png",
+				"db-skill": "PVE Skill 02"
+			},
+			{
+				"skill": "Shadow of Death",
+				"level": "Ур.10",
+				"icon": "e3e48cee91c7abf77a15f6c4c9c9630349849205.png",
+				"db-skill": "PVE Skill 03"
+			},
+			{
+				"skill": "Harpe",
+				"level": "Ур.15",
+				"icon": "d3ae9c9673da37ea10aa4103b747163250c4a385.png",
+				"db-skill": "PVE Skill 04"
+			},
+			{
+				"skill": "Hell's Ingress",
+				"level": "Ур.20",
+				"icon": "2e1c97fd007f90808b2fd40ad86354b9e97447a8.png",
+				"db-skill": "PVE Skill 05"
+			},
+			{
+				"skill": "Hell's Egress",
+				"level": "Ур.20",
+				"icon": "113b87916c7ffdb9a8007615f697f2c189c6646a.png",
+				"db-skill": "PVE Skill 06"
+			},
+			{
+				"skill": "Spinning Scythe",
+				"level": "Ур.25",
+				"icon": "dac9dba46aa8ff673cd2e365c9468525db0ba1a2.png",
+				"db-skill": "PVE Skill 07"
+			},
+			{
+				"skill": "Infernal Slice",
+				"level": "Ур.30",
+				"icon": "aa7a7dd464459f24aa2209cddcbf8a3ebb167f0b.png",
+				"db-skill": "PVE Skill 08"
+			},
+			{
+				"skill": "Whorl of Death",
+				"level": "Ур.35",
+				"icon": "31d409f8aaeae041b8150e68764e032fccd7c4c6.png",
+				"db-skill": "PVE Skill 09"
+			},
+			{
+				"skill": "Arcane Crest",
+				"level": "Ур.40",
+				"icon": "9977fdbbf70443f9f31f4868cba97138fbec5460.png",
+				"db-skill": "PVE Skill 10"
+			},
+			{
+				"skill": "Nightmare Scythe",
+				"level": "Ур.45",
+				"icon": "710256a9319251859b53dd3804078cc8e35c2333.png",
+				"db-skill": "PVE Skill 11"
+			},
+			{
+				"skill": "Blood Stalk",
+				"level": "Ур.50",
+				"icon": "f0f3d4c722f5f9b36b25ba72d3774b4b811b699d.png",
+				"db-skill": "PVE Skill 12"
+			},
+			{
+				"skill": "Grim Swathe",
+				"level": "Ур.55",
+				"icon": "ac34fd282b758c407014a47e3c30e188050307d8.png",
+				"db-skill": "PVE Skill 13"
+			},
+			{
+				"skill": "Soul Slice",
+				"level": "Ур.60",
+				"icon": "089e7135cc2e4e64590c18db17fbab56e0040843.png",
+				"db-skill": "PVE Skill 14"
+			},
+			{
+				"skill": "Soul Scythe",
+				"level": "Ур.65",
+				"icon": "22ae994a06569700d3f9d51b1b999c951ca171e3.png",
+				"db-skill": "PVE Skill 15"
+			},
+			{
+				"skill": "Gibbet",
+				"level": "Ур.70",
+				"icon": "f8259f07fef48d2d418535404fdc672bdc852285.png",
+				"db-skill": "PVE Skill 16"
+			},
+			{
+				"skill": "Gallows",
+				"level": "Ур.70",
+				"icon": "ae681cd40113523630db64f0e3823235db61a364.png",
+				"db-skill": "PVE Skill 17"
+			},
+			{
+				"skill": "Guillotine",
+				"level": "Ур.70",
+				"icon": "b4d685f506367e2bd3228603e7b2c4172567f933.png",
+				"db-skill": "PVE Skill 18"
+			},
+			{
+				"skill": "Unveiled Gibbet",
+				"level": "Ур.70",
+				"icon": "02ab830b9551480d0b5d62a24012c401a422b0bd.png",
+				"db-skill": "PVE Skill 19"
+			},
+			{
+				"skill": "Unveiled Gallows",
+				"level": "Ур.70",
+				"icon": "017af138fc2458f9cae561ec96f027791d1da803.png",
+				"db-skill": "PVE Skill 20"
+			},
+			{
+				"skill": "Arcane Circle",
+				"level": "Ур.72",
+				"icon": "b561271272c45fb8436bfe4dfb590b76c631687b.png",
+				"db-skill": "PVE Skill 21"
+			},
+			{
+				"skill": "Regress",
+				"level": "Ур.74",
+				"icon": "eaeec5829efd0623650ee09d1b3867ef3804c643.png",
+				"db-skill": "PVE Skill 22"
+			},
+			{
+				"skill": "Gluttony",
+				"level": "Ур.76",
+				"icon": "933867484213377dc45cafd796ff5d934cee8906.png",
+				"db-skill": "PVE Skill 23"
+			},
+			{
+				"skill": "Enshroud",
+				"level": "Ур.80",
+				"icon": "4e389efd3504b3ed9dcd4f7633ebc9a5bb528971.png",
+				"db-skill": "PVE Skill 24"
+			},
+			{
+				"skill": "Void Reaping",
+				"level": "Ур.80",
+				"icon": "d2632208267baca74f7d9c19ee7a9c794034f2f0.png",
+				"db-skill": "PVE Skill 25"
+			},
+			{
+				"skill": "Cross Reaping",
+				"level": "Ур.80",
+				"icon": "a080e4189263d80adcd79deaaac266c93798d202.png",
+				"db-skill": "PVE Skill 26"
+			},
+			{
+				"skill": "Grim Reaping",
+				"level": "Ур.80",
+				"icon": "3b57c45ec39fc75788c9603653a77c5b95f04e67.png",
+				"db-skill": "PVE Skill 27"
+			},
+			{
+				"skill": "Soulsow",
+				"level": "Ур.82",
+				"icon": "a59a5def406758cbd282cffdea8bea00a98f5e58.png",
+				"db-skill": "PVE Skill 28"
+			},
+			{
+				"skill": "Harvest Moon",
+				"level": "Ур.82",
+				"icon": "e5f0a7dabd5ef44d08e8d5920d834f3e734169d9.png",
+				"db-skill": "PVE Skill 29"
+			},
+			{
+				"skill": "Lemure's Slice",
+				"level": "Ур.86",
+				"icon": "c9ae486399356401f032b455ea5b13f986236c82.png",
+				"db-skill": "PVE Skill 30"
+			},
+			{
+				"skill": "Lemure's Scythe",
+				"level": "Ур.86",
+				"icon": "479155b751c2764273ae35c1aab71ed298ad9d18.png",
+				"db-skill": "PVE Skill 31"
+			},
+			{
+				"skill": "Plentiful Harvest",
+				"level": "Ур.88",
+				"icon": "08babf4d2bf7ce046d03f459af8fa4c9921f96cc.png",
+				"db-skill": "PVE Skill 32"
+			},
+			{
+				"skill": "Communio",
+				"level": "Ур.90",
+				"icon": "3b0daa7e454abbd2b6ce037b5c77157462fadbf7.png",
+				"db-skill": "PVE Skill 33"
+			},
+			{
+				"skill": "Sacrificium",
+				"level": "Ур.92",
+				"icon": "c30eb0a31733645a16fe4afedf837597addded77.png",
+				"db-skill": "PVE Skill 34"
+			},
+			{
+				"skill": "Executioner's Gibbet",
+				"level": "Ур.96",
+				"icon": "7df5921d09e8a524ef8b7c187a9f0cb1ee181aff.png",
+				"db-skill": "PVE Skill 35"
+			},
+			{
+				"skill": "Executioner's Gallows",
+				"level": "Ур.96",
+				"icon": "0dfc7d7951330304c328135c306fa3d54b1a9cdc.png",
+				"db-skill": "PVE Skill 36"
+			},
+			{
+				"skill": "Executioner's Guillotine",
+				"level": "Ур.96",
+				"icon": "d732a04e72dd2c5e3c0702749e6310329b611ca8.png",
+				"db-skill": "PVE Skill 37"
+			},
+			{
+				"skill": "Perfectio",
+				"level": "Ур.100",
+				"icon": "ab9537a1e24665b2b794656e28f58981b95b3c52.png",
+				"db-skill": "PVE Skill 38"
+			}
+		]
+	},
+	{
+		"page_job": "VPR",
+		"job": "Viper",
+		"skills": [
+			{
+				"skill": "Steel Fangs",
+				"level": "Ур.1",
+				"icon": "4c17f1a64284635f1483f205f9aea15be9bd1a16.png",
+				"db-skill": "PVE Skill 01"
+			},
+			{
+				"skill": "Hunter's Sting",
+				"level": "Ур.5",
+				"icon": "3b2aea9fa0be73f01aeb45b7eff15fd344776af0.png",
+				"db-skill": "PVE Skill 02"
+			},
+			{
+				"skill": "Reaving Fangs",
+				"level": "Ур.10",
+				"icon": "0763edc3238365b4076dba5d28b8f5c68be1d3de.png",
+				"db-skill": "PVE Skill 03"
+			},
+			{
+				"skill": "Writhing Snap",
+				"level": "Ур.15",
+				"icon": "251a98740164ae526be0e23bf9477abb8e28fe94.png",
+				"db-skill": "PVE Skill 04"
+			},
+			{
+				"skill": "Swiftskin's Sting",
+				"level": "Ур.20",
+				"icon": "75a4621d0d002a4b18c59acfdfb097424ff88a5b.png",
+				"db-skill": "PVE Skill 05"
+			},
+			{
+				"skill": "Steel Maw",
+				"level": "Ур.25",
+				"icon": "8b9f63b988cfb7be43914b31ff5551ee41c99ffa.png",
+				"db-skill": "PVE Skill 06"
+			},
+			{
+				"skill": "Flanksting Strike",
+				"level": "Ур.30",
+				"icon": "05bf152b3b5ac3ed319b5cdcbbdca1db4006cd96.png",
+				"db-skill": "PVE Skill 07"
+			},
+			{
+				"skill": "Flanksbane Fang",
+				"level": "Ур.30",
+				"icon": "24777f7ac5f5169f3ebf6b656d7cedf54d57e9a6.png",
+				"db-skill": "PVE Skill 08"
+			},
+			{
+				"skill": "Hindsting Strike",
+				"level": "Ур.30",
+				"icon": "c0524362f22ecb3fe78015685d2385c1cfbbe811.png",
+				"db-skill": "PVE Skill 09"
+			},
+			{
+				"skill": "Hindsbane Fang",
+				"level": "Ур.30",
+				"icon": "2ca132552615abcd4f962ec2b32eb8b0ef6ccd50.png",
+				"db-skill": "PVE Skill 10"
+			},
+			{
+				"skill": "Reaving Maw",
+				"level": "Ур.35",
+				"icon": "d5b0fd312dbb29775aba54246dc487805eb045e7.png",
+				"db-skill": "PVE Skill 11"
+			},
+			{
+				"skill": "Slither",
+				"level": "Ур.40",
+				"icon": "7ebdd1c17d9bfe7e52641396ee2c0ff944aea319.png",
+				"db-skill": "PVE Skill 12"
+			},
+			{
+				"skill": "Hunter's Bite",
+				"level": "Ур.40",
+				"icon": "2117aa184918197d460d34352b715a239d27af1d.png",
+				"db-skill": "PVE Skill 13"
+			},
+			{
+				"skill": "Swiftskin's Bite",
+				"level": "Ур.45",
+				"icon": "c45c309beb82894d97fdb3a01afe3673cc1ec5b0.png",
+				"db-skill": "PVE Skill 14"
+			},
+			{
+				"skill": "Jagged Maw",
+				"level": "Ур.50",
+				"icon": "a7c0917ef2eebad0e74ffceccb472348016fcb79.png",
+				"db-skill": "PVE Skill 15"
+			},
+			{
+				"skill": "Bloodied Maw",
+				"level": "Ур.50",
+				"icon": "6715225127c0d7b81affb5d8cbdbb81dbaac8744.png",
+				"db-skill": "PVE Skill 16"
+			},
+			{
+				"skill": "Serpent's Tail",
+				"level": "Ур.55",
+				"icon": "462326b75ba66828eb96e0f2d64ef7542daccf38.png",
+				"db-skill": "PVE Skill 17"
+			},
+			{
+				"skill": "Death Rattle",
+				"level": "Ур.55",
+				"icon": "42670e7db3e339182d5d65c29f7acee4319d5360.png",
+				"db-skill": "PVE Skill 18"
+			},
+			{
+				"skill": "Last Lash",
+				"level": "Ур.60",
+				"icon": "6931cd1152c69f96360689e0e61a8c6cabfafe46.png",
+				"db-skill": "PVE Skill 19"
+			},
+			{
+				"skill": "Vicewinder",
+				"level": "Ур.65",
+				"icon": "7958ea7095b37de74593fd6d1426d74177e46536.png",
+				"db-skill": "PVE Skill 20"
+			},
+			{
+				"skill": "Hunter's Coil",
+				"level": "Ур.65",
+				"icon": "a9a91ec0b652e92408c4211e510ffca14d7498cd.png",
+				"db-skill": "PVE Skill 21"
+			},
+			{
+				"skill": "Swiftskin's Coil",
+				"level": "Ур.65",
+				"icon": "2ff8a8c9e5710f229b6d3dc3e19ea40c7908cb50.png",
+				"db-skill": "PVE Skill 22"
+			},
+			{
+				"skill": "Vicepit",
+				"level": "Ур.70",
+				"icon": "13c9698f33d48e95d53bb67e7eef68bfff122e14.png",
+				"db-skill": "PVE Skill 23"
+			},
+			{
+				"skill": "Hunter's Den",
+				"level": "Ур.70",
+				"icon": "d807e8e444e8cb313a14e04f5c4d9f3af91b9706.png",
+				"db-skill": "PVE Skill 24"
+			},
+			{
+				"skill": "Swiftskin's Den",
+				"level": "Ур.70",
+				"icon": "2425fc375286fe6776b09f0db2f020faec679bfd.png",
+				"db-skill": "PVE Skill 25"
+			},
+			{
+				"skill": "Twinfang",
+				"level": "Ур.75",
+				"icon": "c0a3ce4ca4284759ef6ac5592b351f6985fe4edd.png",
+				"db-skill": "PVE Skill 26"
+			},
+			{
+				"skill": "Twinblood",
+				"level": "Ур.75",
+				"icon": "0093aca28c0a2877e6fb631b24af1d0b77c46f92.png",
+				"db-skill": "PVE Skill 27"
+			},
+			{
+				"skill": "Twinfang Bite",
+				"level": "Ур.75",
+				"icon": "7f157bebbaa01d92600ee604fbce64f969730966.png",
+				"db-skill": "PVE Skill 28"
+			},
+			{
+				"skill": "Twinblood Bite",
+				"level": "Ур.75",
+				"icon": "d2e6fe2cd7f5e0ac0170f7aeb78639533e4f7cc7.png",
+				"db-skill": "PVE Skill 29"
+			},
+			{
+				"skill": "Twinfang Thresh",
+				"level": "Ур.80",
+				"icon": "94a94c69ef3f58b4b0601e1f04fdef144ad2830f.png",
+				"db-skill": "PVE Skill 30"
+			},
+			{
+				"skill": "Twinblood Thresh",
+				"level": "Ур.80",
+				"icon": "29c3f69d1f38de7049262c99da58d8ff8ba8607d.png",
+				"db-skill": "PVE Skill 31"
+			},
+			{
+				"skill": "Uncoiled Fury",
+				"level": "Ур.82",
+				"icon": "9b1b65c7abae88ab3c5ba775a7eda8e6afccf3b2.png",
+				"db-skill": "PVE Skill 32"
+			},
+			{
+				"skill": "Serpent's Ire",
+				"level": "Ур.86",
+				"icon": "07ad6a7df65952f604f164eb4ac1cb99238dd871.png",
+				"db-skill": "PVE Skill 33"
+			},
+			{
+				"skill": "Reawaken",
+				"level": "Ур.90",
+				"icon": "747eae977c8adbe87254c934e1e890fc54a85b50.png",
+				"db-skill": "PVE Skill 34"
+			},
+			{
+				"skill": "First Generation",
+				"level": "Ур.90",
+				"icon": "0669ed905da6f1885333d21619a678cf6b382a72.png",
+				"db-skill": "PVE Skill 35"
+			},
+			{
+				"skill": "Second Generation",
+				"level": "Ур.90",
+				"icon": "0c534882c858afef2cee59ccf78664dac5f5d28e.png",
+				"db-skill": "PVE Skill 36"
+			},
+			{
+				"skill": "Third Generation",
+				"level": "Ур.90",
+				"icon": "bac0b9c0fc9068b083e47d645b2db52d8888ae7e.png",
+				"db-skill": "PVE Skill 37"
+			},
+			{
+				"skill": "Fourth Generation",
+				"level": "Ур.90",
+				"icon": "718f70f8e5f985309a09171ba83bcf34fba0cbf9.png",
+				"db-skill": "PVE Skill 38"
+			},
+			{
+				"skill": "Uncoiled Twinfang",
+				"level": "Ур.92",
+				"icon": "fb4eb443e7d759b2e6e01ead35aa6b6dd73abf4c.png",
+				"db-skill": "PVE Skill 39"
+			},
+			{
+				"skill": "Uncoiled Twinblood",
+				"level": "Ур.92",
+				"icon": "eb4f394f15241c1820a674ba2f671d005ab431cf.png",
+				"db-skill": "PVE Skill 40"
+			},
+			{
+				"skill": "Ouroboros",
+				"level": "Ур.96",
+				"icon": "9c66e4147b2a5467f541734d3aedc5e0f1522b07.png",
+				"db-skill": "PVE Skill 41"
+			},
+			{
+				"skill": "First Legacy",
+				"level": "Ур.100",
+				"icon": "a7750d692ef417ce934373dab4f71214ca5d6676.png",
+				"db-skill": "PVE Skill 42"
+			},
+			{
+				"skill": "Second Legacy",
+				"level": "Ур.100",
+				"icon": "845aa0a62b6afed88ac65e36b63ec0e171526aa4.png",
+				"db-skill": "PVE Skill 43"
+			},
+			{
+				"skill": "Third Legacy",
+				"level": "Ур.100",
+				"icon": "6fbd15532cd7c980e0f5c55b40d641d64c849b17.png",
+				"db-skill": "PVE Skill 44"
+			},
+			{
+				"skill": "Fourth Legacy",
+				"level": "Ур.100",
+				"icon": "479c9e0777b6a210f15ef8215c2bac81c1c5ffb0.png",
+				"db-skill": "PVE Skill 45"
+			}
+		]
+	},
+	{
+		"page_job": "BRD",
+		"job": "Bard",
+		"skills": [
+			{
+				"skill": "Heavy Shot",
+				"level": "Ур.1",
+				"icon": "c2be827c9e88459a397d2d02851c435d27a7bfd8.png",
+				"db-skill": "PVE Skill 01"
+			},
+			{
+				"skill": "Straight Shot",
+				"level": "Ур.2",
+				"icon": "58345465e1b0bb46bac9920464892ef4e51be34f.png",
+				"db-skill": "PVE Skill 02"
+			},
+			{
+				"skill": "Raging Strikes",
+				"level": "Ур.4",
+				"icon": "444bd0d452881277e79be184fdb8ca6d21906014.png",
+				"db-skill": "PVE Skill 03"
+			},
+			{
+				"skill": "Venomous Bite",
+				"level": "Ур.6",
+				"icon": "5628b34f3942ef93659f9f03dd2c0556b66f83ea.png",
+				"db-skill": "PVE Skill 04"
+			},
+			{
+				"skill": "Bloodletter",
+				"level": "Ур.12",
+				"icon": "fd9763578c2d9e6fca1cc0637d953ba405aa5b2b.png",
+				"db-skill": "PVE Skill 05"
+			},
+			{
+				"skill": "Repelling Shot",
+				"level": "Ур.15",
+				"icon": "33e4423b5606c916b4c92db7a6cfb7d22d8f89ac.png",
+				"db-skill": "PVE Skill 06"
+			},
+			{
+				"skill": "Quick Nock",
+				"level": "Ур.18",
+				"icon": "674767e2dcc3f57156cd13273601bd4ed337657b.png",
+				"db-skill": "PVE Skill 07"
+			},
+			{
+				"skill": "Wide Volley",
+				"level": "Ур.25",
+				"icon": "f935382d44889e5e74a995ed49bb6db78532edd4.png",
+				"db-skill": "PVE Skill 08"
+			},
+			{
+				"skill": "Windbite",
+				"level": "Ур.30",
+				"icon": "798e2b8207ce793087365990d0996232238b9225.png",
+				"db-skill": "PVE Skill 09"
+			},
+			{
+				"skill": "Mage's Ballad",
+				"level": "Ур.30",
+				"icon": "eda9a8394ad037b3dec2b0013883bfddb34f54c4.png",
+				"db-skill": "PVE Skill 10"
+			},
+			{
+				"skill": "The Warden's Paean",
+				"level": "Ур.35",
+				"icon": "4df97f99863b3eade0fc5bba2937eff52a70fa6f.png",
+				"db-skill": "PVE Skill 11"
+			},
+			{
+				"skill": "Barrage",
+				"level": "Ур.38",
+				"icon": "28e7d01b94a703869a9bfae6f06864154f1bd2f3.png",
+				"db-skill": "PVE Skill 12"
+			},
+			{
+				"skill": "Army's Paeon",
+				"level": "Ур.40",
+				"icon": "008c12ecfaee3427ff9c25c7f8d2307aee93df31.png",
+				"db-skill": "PVE Skill 13"
+			},
+			{
+				"skill": "Rain of Death",
+				"level": "Ур.45",
+				"icon": "f6aff04bfff3c98ae2e81e955c3c453f70a24e59.png",
+				"db-skill": "PVE Skill 14"
+			},
+			{
+				"skill": "Battle Voice",
+				"level": "Ур.50",
+				"icon": "3c4e15bf310cd0ac2d57e067057e4ef50d150705.png",
+				"db-skill": "PVE Skill 15"
+			},
+			{
+				"skill": "The Wanderer's Minuet",
+				"level": "Ур.52",
+				"icon": "53e0411604846053cbec196bed125f38a71b73c1.png",
+				"db-skill": "PVE Skill 16"
+			},
+			{
+				"skill": "Pitch Perfect",
+				"level": "Ур.52",
+				"icon": "fa05309833a74ae0a743b41574347b02408148c5.png",
+				"db-skill": "PVE Skill 17"
+			},
+			{
+				"skill": "Empyreal Arrow",
+				"level": "Ур.54",
+				"icon": "06f5720224fc5d70aaf47a8850f683e0d4e89b02.png",
+				"db-skill": "PVE Skill 18"
+			},
+			{
+				"skill": "Iron Jaws",
+				"level": "Ур.56",
+				"icon": "60a919b5c963e842d9c69066761319737f00253f.png",
+				"db-skill": "PVE Skill 19"
+			},
+			{
+				"skill": "Sidewinder",
+				"level": "Ур.60",
+				"icon": "ac6fcd72c5f1c20fe9106dbf9d1936b01a643ff4.png",
+				"db-skill": "PVE Skill 20"
+			},
+			{
+				"skill": "Troubadour",
+				"level": "Ур.62",
+				"icon": "8afc3a84c2ec0f215d378e8ed011fd260d3cdc6b.png",
+				"db-skill": "PVE Skill 21"
+			},
+			{
+				"skill": "Caustic Bite",
+				"level": "Ур.64",
+				"icon": "534f0bede51a66ae9c6b36f0d2727280c4fc72b1.png",
+				"db-skill": "PVE Skill 22"
+			},
+			{
+				"skill": "Stormbite",
+				"level": "Ур.64",
+				"icon": "90e699e1bfbc23abf1ba96217b631ed04109be28.png",
+				"db-skill": "PVE Skill 23"
+			},
+			{
+				"skill": "Nature's Minne",
+				"level": "Ур.66",
+				"icon": "18695708d8d7ea8d7f9a7ffe0857dafcaea57694.png",
+				"db-skill": "PVE Skill 24"
+			},
+			{
+				"skill": "Refulgent Arrow",
+				"level": "Ур.70",
+				"icon": "82ad905241d7a83faf26dd9d31227a6d79a6ae86.png",
+				"db-skill": "PVE Skill 25"
+			},
+			{
+				"skill": "Shadowbite",
+				"level": "Ур.72",
+				"icon": "4606071e2563a6b58da4e53f374c1a3e2aad73b7.png",
+				"db-skill": "PVE Skill 26"
+			},
+			{
+				"skill": "Burst Shot",
+				"level": "Ур.76",
+				"icon": "d97a50687d4bb81c0d01155d889a89252e9365f3.png",
+				"db-skill": "PVE Skill 27"
+			},
+			{
+				"skill": "Apex Arrow",
+				"level": "Ур.80",
+				"icon": "bb3db0cfb0a935f62b178ae16ce11e03d4cd16b5.png",
+				"db-skill": "PVE Skill 28"
+			},
+			{
+				"skill": "Ladonsbite",
+				"level": "Ур.82",
+				"icon": "f98902415153b56b16c933530c8a836ffd3f38a2.png",
+				"db-skill": "PVE Skill 29"
+			},
+			{
+				"skill": "Blast Arrow",
+				"level": "Ур.86",
+				"icon": "5822409165097e5bdc147d6dddd40e9296d5d6c1.png",
+				"db-skill": "PVE Skill 30"
+			},
+			{
+				"skill": "Radiant Finale",
+				"level": "Ур.90",
+				"icon": "c22031ccb99f6446f2921d6250d646005535c684.png",
+				"db-skill": "PVE Skill 31"
+			},
+			{
+				"skill": "Heartbreak Shot",
+				"level": "Ур.92",
+				"icon": "c0a5370256054855bc11136374ddbd388c3f8c98.png",
+				"db-skill": "PVE Skill 32"
+			},
+			{
+				"skill": "Resonant Arrow",
+				"level": "Ур.96",
+				"icon": "5ecc6e2f2f492310758f85277b00eb134eec6c68.png",
+				"db-skill": "PVE Skill 33"
+			},
+			{
+				"skill": "Radiant Encore",
+				"level": "Ур.100",
+				"icon": "f2f516fd00c23f16a32c6278b6d9ebd7481d41a3.png",
+				"db-skill": "PVE Skill 34"
+			}
+		]
+	},
+	{
+		"page_job": "MCH",
+		"job": "Machinist",
+		"skills": [
+			{
+				"skill": "Split Shot",
+				"level": "Ур.1",
+				"icon": "8060c2f198141fb9c4d4202e298c212c15a82e88.png",
+				"db-skill": "PVE Skill 01"
+			},
+			{
+				"skill": "Slug Shot",
+				"level": "Ур.2",
+				"icon": "63bb059658f193d08de8cd45e4a95e7bed0418b8.png",
+				"db-skill": "PVE Skill 02"
+			},
+			{
+				"skill": "Hot Shot",
+				"level": "Ур.4",
+				"icon": "b297b6034baa7347d3a53a12910b102914ce3c3e.png",
+				"db-skill": "PVE Skill 03"
+			},
+			{
+				"skill": "Reassemble",
+				"level": "Ур.10",
+				"icon": "55906cd43fffdf7bcc09790b1b02b19edc6b2e8e.png",
+				"db-skill": "PVE Skill 04"
+			},
+			{
+				"skill": "Gauss Round",
+				"level": "Ур.15",
+				"icon": "e6959a3306b601fc9e5987712f6d9ea247a7a566.png",
+				"db-skill": "PVE Skill 05"
+			},
+			{
+				"skill": "Spread Shot",
+				"level": "Ур.18",
+				"icon": "7c4e991ed4e6b585ceb2dda1c03dec0278ff28f0.png",
+				"db-skill": "PVE Skill 06"
+			},
+			{
+				"skill": "Clean Shot",
+				"level": "Ур.26",
+				"icon": "d6d762f987ab51e9840cbf5229251838b16078b5.png",
+				"db-skill": "PVE Skill 07"
+			},
+			{
+				"skill": "Hypercharge",
+				"level": "Ур.30",
+				"icon": "273150b6ebb3357688de07d86ec37a02da8e9348.png",
+				"db-skill": "PVE Skill 08"
+			},
+			{
+				"skill": "Heat Blast",
+				"level": "Ур.35",
+				"icon": "009d06297b1776f1404cdf4de9c5bd8b17a447e6.png",
+				"db-skill": "PVE Skill 09"
+			},
+			{
+				"skill": "Rook Autoturret",
+				"level": "Ур.40",
+				"icon": "5b7c9667f3dca5facbc020d4ab7743c7f9d4e6d9.png",
+				"db-skill": "PVE Skill 10"
+			},
+			{
+				"skill": "Rook Overdrive",
+				"level": "Ур.40",
+				"icon": "d02c5a123e15d77891887c24dce2f6f21d92852d.png",
+				"db-skill": "PVE Skill 11"
+			},
+			{
+				"skill": "Rook Overload",
+				"level": "Ур.40",
+				"icon": "0458a11999934b3eb6d4088c941329698c898722.png",
+				"db-skill": "PVE Skill 12"
+			},
+			{
+				"skill": "Wildfire",
+				"level": "Ур.45",
+				"icon": "6d73e45fbbfb35ad0a4f8b4a73753e6a06a37651.png",
+				"db-skill": "PVE Skill 13"
+			},
+			{
+				"skill": "Detonator",
+				"level": "Ур.45",
+				"icon": "d342968f8a04290200386a016f586a0b175e3d3b.png",
+				"db-skill": "PVE Skill 14"
+			},
+			{
+				"skill": "Ricochet",
+				"level": "Ур.50",
+				"icon": "5556960a2e8ce389c2117d13c6d182f41943c3c9.png",
+				"db-skill": "PVE Skill 15"
+			},
+			{
+				"skill": "Auto Crossbow",
+				"level": "Ур.52",
+				"icon": "8c8ae8bf5d1dbcae1bf932cfed578e4fda8d80f3.png",
+				"db-skill": "PVE Skill 16"
+			},
+			{
+				"skill": "Heated Split Shot",
+				"level": "Ур.54",
+				"icon": "c7fb786ed29dd5618309e36b58105dd329f255fa.png",
+				"db-skill": "PVE Skill 17"
+			},
+			{
+				"skill": "Tactician",
+				"level": "Ур.56",
+				"icon": "eb334bf6f4cfd728e234e09c1cc1521c37d9d73e.png",
+				"db-skill": "PVE Skill 18"
+			},
+			{
+				"skill": "Drill",
+				"level": "Ур.58",
+				"icon": "c8bd9fe712521ac377c3359846437a640c0516b7.png",
+				"db-skill": "PVE Skill 19"
+			},
+			{
+				"skill": "Heated Slug Shot",
+				"level": "Ур.60",
+				"icon": "7f91784177366a8b4dd069a15915b41601231f83.png",
+				"db-skill": "PVE Skill 20"
+			},
+			{
+				"skill": "Dismantle",
+				"level": "Ур.62",
+				"icon": "94eaa7aadfa4d857c00551af690f42bb5d7a4a94.png",
+				"db-skill": "PVE Skill 21"
+			},
+			{
+				"skill": "Heated Clean Shot",
+				"level": "Ур.64",
+				"icon": "3c8cababe00b6d512baada3b68a32cb866758a17.png",
+				"db-skill": "PVE Skill 22"
+			},
+			{
+				"skill": "Barrel Stabilizer",
+				"level": "Ур.66",
+				"icon": "1688057a6b4150542d3c41e9e5202cf5aa14b5b7.png",
+				"db-skill": "PVE Skill 23"
+			},
+			{
+				"skill": "Blazing Shot",
+				"level": "Ур.68",
+				"icon": "c70341dbb174a9c43c76249ae4b7c40aefbbf40a.png",
+				"db-skill": "PVE Skill 24"
+			},
+			{
+				"skill": "Flamethrower",
+				"level": "Ур.70",
+				"icon": "37f5418d1629e6ebc93161622a271d14aa82464e.png",
+				"db-skill": "PVE Skill 25"
+			},
+			{
+				"skill": "Bioblaster",
+				"level": "Ур.72",
+				"icon": "193879ae7c68f4e144e385a018c69e3626dfa569.png",
+				"db-skill": "PVE Skill 26"
+			},
+			{
+				"skill": "Air Anchor",
+				"level": "Ур.76",
+				"icon": "85abf6ce8fa5c7b7bda98e11f37df0e8c024015e.png",
+				"db-skill": "PVE Skill 27"
+			},
+			{
+				"skill": "Automaton Queen",
+				"level": "Ур.80",
+				"icon": "e27f4ccdaad09197dbb5c06734c52bd2e4b4af06.png",
+				"db-skill": "PVE Skill 28"
+			},
+			{
+				"skill": "Queen Overdrive",
+				"level": "Ур.80",
+				"icon": "1424989e6ca3765da1c9c323ebcf72d0c9ba1536.png",
+				"db-skill": "PVE Skill 29"
+			},
+			{
+				"skill": "Arm Punch",
+				"level": "Ур.80",
+				"icon": "813737b1502285e729d93645fe816e75350bb1c9.png",
+				"db-skill": "PVE Skill 30"
+			},
+			{
+				"skill": "Roller Dash",
+				"level": "Ур.80",
+				"icon": "2f01267b74b97a5447bd88cf5a953e532313255a.png",
+				"db-skill": "PVE Skill 31"
+			},
+			{
+				"skill": "Pile Bunker",
+				"level": "Ур.80",
+				"icon": "5e8ab4cb384f66e2f6a041ab70923ac104fdab80.png",
+				"db-skill": "PVE Skill 32"
+			},
+			{
+				"skill": "Scattergun",
+				"level": "Ур.82",
+				"icon": "8cde8fc67f1387b83328aa85cbe044d21a5bc9b0.png",
+				"db-skill": "PVE Skill 33"
+			},
+			{
+				"skill": "Crowned Collider",
+				"level": "Ур.86",
+				"icon": "e7dfcf4eb7f3e2cea526372e8edd8732348bc035.png",
+				"db-skill": "PVE Skill 34"
+			},
+			{
+				"skill": "Chain Saw",
+				"level": "Ур.90",
+				"icon": "2f788128862828a0a36c66d4dcd6f521f8391d04.png",
+				"db-skill": "PVE Skill 35"
+			},
+			{
+				"skill": "Double Check",
+				"level": "Ур.92",
+				"icon": "5de8d4517d7e5179cc341ecb2d0bb63e0d716492.png",
+				"db-skill": "PVE Skill 36"
+			},
+			{
+				"skill": "Checkmate",
+				"level": "Ур.92",
+				"icon": "f44e0b84bfe54b08662b521becbb338225ea90c9.png",
+				"db-skill": "PVE Skill 37"
+			},
+			{
+				"skill": "Excavator",
+				"level": "Ур.96",
+				"icon": "6e221fc321a6d40ecac7a908c5b8c144c8c693a3.png",
+				"db-skill": "PVE Skill 38"
+			},
+			{
+				"skill": "Full Metal Field",
+				"level": "Ур.100",
+				"icon": "9c5bb54095373de5764bcfee0205f998f57b986b.png",
+				"db-skill": "PVE Skill 39"
+			}
+		]
+	},
+	{
+		"page_job": "DNC",
+		"job": "Dancer",
+		"skills": [
+			{
+				"skill": "Cascade",
+				"level": "Ур.1",
+				"icon": "6843786e4a944ff2e315004f38416b9098b62988.png",
+				"db-skill": "PVE Skill 01"
+			},
+			{
+				"skill": "Fountain",
+				"level": "Ур.2",
+				"icon": "25291ed46a237d93b8ada8db02fdeb34f5706c6e.png",
+				"db-skill": "PVE Skill 02"
+			},
+			{
+				"skill": "Windmill",
+				"level": "Ур.15",
+				"icon": "2b56bd032544ac3119cf459288984ea195837486.png",
+				"db-skill": "PVE Skill 03"
+			},
+			{
+				"skill": "Standard Step",
+				"level": "Ур.15",
+				"icon": "601122ac0085d666731203ba91b41a5099457eca.png",
+				"db-skill": "PVE Skill 04"
+			},
+			{
+				"skill": "Standard Finish",
+				"level": "Ур.15",
+				"icon": "3be799f98318288057e0c0957fce44d32d8f2974.png",
+				"db-skill": "PVE Skill 05"
+			},
+			{
+				"skill": "Reverse Cascade",
+				"level": "Ур.20",
+				"icon": "a03ec89f3860e636fa459b5ac4212031aea5c8f7.png",
+				"db-skill": "PVE Skill 06"
+			},
+			{
+				"skill": "Bladeshower",
+				"level": "Ур.25",
+				"icon": "65c0208ef7c6b132558c6aab0a15832fec601e5b.png",
+				"db-skill": "PVE Skill 07"
+			},
+			{
+				"skill": "Fan Dance",
+				"level": "Ур.30",
+				"icon": "62a211c886bd5b46f47b11419f3b55fb628f6535.png",
+				"db-skill": "PVE Skill 08"
+			},
+			{
+				"skill": "Rising Windmill",
+				"level": "Ур.35",
+				"icon": "e233509e4d32c5f7aef385766026a3e161d2d142.png",
+				"db-skill": "PVE Skill 09"
+			},
+			{
+				"skill": "Fountainfall",
+				"level": "Ур.40",
+				"icon": "e4e0f0c2d152720e33f1759219de09ab52051a21.png",
+				"db-skill": "PVE Skill 10"
+			},
+			{
+				"skill": "Bloodshower",
+				"level": "Ур.45",
+				"icon": "75fa1885b19b76db73429a0661588d544e5bc974.png",
+				"db-skill": "PVE Skill 11"
+			},
+			{
+				"skill": "Fan Dance II",
+				"level": "Ур.50",
+				"icon": "835016d35e3f62a1ce42a3519e70714b25d91969.png",
+				"db-skill": "PVE Skill 12"
+			},
+			{
+				"skill": "En Avant",
+				"level": "Ур.50",
+				"icon": "b855b43c6fa93b143a93b339527a31950f6cdc47.png",
+				"db-skill": "PVE Skill 13"
+			},
+			{
+				"skill": "Curing Waltz",
+				"level": "Ур.52",
+				"icon": "30a793f0a1bae7d643449bd69b63722b8bbf1b3a.png",
+				"db-skill": "PVE Skill 14"
+			},
+			{
+				"skill": "Shield Samba",
+				"level": "Ур.56",
+				"icon": "f9692ff39ee50c5901429aaca48c066b8952732a.png",
+				"db-skill": "PVE Skill 15"
+			},
+			{
+				"skill": "Closed Position",
+				"level": "Ур.60",
+				"icon": "6bdcca52407a9435fe5a8578742995382e38f097.png",
+				"db-skill": "PVE Skill 16"
+			},
+			{
+				"skill": "Ending",
+				"level": "Ур.60",
+				"icon": "e32ebe0fb7a3a32ca14bdae331a0a05253f77f8e.png",
+				"db-skill": "PVE Skill 17"
+			},
+			{
+				"skill": "Devilment",
+				"level": "Ур.62",
+				"icon": "5dbf1b6a363454e48f1a32f92fe5c5cb6d8d229b.png",
+				"db-skill": "PVE Skill 18"
+			},
+			{
+				"skill": "Fan Dance III",
+				"level": "Ур.66",
+				"icon": "d786bf59396fce45e0e1bdf96cb1196b48b4a98a.png",
+				"db-skill": "PVE Skill 19"
+			},
+			{
+				"skill": "Technical Step",
+				"level": "Ур.70",
+				"icon": "2b0f0944de8d90ce1e9413cc3294bde99b7e1d7a.png",
+				"db-skill": "PVE Skill 20"
+			},
+			{
+				"skill": "Technical Finish",
+				"level": "Ур.70",
+				"icon": "4fa04453ce7de1db88f05bd6f931d489961cc6b1.png",
+				"db-skill": "PVE Skill 21"
+			},
+			{
+				"skill": "Flourish",
+				"level": "Ур.72",
+				"icon": "ae6211655f643d512199cf8596bed5c379a53063.png",
+				"db-skill": "PVE Skill 22"
+			},
+			{
+				"skill": "Saber Dance",
+				"level": "Ур.76",
+				"icon": "88cfba4c4fe50b5ad841ac5d34679ab96fd5ff13.png",
+				"db-skill": "PVE Skill 23"
+			},
+			{
+				"skill": "Improvisation",
+				"level": "Ур.80",
+				"icon": "837e2a8d2f6c135ea8aaa20630487d15967465c8.png",
+				"db-skill": "PVE Skill 24"
+			},
+			{
+				"skill": "Improvised Finish",
+				"level": "Ур.80",
+				"icon": "c32da2126ef617153a8aa7401324d80bdb564ae2.png",
+				"db-skill": "PVE Skill 25"
+			},
+			{
+				"skill": "Tillana",
+				"level": "Ур.82",
+				"icon": "013e279b45dd499fdedb71be99ba844a65150da8.png",
+				"db-skill": "PVE Skill 26"
+			},
+			{
+				"skill": "Fan Dance IV",
+				"level": "Ур.86",
+				"icon": "0ff359ea16721e9cf04e2af49dbcad4bc2f23bf7.png",
+				"db-skill": "PVE Skill 27"
+			},
+			{
+				"skill": "Starfall Dance",
+				"level": "Ур.90",
+				"icon": "027a3d59d160a17f7568069fe25324c61bc4ee13.png",
+				"db-skill": "PVE Skill 28"
+			},
+			{
+				"skill": "Last Dance",
+				"level": "Ур.92",
+				"icon": "4928175718cd6dcb3f4e39eccea94c7c2fd6f595.png",
+				"db-skill": "PVE Skill 29"
+			},
+			{
+				"skill": "Finishing Move",
+				"level": "Ур.96",
+				"icon": "8b85962f58aaef35ad086a228b5fb12584fc6e0d.png",
+				"db-skill": "PVE Skill 30"
+			},
+			{
+				"skill": "Dance of the Dawn",
+				"level": "Ур.100",
+				"icon": "a4c8408be6396477a003a90a573bc23c141b54a6.png",
+				"db-skill": "PVE Skill 31"
+			}
+		]
+	},
+	{
+		"page_job": "BLM",
+		"job": "Black Mage",
+		"skills": [
+			{
+				"skill": "Blizzard",
+				"level": "Ур.1",
+				"icon": "dab74d4a196c546228d67c91db4bde70c32c45df.png",
+				"db-skill": "PVE Skill 01"
+			},
+			{
+				"skill": "Fire",
+				"level": "Ур.2",
+				"icon": "0f0b18de207de52d394b2ca8cb990a38e96587e0.png",
+				"db-skill": "PVE Skill 02"
+			},
+			{
+				"skill": "Transpose",
+				"level": "Ур.4",
+				"icon": "11343c230e7ebd41588ca8f684cb99ee13809398.png",
+				"db-skill": "PVE Skill 03"
+			},
+			{
+				"skill": "Thunder",
+				"level": "Ур.6",
+				"icon": "db30f0fa05ce4f541f839c5b2c57cfe0e9fb77f8.png",
+				"db-skill": "PVE Skill 04"
+			},
+			{
+				"skill": "Blizzard II",
+				"level": "Ур.12",
+				"icon": "af68a6b262379df65a5b4bd0408fafbfd3feb450.png",
+				"db-skill": "PVE Skill 05"
+			},
+			{
+				"skill": "Scathe",
+				"level": "Ур.15",
+				"icon": "9b763aecc46c5559bbbccadfe866fe42d56a9597.png",
+				"db-skill": "PVE Skill 06"
+			},
+			{
+				"skill": "Fire II",
+				"level": "Ур.18",
+				"icon": "8876f1b3cf116acf7138253e0193396c75698651.png",
+				"db-skill": "PVE Skill 07"
+			},
+			{
+				"skill": "Thunder II",
+				"level": "Ур.26",
+				"icon": "67205b06f51ddd0e07f16441e38e90d59840f1b6.png",
+				"db-skill": "PVE Skill 08"
+			},
+			{
+				"skill": "Manaward",
+				"level": "Ур.30",
+				"icon": "75ed92265dc2dcc6fa1e0b8f22a01258799f222d.png",
+				"db-skill": "PVE Skill 09"
+			},
+			{
+				"skill": "Manafont",
+				"level": "Ур.30",
+				"icon": "46be5d9b06e228473154bc91d303ba989308a1cb.png",
+				"db-skill": "PVE Skill 10"
+			},
+			{
+				"skill": "Fire III",
+				"level": "Ур.35",
+				"icon": "3ff8dcabba57f6a697d5a86fc7490884b74eddff.png",
+				"db-skill": "PVE Skill 11"
+			},
+			{
+				"skill": "Blizzard III",
+				"level": "Ур.35",
+				"icon": "6dbb819d3f64b93d6f6ffa23a73101c79592ae2f.png",
+				"db-skill": "PVE Skill 12"
+			},
+			{
+				"skill": "Umbral Soul",
+				"level": "Ур.35",
+				"icon": "5c3311c8d38df2d4617c0a325772cdd229f3c181.png",
+				"db-skill": "PVE Skill 13"
+			},
+			{
+				"skill": "Freeze",
+				"level": "Ур.40",
+				"icon": "2190c4a6ebb204b010020af62a99b1829185aa21.png",
+				"db-skill": "PVE Skill 14"
+			},
+			{
+				"skill": "Thunder III",
+				"level": "Ур.45",
+				"icon": "2efb022c0715f802a88e1edef4924c075e92a53d.png",
+				"db-skill": "PVE Skill 15"
+			},
+			{
+				"skill": "Aetherial Manipulation",
+				"level": "Ур.50",
+				"icon": "a8c94264a1522d4e1f80e9dcac7864eb6170d722.png",
+				"db-skill": "PVE Skill 16"
+			},
+			{
+				"skill": "Flare",
+				"level": "Ур.50",
+				"icon": "a2d60b093374b2c896487aba2e32eb8bd32eee7c.png",
+				"db-skill": "PVE Skill 17"
+			},
+			{
+				"skill": "Ley Lines",
+				"level": "Ур.52",
+				"icon": "2c84ee7f590f1563a8eda87c8ac5d89081365a92.png",
+				"db-skill": "PVE Skill 18"
+			},
+			{
+				"skill": "Blizzard IV",
+				"level": "Ур.58",
+				"icon": "43e1468c5bc711966fdbb2790cd60aa6527461bf.png",
+				"db-skill": "PVE Skill 19"
+			},
+			{
+				"skill": "Fire IV",
+				"level": "Ур.60",
+				"icon": "1a353ade6d0e1ff5828cca6b4bbc11c9f52618bb.png",
+				"db-skill": "PVE Skill 20"
+			},
+			{
+				"skill": "Between the Lines",
+				"level": "Ур.62",
+				"icon": "7c05d4b844c5a3f1e85e6f4b19214715f7d609e2.png",
+				"db-skill": "PVE Skill 21"
+			},
+			{
+				"skill": "Thunder IV",
+				"level": "Ур.64",
+				"icon": "de62d077a3306797d48ee62f183e82c474b2b768.png",
+				"db-skill": "PVE Skill 22"
+			},
+			{
+				"skill": "Triplecast",
+				"level": "Ур.66",
+				"icon": "d5bb89a25bf7ce54c03b6fb2898927bd06653219.png",
+				"db-skill": "PVE Skill 23"
+			},
+			{
+				"skill": "Foul",
+				"level": "Ур.70",
+				"icon": "4a87efd9bcba0589fb9e9a86b1f9dcd38157c1ee.png",
+				"db-skill": "PVE Skill 24"
+			},
+			{
+				"skill": "Despair",
+				"level": "Ур.72",
+				"icon": "73a81c740f02599d7ec5d451d659b1fe4409123a.png",
+				"db-skill": "PVE Skill 25"
+			},
+			{
+				"skill": "Xenoglossy",
+				"level": "Ур.80",
+				"icon": "428eac2232a6d9531a9a02e344dc48bb06310c6c.png",
+				"db-skill": "PVE Skill 26"
+			},
+			{
+				"skill": "High Fire II",
+				"level": "Ур.82",
+				"icon": "46a0285209f71ee209c27b8211e9aa798417813c.png",
+				"db-skill": "PVE Skill 27"
+			},
+			{
+				"skill": "High Blizzard II",
+				"level": "Ур.82",
+				"icon": "f775fdd2f3ef5115cad5ed5a85c81ca2a2cfd735.png",
+				"db-skill": "PVE Skill 28"
+			},
+			{
+				"skill": "Amplifier",
+				"level": "Ур.86",
+				"icon": "6f48a9f1b585cf23a21cf9ed3f7a012745928295.png",
+				"db-skill": "PVE Skill 29"
+			},
+			{
+				"skill": "Paradox",
+				"level": "Ур.90",
+				"icon": "7a6d48e67b25969c1ad12f0f42d03b484f8f9f9b.png",
+				"db-skill": "PVE Skill 30"
+			},
+			{
+				"skill": "High Thunder",
+				"level": "Ур.92",
+				"icon": "1babd2b0f9ad34451ac3ac29230b2239db95065b.png",
+				"db-skill": "PVE Skill 31"
+			},
+			{
+				"skill": "High Thunder II",
+				"level": "Ур.92",
+				"icon": "51a70145dcf0d8136ff82ce50713529f1cebaf84.png",
+				"db-skill": "PVE Skill 32"
+			},
+			{
+				"skill": "Retrace",
+				"level": "Ур.96",
+				"icon": "44666e4299c0eded8c4af12edb67c7c9f718bda5.png",
+				"db-skill": "PVE Skill 33"
+			},
+			{
+				"skill": "Flare Star",
+				"level": "Ур.100",
+				"icon": "1bf799ec68187691dceb2adb9dc0ea1259f03dd1.png",
+				"db-skill": "PVE Skill 34"
+			}
+		]
+	},
+	{
+		"page_job": "SMN",
+		"job": "Summoner",
+		"skills": [
+			{
+				"skill": "Ruin",
+				"level": "Ур.1",
+				"icon": "1c74fa1688f3d89d6f5b972ce384df15f62e35d1.png",
+				"db-skill": "PVE Skill 01"
+			},
+			{
+				"skill": "Summon Carbuncle",
+				"level": "Ур.2",
+				"icon": "14a64b174c103f36179809458245dc5e4f4fe0a6.png",
+				"db-skill": "PVE Skill 02"
+			},
+			{
+				"skill": "Radiant Aegis",
+				"level": "Ур.2",
+				"icon": "a116b861109158ee5db8e36cf922fae8f923e7d5.png",
+				"db-skill": "PVE Skill 03"
+			},
+			{
+				"skill": "Physick",
+				"level": "Ур.4",
+				"icon": "e51f309947cde0c36f3a0cd815ca01e268928eb6.png",
+				"db-skill": "PVE Skill 04"
+			},
+			{
+				"skill": "Aethercharge",
+				"level": "Ур.6",
+				"icon": "ad9a8a02fa446a43dc54439c8ac1d04dad1384b2.png",
+				"db-skill": "PVE Skill 05"
+			},
+			{
+				"skill": "Summon Ruby",
+				"level": "Ур.6",
+				"icon": "23ce1df0ac3aa5df6aa4b22cdf2369ff364cabc0.png",
+				"db-skill": "PVE Skill 06"
+			},
+			{
+				"skill": "Gemshine",
+				"level": "Ур.6",
+				"icon": "b1b0a655e18e0c446a0774ef264f010a8766db7f.png",
+				"db-skill": "PVE Skill 07"
+			},
+			{
+				"skill": "Ruby Ruin",
+				"level": "Ур.6",
+				"icon": "1c74fa1688f3d89d6f5b972ce384df15f62e35d1.png",
+				"db-skill": "PVE Skill 08"
+			},
+			{
+				"skill": "Fester",
+				"level": "Ур.10",
+				"icon": "b2df31cca5d00be7bba89943c76b799ae82aba8d.png",
+				"db-skill": "PVE Skill 09"
+			},
+			{
+				"skill": "Energy Drain",
+				"level": "Ур.10",
+				"icon": "92ea9227a8a09c62eb53852e2c26c0d6763a35c2.png",
+				"db-skill": "PVE Skill 10"
+			},
+			{
+				"skill": "Resurrection",
+				"level": "Ур.12",
+				"icon": "9e61ea15caf1f7c0e4b44943dcbee0178e61a9fd.png",
+				"db-skill": "PVE Skill 11"
+			},
+			{
+				"skill": "Summon Topaz",
+				"level": "Ур.15",
+				"icon": "45345cb4f108a07c372f8a355b26c13661d51887.png",
+				"db-skill": "PVE Skill 12"
+			},
+			{
+				"skill": "Topaz Ruin",
+				"level": "Ур.15",
+				"icon": "1c74fa1688f3d89d6f5b972ce384df15f62e35d1.png",
+				"db-skill": "PVE Skill 13"
+			},
+			{
+				"skill": "Summon Emerald",
+				"level": "Ур.22",
+				"icon": "d9d328ec1a7b30579dd56ad69fad33981e197f70.png",
+				"db-skill": "PVE Skill 14"
+			},
+			{
+				"skill": "Emerald Ruin",
+				"level": "Ур.22",
+				"icon": "1c74fa1688f3d89d6f5b972ce384df15f62e35d1.png",
+				"db-skill": "PVE Skill 15"
+			},
+			{
+				"skill": "Outburst",
+				"level": "Ур.26",
+				"icon": "aa5a6e6d676d222c70ac9c001132276cd401a140.png",
+				"db-skill": "PVE Skill 16"
+			},
+			{
+				"skill": "Precious Brilliance",
+				"level": "Ур.26",
+				"icon": "1fa3119e51a423fedea3e3a238497548d0c64960.png",
+				"db-skill": "PVE Skill 17"
+			},
+			{
+				"skill": "Ruby Outburst",
+				"level": "Ур.26",
+				"icon": "aa5a6e6d676d222c70ac9c001132276cd401a140.png",
+				"db-skill": "PVE Skill 18"
+			},
+			{
+				"skill": "Topaz Outburst",
+				"level": "Ур.26",
+				"icon": "aa5a6e6d676d222c70ac9c001132276cd401a140.png",
+				"db-skill": "PVE Skill 19"
+			},
+			{
+				"skill": "Emerald Outburst",
+				"level": "Ур.26",
+				"icon": "aa5a6e6d676d222c70ac9c001132276cd401a140.png",
+				"db-skill": "PVE Skill 20"
+			},
+			{
+				"skill": "Ruin II",
+				"level": "Ур.30",
+				"icon": "d6875ae1008a9e4b2d04562cff42646752e919c5.png",
+				"db-skill": "PVE Skill 21"
+			},
+			{
+				"skill": "Summon Ifrit",
+				"level": "Ур.30",
+				"icon": "5e826d0c09e4894638df5676fc15863cce8d5182.png",
+				"db-skill": "PVE Skill 22"
+			},
+			{
+				"skill": "Ruby Ruin II",
+				"level": "Ур.30",
+				"icon": "d6875ae1008a9e4b2d04562cff42646752e919c5.png",
+				"db-skill": "PVE Skill 23"
+			},
+			{
+				"skill": "Topaz Ruin II",
+				"level": "Ур.30",
+				"icon": "d6875ae1008a9e4b2d04562cff42646752e919c5.png",
+				"db-skill": "PVE Skill 24"
+			},
+			{
+				"skill": "Emerald Ruin II",
+				"level": "Ур.30",
+				"icon": "d6875ae1008a9e4b2d04562cff42646752e919c5.png",
+				"db-skill": "PVE Skill 25"
+			},
+			{
+				"skill": "Summon Titan",
+				"level": "Ур.35",
+				"icon": "0e63c4fe037c46bb8fcb3b1402319d0cf1084711.png",
+				"db-skill": "PVE Skill 26"
+			},
+			{
+				"skill": "Painflare",
+				"level": "Ур.40",
+				"icon": "0d06f6fcf4a18fc6dcf2e084098a5acecf958f28.png",
+				"db-skill": "PVE Skill 27"
+			},
+			{
+				"skill": "Summon Garuda",
+				"level": "Ур.45",
+				"icon": "f0d45cc564da364190b10ea26b9978147b3813fd.png",
+				"db-skill": "PVE Skill 28"
+			},
+			{
+				"skill": "Energy Siphon",
+				"level": "Ур.52",
+				"icon": "9a6ba0bc2e8f682c23f8c2d9241a2ed4bf6a637c.png",
+				"db-skill": "PVE Skill 29"
+			},
+			{
+				"skill": "Ruin III",
+				"level": "Ур.54",
+				"icon": "5d2d65267abd378e60f7f9e832ee92be084ff6d7.png",
+				"db-skill": "PVE Skill 30"
+			},
+			{
+				"skill": "Ruby Ruin III",
+				"level": "Ур.54",
+				"icon": "5d2d65267abd378e60f7f9e832ee92be084ff6d7.png",
+				"db-skill": "PVE Skill 31"
+			},
+			{
+				"skill": "Topaz Ruin III",
+				"level": "Ур.54",
+				"icon": "5d2d65267abd378e60f7f9e832ee92be084ff6d7.png",
+				"db-skill": "PVE Skill 32"
+			},
+			{
+				"skill": "Emerald Ruin III",
+				"level": "Ур.54",
+				"icon": "5d2d65267abd378e60f7f9e832ee92be084ff6d7.png",
+				"db-skill": "PVE Skill 33"
+			},
+			{
+				"skill": "Dreadwyrm Trance",
+				"level": "Ур.58",
+				"icon": "629a0b7a52fe0aad68cf3d0a7a0d40ab0d9c45bf.png",
+				"db-skill": "PVE Skill 34"
+			},
+			{
+				"skill": "Astral Impulse",
+				"level": "Ур.58",
+				"icon": "2ba7ab41cd2f8dac96ba0c89426eebff963d6be0.png",
+				"db-skill": "PVE Skill 35"
+			},
+			{
+				"skill": "Astral Flare",
+				"level": "Ур.58",
+				"icon": "41380367e3ff56dfc723ac049dbcacd00ac5c6f8.png",
+				"db-skill": "PVE Skill 36"
+			},
+			{
+				"skill": "Astral Flow",
+				"level": "Ур.60",
+				"icon": "3fd44c9091d6888f7b3b3ee449d3f71d94d9b05a.png",
+				"db-skill": "PVE Skill 37"
+			},
+			{
+				"skill": "Deathflare",
+				"level": "Ур.60",
+				"icon": "710d60dfcdf5a59cb192084786c7c37bff62fb99.png",
+				"db-skill": "PVE Skill 38"
+			},
+			{
+				"skill": "Ruin IV",
+				"level": "Ур.62",
+				"icon": "84226db4cce94d2c2c686af2c6fca01dfc6a63f9.png",
+				"db-skill": "PVE Skill 39"
+			},
+			{
+				"skill": "Searing Light",
+				"level": "Ур.66",
+				"icon": "6c4b1ae3c69201feb415963f374cd3449a4ad7db.png",
+				"db-skill": "PVE Skill 40"
+			},
+			{
+				"skill": "Summon Bahamut",
+				"level": "Ур.70",
+				"icon": "2e961ffd2e67115c99ad1b4863fc29d5064c4fe9.png",
+				"db-skill": "PVE Skill 41"
+			},
+			{
+				"skill": "Wyrmwave",
+				"level": "Ур.70",
+				"icon": "d2234447db9cad86e7f87d6af71b7088e5fee400.png",
+				"db-skill": "PVE Skill 42"
+			},
+			{
+				"skill": "Enkindle Bahamut",
+				"level": "Ур.70",
+				"icon": "cbf72c7579e45d4a64a7232be3fa7d38a34b703f.png",
+				"db-skill": "PVE Skill 43"
+			},
+			{
+				"skill": "Akh Morn",
+				"level": "Ур.70",
+				"icon": "bdea704b3466837dbf634ca8fa4b21e80cddf833.png",
+				"db-skill": "PVE Skill 44"
+			},
+			{
+				"skill": "Ruby Rite",
+				"level": "Ур.72",
+				"icon": "3c739e3604ba2d045b691a46c0dbef1a658951f3.png",
+				"db-skill": "PVE Skill 45"
+			},
+			{
+				"skill": "Topaz Rite",
+				"level": "Ур.72",
+				"icon": "4c4900529cf628e2f3fda4134c996741f8b465c3.png",
+				"db-skill": "PVE Skill 46"
+			},
+			{
+				"skill": "Emerald Rite",
+				"level": "Ур.72",
+				"icon": "87c16672ddea00204d4c0489b5417166cdb2546a.png",
+				"db-skill": "PVE Skill 47"
+			},
+			{
+				"skill": "Tri-disaster",
+				"level": "Ур.74",
+				"icon": "20e1e40922c159401231154ab0cc94c789b1f58f.png",
+				"db-skill": "PVE Skill 48"
+			},
+			{
+				"skill": "Ruby Disaster",
+				"level": "Ур.74",
+				"icon": "20e1e40922c159401231154ab0cc94c789b1f58f.png",
+				"db-skill": "PVE Skill 49"
+			},
+			{
+				"skill": "Topaz Disaster",
+				"level": "Ур.74",
+				"icon": "20e1e40922c159401231154ab0cc94c789b1f58f.png",
+				"db-skill": "PVE Skill 50"
+			},
+			{
+				"skill": "Emerald Disaster",
+				"level": "Ур.74",
+				"icon": "20e1e40922c159401231154ab0cc94c789b1f58f.png",
+				"db-skill": "PVE Skill 51"
+			},
+			{
+				"skill": "Summon Phoenix",
+				"level": "Ур.80",
+				"icon": "e38e769e9f268f4dcc345b25d310cd53d10d4795.png",
+				"db-skill": "PVE Skill 52"
+			},
+			{
+				"skill": "Fountain of Fire",
+				"level": "Ур.80",
+				"icon": "1b50beab981774f701d16ac61674bfc01747f38b.png",
+				"db-skill": "PVE Skill 53"
+			},
+			{
+				"skill": "Brand of Purgatory",
+				"level": "Ур.80",
+				"icon": "daebb0133d31dbdcc989ecf9fd04ef3acf040cba.png",
+				"db-skill": "PVE Skill 54"
+			},
+			{
+				"skill": "Rekindle",
+				"level": "Ур.80",
+				"icon": "6b2befa4d39ad77fa8992d934bd796e836eed13f.png",
+				"db-skill": "PVE Skill 55"
+			},
+			{
+				"skill": "Enkindle Phoenix",
+				"level": "Ур.80",
+				"icon": "596917791c140eef84754e4488df04bfb7aabf87.png",
+				"db-skill": "PVE Skill 56"
+			},
+			{
+				"skill": "Everlasting Flight",
+				"level": "Ур.80",
+				"icon": "47555a1b908cba86b377560667afa40e8471b69a.png",
+				"db-skill": "PVE Skill 57"
+			},
+			{
+				"skill": "Scarlet Flame",
+				"level": "Ур.80",
+				"icon": "865ff61841e27dc0ede5742b0109c45b672c2ef2.png",
+				"db-skill": "PVE Skill 58"
+			},
+			{
+				"skill": "Revelation",
+				"level": "Ур.80",
+				"icon": "9358e80cfda84c41bef60f05c6f66218842a6f74.png",
+				"db-skill": "PVE Skill 59"
+			},
+			{
+				"skill": "Ruby Catastrophe",
+				"level": "Ур.82",
+				"icon": "aff103d032034722b3a4063ad749eb2bb85793aa.png",
+				"db-skill": "PVE Skill 60"
+			},
+			{
+				"skill": "Topaz Catastrophe",
+				"level": "Ур.82",
+				"icon": "8f6bc648e6b39fcdfdb5d747cc28ea98dd65b441.png",
+				"db-skill": "PVE Skill 61"
+			},
+			{
+				"skill": "Emerald Catastrophe",
+				"level": "Ур.82",
+				"icon": "876d6589f594c3f74d7d2834d297f18da7809199.png",
+				"db-skill": "PVE Skill 62"
+			},
+			{
+				"skill": "Crimson Cyclone",
+				"level": "Ур.86",
+				"icon": "7ec3b0243e57959d38e7bcbfaaab4fe0bbf8972b.png",
+				"db-skill": "PVE Skill 63"
+			},
+			{
+				"skill": "Crimson Strike",
+				"level": "Ур.86",
+				"icon": "a63bb4e29d20c938e1b68ea0dc0ab64c3a8a9fdf.png",
+				"db-skill": "PVE Skill 64"
+			},
+			{
+				"skill": "Mountain Buster",
+				"level": "Ур.86",
+				"icon": "735d3aabed75539866193ca97b356367f818821f.png",
+				"db-skill": "PVE Skill 65"
+			},
+			{
+				"skill": "Slipstream",
+				"level": "Ур.86",
+				"icon": "6a54b05a1f6bd144d28149045f1f9cc61f86daf3.png",
+				"db-skill": "PVE Skill 66"
+			},
+			{
+				"skill": "Summon Ifrit II",
+				"level": "Ур.90",
+				"icon": "e49b3a55b75a637cb0e6e794d588b2ba4886c742.png",
+				"db-skill": "PVE Skill 67"
+			},
+			{
+				"skill": "Summon Titan II",
+				"level": "Ур.90",
+				"icon": "d5e3edcb915673621b1ccb51774abf494eba6b5e.png",
+				"db-skill": "PVE Skill 68"
+			},
+			{
+				"skill": "Summon Garuda II",
+				"level": "Ур.90",
+				"icon": "f25f4c81570c889872295e4ba99496ee6bf3fc89.png",
+				"db-skill": "PVE Skill 69"
+			},
+			{
+				"skill": "Necrotize",
+				"level": "Ур.92",
+				"icon": "f224b169e6f0f4b35b361e5c6666293e09a1f0ac.png",
+				"db-skill": "PVE Skill 70"
+			},
+			{
+				"skill": "Searing Flash",
+				"level": "Ур.96",
+				"icon": "b1edfc3a4d1b47e1df840e26e0969529070fed58.png",
+				"db-skill": "PVE Skill 71"
+			},
+			{
+				"skill": "Lux Solaris",
+				"level": "Ур.100",
+				"icon": "38e51b1e903bd0b7bc685ec95c2ac105779bbc8c.png",
+				"db-skill": "PVE Skill 72"
+			},
+			{
+				"skill": "Summon Solar Bahamut",
+				"level": "Ур.100",
+				"icon": "8b65e3df95387470664286d1e2a0f71dd29b8f77.png",
+				"db-skill": "PVE Skill 73"
+			},
+			{
+				"skill": "Umbral Impulse",
+				"level": "Ур.100",
+				"icon": "097755a6dc321ca146451fbb0e5c42dca4d9dd02.png",
+				"db-skill": "PVE Skill 74"
+			},
+			{
+				"skill": "Umbral Flare",
+				"level": "Ур.100",
+				"icon": "e20b0b341a670598c6af9548925d4da35c2e4365.png",
+				"db-skill": "PVE Skill 75"
+			},
+			{
+				"skill": "Sunflare",
+				"level": "Ур.100",
+				"icon": "ea98821592c274277d2472f4eb33e014c66a751f.png",
+				"db-skill": "PVE Skill 76"
+			},
+			{
+				"skill": "Enkindle Solar Bahamut",
+				"level": "Ур.100",
+				"icon": "4deaaa9815c4b1bd5fc52e76019d9192342568b9.png",
+				"db-skill": "PVE Skill 77"
+			},
+			{
+				"skill": "Luxwave",
+				"level": "Ур.100",
+				"icon": "7ea77f0af91e55be0b619e4dc72e20c5ba56f516.png",
+				"db-skill": "PVE Skill 78"
+			},
+			{
+				"skill": "Exodus",
+				"level": "Ур.100",
+				"icon": "97f91c1009d19698ee6e2e3272b974a4c0dd62ff.png",
+				"db-skill": "PVE Skill 79"
+			}
+		]
+	},
+	{
+		"page_job": "RDM",
+		"job": "Red Mage",
+		"skills": [
+			{
+				"skill": "Riposte",
+				"level": "Ур.1",
+				"icon": "8c24d1459dbae096bb8927efb52db5feb9b0d316.png",
+				"db-skill": "PVE Skill 01"
+			},
+			{
+				"skill": "Jolt",
+				"level": "Ур.2",
+				"icon": "9fc8c455d50ec08c721f4674e7e9015f4700debe.png",
+				"db-skill": "PVE Skill 02"
+			},
+			{
+				"skill": "Verthunder",
+				"level": "Ур.4",
+				"icon": "f5a91b090922e24a43d172f2cdfb85fc4ff9423a.png",
+				"db-skill": "PVE Skill 03"
+			},
+			{
+				"skill": "Corps-a-corps",
+				"level": "Ур.6",
+				"icon": "ca149fa59c97f3ce000ba2cdd143dd181a25def6.png",
+				"db-skill": "PVE Skill 04"
+			},
+			{
+				"skill": "Veraero",
+				"level": "Ур.10",
+				"icon": "a774e32d6c268433b5e2c56dc152cae973605e2e.png",
+				"db-skill": "PVE Skill 05"
+			},
+			{
+				"skill": "Scatter",
+				"level": "Ур.15",
+				"icon": "adbad46ea7684b2e5914b23c4ec7de0ecb19432d.png",
+				"db-skill": "PVE Skill 06"
+			},
+			{
+				"skill": "Verthunder II",
+				"level": "Ур.18",
+				"icon": "e81a0ede20ee59190bd71e6e1e0398449a3d9b54.png",
+				"db-skill": "PVE Skill 07"
+			},
+			{
+				"skill": "Veraero II",
+				"level": "Ур.22",
+				"icon": "bd4b649f82039bd9b028dc8bafacef3eb671da79.png",
+				"db-skill": "PVE Skill 08"
+			},
+			{
+				"skill": "Verfire",
+				"level": "Ур.26",
+				"icon": "ce7efb90e13d0fef394abb8d2e57a09402452890.png",
+				"db-skill": "PVE Skill 09"
+			},
+			{
+				"skill": "Verstone",
+				"level": "Ур.30",
+				"icon": "c5ddf887a06b23a2ae9426a5a6288b863b92eced.png",
+				"db-skill": "PVE Skill 10"
+			},
+			{
+				"skill": "Zwerchhau",
+				"level": "Ур.35",
+				"icon": "adef75e55602967f0c722896b45d5be518cd9dd4.png",
+				"db-skill": "PVE Skill 11"
+			},
+			{
+				"skill": "Displacement",
+				"level": "Ур.40",
+				"icon": "3a7bcdd99a2d4f40c95c39ce19d97be8ee0a151b.png",
+				"db-skill": "PVE Skill 12"
+			},
+			{
+				"skill": "Engagement",
+				"level": "Ур.40",
+				"icon": "341778a835813d9d96dd39d0a4f67e13b6c09527.png",
+				"db-skill": "PVE Skill 13"
+			},
+			{
+				"skill": "Fleche",
+				"level": "Ур.45",
+				"icon": "f950d18911258503ab8a8ec2fa28ca3fdb6a8a6d.png",
+				"db-skill": "PVE Skill 14"
+			},
+			{
+				"skill": "Redoublement",
+				"level": "Ур.50",
+				"icon": "292f17a2bcaebf7db4560ff8c977f64908db9917.png",
+				"db-skill": "PVE Skill 15"
+			},
+			{
+				"skill": "Acceleration",
+				"level": "Ур.50",
+				"icon": "831a96d8378a68659074d13e8a1e90e0de2da5a4.png",
+				"db-skill": "PVE Skill 16"
+			},
+			{
+				"skill": "Moulinet",
+				"level": "Ур.52",
+				"icon": "fe9877c05ef3a4622f0488b580b6ea36b7446bca.png",
+				"db-skill": "PVE Skill 17"
+			},
+			{
+				"skill": "Vercure",
+				"level": "Ур.54",
+				"icon": "d23f5785bdb0f0c398a14087753ddcedab6d4e78.png",
+				"db-skill": "PVE Skill 18"
+			},
+			{
+				"skill": "Contre Sixte",
+				"level": "Ур.56",
+				"icon": "e9183e5932215335efe798ce4d6422d37befaf27.png",
+				"db-skill": "PVE Skill 19"
+			},
+			{
+				"skill": "Embolden",
+				"level": "Ур.58",
+				"icon": "85d6955ad939bb051fe8b893c194497b9499d89e.png",
+				"db-skill": "PVE Skill 20"
+			},
+			{
+				"skill": "Manafication",
+				"level": "Ур.60",
+				"icon": "5f145a66018e2f197e16b966e30c53bba09e13bd.png",
+				"db-skill": "PVE Skill 21"
+			},
+			{
+				"skill": "Jolt II",
+				"level": "Ур.62",
+				"icon": "e2b3cc05547ba6a37ba5e883f190570d32eabb10.png",
+				"db-skill": "PVE Skill 22"
+			},
+			{
+				"skill": "Verraise",
+				"level": "Ур.64",
+				"icon": "6be6c45a105e3890f5390c26a2d5532a7e2eea43.png",
+				"db-skill": "PVE Skill 23"
+			},
+			{
+				"skill": "Impact",
+				"level": "Ур.66",
+				"icon": "1c5d66100b8539f4dd5779a760ccbc29f5878e6a.png",
+				"db-skill": "PVE Skill 24"
+			},
+			{
+				"skill": "Verflare",
+				"level": "Ур.68",
+				"icon": "d20080ca189b4843d89ac2faab14d42099bd2e4c.png",
+				"db-skill": "PVE Skill 25"
+			},
+			{
+				"skill": "Verholy",
+				"level": "Ур.70",
+				"icon": "34f4be861c3f40879653fef7fe7039f8df1108c1.png",
+				"db-skill": "PVE Skill 26"
+			},
+			{
+				"skill": "Reprise",
+				"level": "Ур.76",
+				"icon": "5a263708112bc6c8cbada8c40c34e97811874caf.png",
+				"db-skill": "PVE Skill 27"
+			},
+			{
+				"skill": "Scorch",
+				"level": "Ур.80",
+				"icon": "ebe66b332de0465570b50147ee257968cfd77d0e.png",
+				"db-skill": "PVE Skill 28"
+			},
+			{
+				"skill": "Verthunder III",
+				"level": "Ур.82",
+				"icon": "8753ec70302b5e3613d8f95980f6d80d30c8ee9d.png",
+				"db-skill": "PVE Skill 29"
+			},
+			{
+				"skill": "Veraero III",
+				"level": "Ур.82",
+				"icon": "d9d556c8c08c0704176d7239be8de27e2c1f4aba.png",
+				"db-skill": "PVE Skill 30"
+			},
+			{
+				"skill": "Jolt III",
+				"level": "Ур.84",
+				"icon": "f3be0e80366bd72a864a87e41eadd964f07a5f57.png",
+				"db-skill": "PVE Skill 31"
+			},
+			{
+				"skill": "Magick Barrier",
+				"level": "Ур.86",
+				"icon": "76814235b2963003889ec3f3fc8c4857d82d3177.png",
+				"db-skill": "PVE Skill 32"
+			},
+			{
+				"skill": "Resolution",
+				"level": "Ур.90",
+				"icon": "3683481bcc4bf11a5c0d8d2b979d3109eb2664f7.png",
+				"db-skill": "PVE Skill 33"
+			},
+			{
+				"skill": "Vice of Thorns",
+				"level": "Ур.92",
+				"icon": "23de2734d998406aa25f526147ebbea7f1012d67.png",
+				"db-skill": "PVE Skill 34"
+			},
+			{
+				"skill": "Grand Impact",
+				"level": "Ур.96",
+				"icon": "5be2009c3bc4bd918ee899e0c6edc953571e93a3.png",
+				"db-skill": "PVE Skill 35"
+			},
+			{
+				"skill": "Prefulgence",
+				"level": "Ур.100",
+				"icon": "f3988ae5cc17fcf0b655c5820f0c25ef2ac72b43.png",
+				"db-skill": "PVE Skill 36"
+			},
+			{
+				"skill": "Enchanted Riposte",
+				"level": "Ур.1",
+				"icon": "f3b5d72daa982d01b469e4d45a73b184b7056154.png",
+				"db-skill": "PVE Skill 37"
+			},
+			{
+				"skill": "Enchanted Zwerchhau",
+				"level": "Ур.35",
+				"icon": "4740dd6eac66424c4d1b236f9002b979f7f993e7.png",
+				"db-skill": "PVE Skill 38"
+			},
+			{
+				"skill": "Enchanted Redoublement",
+				"level": "Ур.50",
+				"icon": "12329935fdf53d176f290194929c91b4f96c5212.png",
+				"db-skill": "PVE Skill 39"
+			},
+			{
+				"skill": "Enchanted Moulinet",
+				"level": "Ур.52",
+				"icon": "078ff2ecf682fbabebea07caf8631619a223a774.png",
+				"db-skill": "PVE Skill 40"
+			},
+			{
+				"skill": "Enchanted Moulinet Deux",
+				"level": "Ур.52",
+				"icon": "e5dfc01b5048f6bef58d504d6e6f633004ad8fc7.png",
+				"db-skill": "PVE Skill 41"
+			},
+			{
+				"skill": "Enchanted Moulinet Trois",
+				"level": "Ур.52",
+				"icon": "0f1ad21893a66c8f4b9253821fee9044ba1b4464.png",
+				"db-skill": "PVE Skill 42"
+			},
+			{
+				"skill": "Enchanted Reprise",
+				"level": "Ур.76",
+				"icon": "a6e98885e3a5709ef22ba5ea9ad2991f3015752e.png",
+				"db-skill": "PVE Skill 43"
+			}
+		]
+	},
+	{
+		"page_job": "PCT",
+		"job": "Pictomancer",
+		"skills": [
+			{
+				"skill": "Fire in Red",
+				"level": "Ур.1",
+				"icon": "e25904d9d00a0c1067e479ea752557aaec6fc30d.png",
+				"db-skill": "PVE Skill 01"
+			},
+			{
+				"skill": "Aero in Green",
+				"level": "Ур.5",
+				"icon": "07406a981daf5e92fa645d070a97d8dc87e68a78.png",
+				"db-skill": "PVE Skill 02"
+			},
+			{
+				"skill": "Tempera Coat",
+				"level": "Ур.10",
+				"icon": "615ab65c73e8727db1cd8de2bb161626170506c8.png",
+				"db-skill": "PVE Skill 03"
+			},
+			{
+				"skill": "Water in Blue",
+				"level": "Ур.15",
+				"icon": "2cf03c27a9e09631ea594dea8b064cf4f9aa48be.png",
+				"db-skill": "PVE Skill 04"
+			},
+			{
+				"skill": "Smudge",
+				"level": "Ур.20",
+				"icon": "2933360212b43c10972912ef1907e45937f50292.png",
+				"db-skill": "PVE Skill 05"
+			},
+			{
+				"skill": "Fire II in Red",
+				"level": "Ур.25",
+				"icon": "a7bc8c6fb62a9d9666ef56e064ac6624474520c4.png",
+				"db-skill": "PVE Skill 06"
+			},
+			{
+				"skill": "Creature Motif",
+				"level": "Ур.30",
+				"icon": "89e15b3832fe4cd3edbe62d6149f48053694306f.png",
+				"db-skill": "PVE Skill 07"
+			},
+			{
+				"skill": "Living Muse",
+				"level": "Ур.30",
+				"icon": "f9128e8be207d2af1ea466a8a16e0c84028bd237.png",
+				"db-skill": "PVE Skill 08"
+			},
+			{
+				"skill": "Mog of the Ages",
+				"level": "Ур.30",
+				"icon": "67d1a8e6464d65e94696ab65d1b0ba85e7501a91.png",
+				"db-skill": "PVE Skill 09"
+			},
+			{
+				"skill": "Pom Motif",
+				"level": "Ур.30",
+				"icon": "39158442095659217fb08bed59c45b2caf4ae7c2.png",
+				"db-skill": "PVE Skill 10"
+			},
+			{
+				"skill": "Wing Motif",
+				"level": "Ур.30",
+				"icon": "9ccb0df55e15663f80866bd12936553cef27e1f8.png",
+				"db-skill": "PVE Skill 11"
+			},
+			{
+				"skill": "Pom Muse",
+				"level": "Ур.30",
+				"icon": "839afb2d992cdfd4588764299d02f5acd46d8765.png",
+				"db-skill": "PVE Skill 12"
+			},
+			{
+				"skill": "Winged Muse",
+				"level": "Ур.30",
+				"icon": "78640b1974c2e3ac862c3e94b6cf0715c2a53705.png",
+				"db-skill": "PVE Skill 13"
+			},
+			{
+				"skill": "Aero II in Green",
+				"level": "Ур.35",
+				"icon": "bc20c2aa10ac1db0fae2452b5c3cd41e2b9c2eda.png",
+				"db-skill": "PVE Skill 14"
+			},
+			{
+				"skill": "Water II in Blue",
+				"level": "Ур.45",
+				"icon": "5d8842fd05fef2d1c4f940bd5a7b35137bdba502.png",
+				"db-skill": "PVE Skill 15"
+			},
+			{
+				"skill": "Weapon Motif",
+				"level": "Ур.50",
+				"icon": "385f005903208963e20e251176a2e9b7efc0590f.png",
+				"db-skill": "PVE Skill 16"
+			},
+			{
+				"skill": "Steel Muse",
+				"level": "Ур.50",
+				"icon": "b17ceff782edd7fed2934d1bb6a918fb8e97ef7f.png",
+				"db-skill": "PVE Skill 17"
+			},
+			{
+				"skill": "Hammer Stamp",
+				"level": "Ур.50",
+				"icon": "bd61923ae5b677d8d93e57b962b23511d0f4396c.png",
+				"db-skill": "PVE Skill 18"
+			},
+			{
+				"skill": "Hammer Motif",
+				"level": "Ур.50",
+				"icon": "3c48a4050ea4386ef17063dbc841e75327a8d29e.png",
+				"db-skill": "PVE Skill 19"
+			},
+			{
+				"skill": "Striking Muse",
+				"level": "Ур.50",
+				"icon": "83dc200badfab99ff0f550da3b13737e82dfa118.png",
+				"db-skill": "PVE Skill 20"
+			},
+			{
+				"skill": "Blizzard in Cyan",
+				"level": "Ур.60",
+				"icon": "4a31c08d79867d5b332f98f8616bb06b9088daf0.png",
+				"db-skill": "PVE Skill 21"
+			},
+			{
+				"skill": "Blizzard II in Cyan",
+				"level": "Ур.60",
+				"icon": "5f09a63e115cb331f60826a258ba7d2cf51adf3f.png",
+				"db-skill": "PVE Skill 22"
+			},
+			{
+				"skill": "Subtractive Palette",
+				"level": "Ур.60",
+				"icon": "346a632a64591ed1e61406c1a85357112ae98a80.png",
+				"db-skill": "PVE Skill 23"
+			},
+			{
+				"skill": "Stone in Yellow",
+				"level": "Ур.60",
+				"icon": "8f7552113b38a8e6b3debb5ca900fbcd2bc3d0fb.png",
+				"db-skill": "PVE Skill 24"
+			},
+			{
+				"skill": "Thunder in Magenta",
+				"level": "Ур.60",
+				"icon": "f6f648fbed76b3d0b99e4127e8e9024234b6fb97.png",
+				"db-skill": "PVE Skill 25"
+			},
+			{
+				"skill": "Stone II in Yellow",
+				"level": "Ур.60",
+				"icon": "900e2d32cfb03084ddf48bc8120763ad623f5540.png",
+				"db-skill": "PVE Skill 26"
+			},
+			{
+				"skill": "Thunder II in Magenta",
+				"level": "Ур.60",
+				"icon": "6463351c3b4bef69baddc35e1c6d93a247daa923.png",
+				"db-skill": "PVE Skill 27"
+			},
+			{
+				"skill": "Landscape Motif",
+				"level": "Ур.70",
+				"icon": "f05b478236d27157b878276c280c3b49bd13cca6.png",
+				"db-skill": "PVE Skill 28"
+			},
+			{
+				"skill": "Scenic Muse",
+				"level": "Ур.70",
+				"icon": "d711d26c3f29241311b78bca1d92cc18de18e35f.png",
+				"db-skill": "PVE Skill 29"
+			},
+			{
+				"skill": "Starry Sky Motif",
+				"level": "Ур.70",
+				"icon": "39ff3bff7a4857c386313552edd236755358526a.png",
+				"db-skill": "PVE Skill 30"
+			},
+			{
+				"skill": "Starry Muse",
+				"level": "Ур.70",
+				"icon": "cafa13f63003b860d9edc8e67aa095fed5501a79.png",
+				"db-skill": "PVE Skill 31"
+			},
+			{
+				"skill": "Holy in White",
+				"level": "Ур.80",
+				"icon": "5d8eefda835c959562af7d1fe12b229cedcca409.png",
+				"db-skill": "PVE Skill 32"
+			},
+			{
+				"skill": "Hammer Brush",
+				"level": "Ур.86",
+				"icon": "10803efae25f689fa66fe9ddedce3a95390e80c5.png",
+				"db-skill": "PVE Skill 33"
+			},
+			{
+				"skill": "Polishing Hammer",
+				"level": "Ур.86",
+				"icon": "2405c837c6e42b5e05b84f9e10b30ef2eb6224e0.png",
+				"db-skill": "PVE Skill 34"
+			},
+			{
+				"skill": "Tempera Grassa",
+				"level": "Ур.88",
+				"icon": "ed684b430814130c6917a00018cd5e400430e210.png",
+				"db-skill": "PVE Skill 35"
+			},
+			{
+				"skill": "Comet in Black",
+				"level": "Ур.90",
+				"icon": "b6e90d61c6e71d968943043d62ddb5e1a9e6d7f3.png",
+				"db-skill": "PVE Skill 36"
+			},
+			{
+				"skill": "Rainbow Drip",
+				"level": "Ур.92",
+				"icon": "5611f2fd77f2a770574f207216a66a12629a7526.png",
+				"db-skill": "PVE Skill 37"
+			},
+			{
+				"skill": "Claw Motif",
+				"level": "Ур.96",
+				"icon": "34cd074b3bd5cc9036d2598ae899aed5e77e6db3.png",
+				"db-skill": "PVE Skill 38"
+			},
+			{
+				"skill": "Maw Motif",
+				"level": "Ур.96",
+				"icon": "96814a40791c36cc4eff5e82300e1fb851a4515e.png",
+				"db-skill": "PVE Skill 39"
+			},
+			{
+				"skill": "Clawed Muse",
+				"level": "Ур.96",
+				"icon": "e7eb51e71ca43854e55e520c860658d166e4b266.png",
+				"db-skill": "PVE Skill 40"
+			},
+			{
+				"skill": "Fanged Muse",
+				"level": "Ур.96",
+				"icon": "a7397b9f417ac2daf98e9f72b38e30768ec3b1cf.png",
+				"db-skill": "PVE Skill 41"
+			},
+			{
+				"skill": "Retribution of the Madeen",
+				"level": "Ур.96",
+				"icon": "cfe33f3c8faa98ade9f3f2fa13e4fbb1aa0cb3e3.png",
+				"db-skill": "PVE Skill 42"
+			},
+			{
+				"skill": "Star Prism",
+				"level": "Ур.100",
+				"icon": "5627109a7394cce83a4085e16b4448a7d0262525.png",
+				"db-skill": "PVE Skill 43"
+			}
+		]
+	}
+]
