@@ -1,6 +1,8 @@
-<h1 align="center">
-  <a>FFXIVJobUpdatesRU</a>
-</h1>
+<p align="center">
+  <a href="https://ff14jobguide.ru">
+    <img src="https://raw.githubusercontent.com/Murakumo-JP/FFXIVJobUpdatesRU/main/logo.png">
+  </a>
+</p>
 
 <p align="center">
   <a href=LICENSE><img src="https://img.shields.io/github/license/Murakumo-JP/FFXIVJobUpdatesRU?style=for-the-badge"></a>
