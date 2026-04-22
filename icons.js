@@ -7,7 +7,7 @@ const CONFIG = {
     baseUrl: 'https://eu.finalfantasyxiv.com/jobguide',
     timeout: 15000,
     delayBetweenRequests: 2000,
-    delayBetweenImages: 250,
+    delayBetweenImages: 150,
     userAgent: 'FFXIV Icon Parser'
 };
 
