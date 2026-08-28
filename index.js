@@ -1,12 +1,12 @@
 import axios from 'axios';
 import { load } from 'cheerio';
-import { writeFile, mkdir } from 'fs/promises';
+import { writeFile, mkdir, readFile } from 'fs/promises';
 
 const CONFIG = {
     baseUrl: 'https://eu.finalfantasyxiv.com/jobguide',
     timeout: 15000,
     delayBetweenRequests: 2000,
-    userAgent: 'FFXIV Parser'
+    userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'
 };
 
 const JOBS = [
@@ -33,12 +33,28 @@ const JOBS = [
     { code: 'PCT', slug: 'pictomancer' }
 ];
 
+const isTTY = Boolean(process.stdout.isTTY);
+const C = {
+    reset: '\x1b[0m',
+    bold: '\x1b[1m',
+    dim: '\x1b[2m',
+    red: '\x1b[31m',
+    green: '\x1b[32m',
+    yellow: '\x1b[33m',
+    cyan: '\x1b[36m',
+    gray: '\x1b[90m'
+};
+function paint(text, ...codes) {
+    if (!isTTY) return text;
+    return `${codes.join('')}${text}${C.reset}`;
+}
+
 const Utils = {
     timestampToDate(timestamp) {
         const date = new Date(timestamp * 1000);
-        const day = date.getDate().toString().padStart(2, '0');
-        const month = (date.getMonth() + 1).toString().padStart(2, '0');
-        const year = date.getFullYear();
+        const day = date.getUTCDate().toString().padStart(2, '0');
+        const month = (date.getUTCMonth() + 1).toString().padStart(2, '0');
+        const year = date.getUTCFullYear();
         return `${day}/${month}/${year}`;
     },
 
@@ -47,7 +63,7 @@ const Utils = {
             { regex: /^pve_action__(\d+)$/, formatter: (num) => `PVE Skill ${num.padStart(2, '0')}` },
             { regex: /^pvp_action__(\d+)$/, formatter: (num) => `PVP Skill ${num.padStart(2, '0')}` },
             { regex: /^trait_action__(\d+)$/, formatter: (num) => `Trait ${num.padStart(2, '0')}` },
-            { regex: /^pvplimitbreakaction_(\d+)$/, formatter: (num) => `PVP Skill LB${parseInt(num)}` }
+            { regex: /^pvplimitbreakaction_(\d+)$/, formatter: (num) => `PVP Skill LB ${num.padStart(2, '0')}` }
         ];
 
         for (const pattern of patterns) {
@@ -56,6 +72,14 @@ const Utils = {
                 return pattern.formatter(match[1]);
             }
         }
+        return null;
+    },
+
+    classifyKey(key) {
+        if (key.startsWith('PVP Skill LB')) return 'lb';
+        if (key.startsWith('PVE Skill')) return 'pve';
+        if (key.startsWith('PVP Skill')) return 'pvp';
+        if (key.startsWith('Trait')) return 'traits';
         return null;
     },
 
@@ -102,7 +126,7 @@ class UpdateParser {
         this.$('tr.update.js__jobguide_update_one.hide').each((i, elem) => {
             const $row = this.$(elem);
             const timestamp = $row.attr('data-updated');
-            
+
             if (!timestamp || parseInt(timestamp) <= 0) return;
 
             const $nextRow = $row.next();
@@ -112,10 +136,8 @@ class UpdateParser {
             const skillKey = Utils.getSkillKey(actionId);
             if (!skillKey) return;
 
-            if (skillKey.startsWith('PVE Skill')) skills.pve.push(skillKey);
-            else if (skillKey.startsWith('PVP Skill LB')) skills.lb.push(skillKey);
-            else if (skillKey.startsWith('PVP Skill')) skills.pvp.push(skillKey);
-            else if (skillKey.startsWith('Trait')) skills.traits.push(skillKey);
+            const category = Utils.classifyKey(skillKey);
+            if (category) skills[category].push(skillKey);
         });
 
         return skills;
@@ -129,67 +151,51 @@ class JobPageParser {
         this.data = {};
     }
 
-    async fetch() {
-        try {
-            const response = await axios.get(this.url, {
-                headers: { 'User-Agent': CONFIG.userAgent },
-                timeout: CONFIG.timeout
-            });
-            this.$ = load(response.data);
-            return true;
-        } catch (error) {
-            console.error(`Ошибка загрузки ${this.jobSlug}:`, error.message);
-            return false;
+    async fetch(retries = 2) {
+        for (let attempt = 0; attempt <= retries; attempt++) {
+            try {
+                const response = await axios.get(this.url, {
+                    headers: { 'User-Agent': CONFIG.userAgent },
+                    timeout: CONFIG.timeout
+                });
+                this.$ = load(response.data);
+                return true;
+            } catch (error) {
+                const isLastAttempt = attempt === retries;
+                const prefix = isLastAttempt ? paint('✗', C.red) : paint('…', C.yellow);
+                console.log(`      ${prefix} attempt ${attempt + 1}/${retries + 1} failed: ${paint(error.message, C.dim)}`);
+                if (isLastAttempt) return false;
+                await Utils.delay(CONFIG.delayBetweenRequests);
+            }
         }
+        return false;
     }
 
     async parse() {
-        if (!await this.fetch()) return this.data;
+        const ok = await this.fetch();
+        const emptySkills = { pve: [], pvp: [], traits: [], lb: [] };
+        if (!ok) return { ok: false, data: this.data, skills: emptySkills };
 
         const updateParser = new UpdateParser(this.$);
-        
+
         const pveUpdate = updateParser.parseUpdateDate('div.js__select--pve', 'PVE');
         const pvpUpdate = updateParser.parseUpdateDate('div.js__select--pvp', 'PVP');
-        
+
         if (pveUpdate) this.data['PVE Update'] = pveUpdate;
         if (pvpUpdate) this.data['PVP Update'] = pvpUpdate;
 
         const skills = updateParser.parseSkills();
-        
+
         [...skills.pve, ...skills.pvp, ...skills.lb, ...skills.traits]
             .forEach(skill => this.data[skill] = true);
 
-        this.printStats(skills);
-        return this.data;
-    }
-
-    printStats(skills) {
-        const updateCount = Object.keys(this.data).filter(k => k.includes('Update')).length;
-        const skillCount = Object.keys(this.data).filter(k => 
-            k.includes('Skill') || k.includes('Trait')
-        ).length;
-
-        console.log(`Найдено: ${updateCount} дат, ${skillCount} умений`);
-        console.log(`PVE: ${skills.pve.length}, PVP: ${skills.pvp.length}, Traits: ${skills.traits.length}, LB: ${skills.lb.length}`);
-
-        if (updateCount > 0) {
-            Object.entries(this.data).forEach(([key, value]) => {
-                if (key.includes('Update')) {
-                    console.log(`    ${key}: ${value}`);
-                }
-            });
-        }
-
-        if (skillCount > 0) {
-            console.log('Умение:', Object.keys(this.data)
-                .filter(k => k.includes('Skill') || k.includes('Trait'))
-                .join(', '));
-        }
+        return { ok: true, data: this.data, skills };
     }
 }
 
 class ParserManager {
-    constructor() {
+    constructor(previousFlags = {}) {
+        this.previousFlags = previousFlags;
         this.flags = {};
         this.stats = {
             processedJobs: 0,
@@ -199,18 +205,29 @@ class ParserManager {
     }
 
     async parseAllJobs() {
-        console.log('Запуск парсера...\n');
+        this.printHeader();
 
-        for (const job of JOBS) {
-            console.log(`Парсинг ${job.slug}...`);
-            
+        for (let i = 0; i < JOBS.length; i++) {
+            const job = JOBS[i];
+            const progress = paint(`[${(i + 1).toString().padStart(2, '0')}/${JOBS.length}]`, C.gray);
+            const name = this.jobDisplayName(job).padEnd(13, ' ');
+
             const parser = new JobPageParser(job.slug);
-            const jobData = await parser.parse();
+            const { ok, data, skills } = await parser.parse();
 
-            if (Object.keys(jobData).length > 0) {
-                this.flags[job.code] = jobData;
+            if (ok && Object.keys(data).length > 0) {
+                this.flags[job.code] = data;
                 this.stats.processedJobs++;
-                this.updateStats(jobData);
+                this.updateStats(data);
+                console.log(`${progress} ${name} ${paint('OK', C.green)}   ${this.formatCounts(skills)}`);
+            } else if (ok) {
+                this.stats.processedJobs++;
+                console.log(`${progress} ${name} ${paint('no changes', C.gray)}`);
+            } else if (this.previousFlags[job.code]) {
+                this.flags[job.code] = this.previousFlags[job.code];
+                console.log(`${progress} ${name} ${paint('fetch failed', C.red)} — using data from previous run`);
+            } else {
+                console.log(`${progress} ${name} ${paint('fetch failed', C.red)} — no data available`);
             }
 
             await Utils.delay(CONFIG.delayBetweenRequests);
@@ -219,34 +236,67 @@ class ParserManager {
         return this.flags;
     }
 
+    jobDisplayName(job) {
+        return job.slug.charAt(0).toUpperCase() + job.slug.slice(1);
+    }
+
+    formatCounts(skills) {
+        const parts = [];
+        if (skills.pve.length) parts.push(`PVE ${skills.pve.length}`);
+        if (skills.pvp.length) parts.push(`PVP ${skills.pvp.length}`);
+        if (skills.traits.length) parts.push(`Traits ${skills.traits.length}`);
+        if (skills.lb.length) parts.push(`LB ${skills.lb.length}`);
+        return parts.length ? paint(parts.join('  ·  '), C.dim) : paint('update date only', C.dim);
+    }
+
+    printHeader() {
+        const line = '─'.repeat(58);
+        console.log(paint(line, C.cyan));
+        console.log(paint('  FFXIV Job Guide — update parser', C.cyan + C.bold));
+        console.log(paint(line, C.cyan));
+    }
+
     updateStats(jobData) {
-        const skills = Object.keys(jobData).filter(k => 
+        const skills = Object.keys(jobData).filter(k =>
             k.includes('Skill') || k.includes('Trait')
         );
         this.stats.totalSkills += skills.length;
 
         skills.forEach(key => {
-            if (key.startsWith('PVE Skill') && !key.includes('LB')) this.stats.pve++;
-            else if (key.startsWith('PVP Skill LB')) this.stats.lb++;
-            else if (key.startsWith('PVP Skill')) this.stats.pvp++;
-            else if (key.startsWith('Trait')) this.stats.traits++;
+            const category = Utils.classifyKey(key);
+            if (category) this.stats[category]++;
         });
     }
 
     printFinalReport() {
-        console.log(`\nОТЧЕТ:`);
-        console.log(`Обработано ${this.stats.processedJobs} из ${JOBS.length} классов`);
-        console.log(`Всего найдено: ${this.stats.totalSkills} флагов`);
-        console.log(`PVE Skills: ${this.stats.pve}`);
-        console.log(`PVP Skills: ${this.stats.pvp}`);
-        console.log(`Traits: ${this.stats.traits}`);
-        console.log(`PVP Limit Break: ${this.stats.lb}`);
+        const line = '─'.repeat(58);
+        const row = (label, value) => console.log(`  ${label.padEnd(18, ' ')} ${paint(value, C.bold)}`);
+
+        console.log();
+        console.log(paint(line, C.cyan));
+        console.log(paint('  SUMMARY', C.cyan + C.bold));
+        console.log(paint(line, C.cyan));
+        row('Processed:', `${this.stats.processedJobs} / ${JOBS.length} jobs`);
+        row('Total flags:', this.stats.totalSkills);
+        row('PVE Skills:', this.stats.pve);
+        row('PVP Skills:', this.stats.pvp);
+        row('Traits:', this.stats.traits);
+        row('PVP Limit Break:', this.stats.lb);
+        console.log(paint(line, C.cyan));
     }
 }
 
 async function main() {
     try {
-        const parserManager = new ParserManager();
+        let previousFlags = {};
+        try {
+            const existing = await readFile('data/UpdateFlags.json', 'utf-8');
+            previousFlags = JSON.parse(existing).flags || {};
+        } catch {
+            
+        }
+
+        const parserManager = new ParserManager(previousFlags);
         const flags = await parserManager.parseAllJobs();
         
         await mkdir('data', { recursive: true });
@@ -261,7 +311,7 @@ async function main() {
         parserManager.printFinalReport();
         
     } catch (error) {
-        console.error('Критическая ошибка:', error);
+        console.error('Fatal error:', error);
         process.exit(1);
     }
 }
