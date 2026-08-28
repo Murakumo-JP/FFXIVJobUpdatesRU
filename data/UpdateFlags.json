@@ -1,10 +1,10 @@
 {
-  "generated": "2026-07-28T12:59:43.789Z",
+  "generated": "2026-08-28T00:13:47.955Z",
   "flags": {
     "PLD": {
       "PVE Update": "Последнее обновление: 28/04/2026",
       "PVP Update": "Последнее обновление: 28/07/2026",
-      "PVP Skill LB1": true
+      "PVP Skill LB 01": true
     },
     "WAR": {
       "PVE Update": "Последнее обновление: 28/04/2026",
@@ -55,7 +55,7 @@
       "PVP Update": "Последнее обновление: 28/07/2026",
       "PVP Skill 05": true,
       "PVP Skill 09": true,
-      "PVP Skill LB1": true
+      "PVP Skill LB 01": true
     },
     "NIN": {
       "PVE Update": "Последнее обновление: 28/04/2026",
@@ -101,7 +101,7 @@
       "PVP Skill 07": true,
       "PVP Skill 10": true,
       "PVP Skill 17": true,
-      "PVP Skill LB1": true
+      "PVP Skill LB 01": true
     },
     "BRD": {
       "PVE Update": "Последнее обновление: 28/04/2026",
@@ -125,7 +125,7 @@
       "PVP Skill 05": true,
       "PVP Skill 12": true,
       "PVP Skill 16": true,
-      "PVP Skill LB1": true
+      "PVP Skill LB 01": true
     },
     "SMN": {
       "PVE Update": "Последнее обновление: 28/04/2026",
